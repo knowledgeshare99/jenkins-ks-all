@@ -1,0 +1,64 @@
+Started by user [8mha:////4Fk1k7e+48rHXUzmlNpYSU0RU1syiePVtwyB//KweiJrAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+[EnvInject] - Loading node environment variables.
+Building on master in workspace /var/lib/jenkins/workspace/Maven_CounterWebApp
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/KS-Organization/Maven_CounterWebApp.git # timeout=10
+Fetching upstream changes from https://github.com/KS-Organization/Maven_CounterWebApp.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/KS-Organization/Maven_CounterWebApp.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 44557acdaf671c028ad1466cbda00b2b346207cb (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 44557acdaf671c028ad1466cbda00b2b346207cb
+Commit message: "modifying jdk verison"
+ > git rev-list --no-walk 9c0f8eff95c98a545d4c88f278a0c50d1cd01caa # timeout=10
+[Maven_CounterWebApp] $ /var/lib/jenkins/tools/hudson.tasks.Maven_MavenInstallation/MAVEN_HOME/bin/mvn compile
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< com.mkyong:CounterWebApp >----------------------
+[INFO] Building CounterWebApp Maven Webapp 1.0-SNAPSHOT
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ CounterWebApp ---
+[8mha:////4B9hiNTi7UKoGwe6I08zfcchzFvqwNxs8N4lFpG4HptVAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 1 resource
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ CounterWebApp ---
+[8mha:////4B9hiNTi7UKoGwe6I08zfcchzFvqwNxs8N4lFpG4HptVAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 1 source file to /var/lib/jenkins/workspace/Maven_CounterWebApp/target/classes
+[INFO] -------------------------------------------------------------
+[8mha:////4Gmebb97mmdsngOdE17BEnR+X1N+64JpNnnzl0BnTwlJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[8mha:////4Gmebb97mmdsngOdE17BEnR+X1N+64JpNnnzl0BnTwlJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] Unable to locate the Javac Compiler in:
+  /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-0.amzn2.x86_64/jre/../lib/tools.jar
+Please ensure you are using JDK 1.4 or above and
+not a JRE (the com.sun.tools.javac.Main class is required).
+In most cases you can change the location of your Java
+installation by setting the JAVA_HOME environment variable.
+[INFO] 1 error
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.330 s
+[INFO] Finished at: 2019-01-05T14:34:15Z
+[INFO] ------------------------------------------------------------------------
+[8mha:////4Gmebb97mmdsngOdE17BEnR+X1N+64JpNnnzl0BnTwlJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:2.3.2:compile (default-compile) on project CounterWebApp: Compilation failure
+[8mha:////4Gmebb97mmdsngOdE17BEnR+X1N+64JpNnnzl0BnTwlJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] Unable to locate the Javac Compiler in:
+[8mha:////4Gmebb97mmdsngOdE17BEnR+X1N+64JpNnnzl0BnTwlJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR]   /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-0.amzn2.x86_64/jre/../lib/tools.jar
+[8mha:////4Gmebb97mmdsngOdE17BEnR+X1N+64JpNnnzl0BnTwlJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] Please ensure you are using JDK 1.4 or above and
+[8mha:////4Gmebb97mmdsngOdE17BEnR+X1N+64JpNnnzl0BnTwlJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] not a JRE (the com.sun.tools.javac.Main class is required).
+[8mha:////4Gmebb97mmdsngOdE17BEnR+X1N+64JpNnnzl0BnTwlJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] In most cases you can change the location of your Java
+[8mha:////4Gmebb97mmdsngOdE17BEnR+X1N+64JpNnnzl0BnTwlJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] installation by setting the JAVA_HOME environment variable.
+[8mha:////4Gmebb97mmdsngOdE17BEnR+X1N+64JpNnnzl0BnTwlJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] 
+[8mha:////4Gmebb97mmdsngOdE17BEnR+X1N+64JpNnnzl0BnTwlJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] -> [Help 1]
+[8mha:////4Gmebb97mmdsngOdE17BEnR+X1N+64JpNnnzl0BnTwlJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] 
+[8mha:////4Gmebb97mmdsngOdE17BEnR+X1N+64JpNnnzl0BnTwlJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[8mha:////4Gmebb97mmdsngOdE17BEnR+X1N+64JpNnnzl0BnTwlJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[8mha:////4Gmebb97mmdsngOdE17BEnR+X1N+64JpNnnzl0BnTwlJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] 
+[8mha:////4Gmebb97mmdsngOdE17BEnR+X1N+64JpNnnzl0BnTwlJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[8mha:////4Gmebb97mmdsngOdE17BEnR+X1N+64JpNnnzl0BnTwlJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+Build step 'Invoke top-level Maven targets' marked build as failure
+Finished: FAILURE

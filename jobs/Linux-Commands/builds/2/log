@@ -1,0 +1,14 @@
+Started by user [8mha:////4Fk1k7e+48rHXUzmlNpYSU0RU1syiePVtwyB//KweiJrAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+[EnvInject] - Loading node environment variables.
+Building on master in workspace /var/lib/jenkins/workspace/Linux-Commands
+[Linux-Commands] $ /bin/sh -xe /tmp/jenkins2542233740673006406.sh
++ sudo yum install wget
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+21 packages excluded due to repository priority protections
+Package wget-1.14-18.amzn2.x86_64 already installed and latest version
+Nothing to do
+Started calculate disk usage of build
+Finished Calculation of disk usage of build in 0 seconds
+Started calculate disk usage of workspace
+Finished Calculation of disk usage of workspace in 0 seconds
+Finished: SUCCESS

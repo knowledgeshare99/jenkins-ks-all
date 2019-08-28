@@ -1,0 +1,202 @@
+Started by user [8mha:////4Fk1k7e+48rHXUzmlNpYSU0RU1syiePVtwyB//KweiJrAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4DJf+k8qCy1S4a5ZKYq9zLhtCWqWT9vTkErxEwG2to2cAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAwOoBn6yfm5BaUlqUX6uZXFOYllqYYANV7kNscAAAA=[0mmyslave1 (myslavenode) in workspace /home/jenkins/workspace/Maven_CounterWebSlaveTomcat
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+Cloning the remote Git repository
+Cloning repository https://github.com/KS-Organization/Maven_CounterWebApp.git
+ > git init /home/jenkins/workspace/Maven_CounterWebSlaveTomcat # timeout=10
+Fetching upstream changes from https://github.com/KS-Organization/Maven_CounterWebApp.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/KS-Organization/Maven_CounterWebApp.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/KS-Organization/Maven_CounterWebApp.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/KS-Organization/Maven_CounterWebApp.git # timeout=10
+Fetching upstream changes from https://github.com/KS-Organization/Maven_CounterWebApp.git
+ > git fetch --tags --progress https://github.com/KS-Organization/Maven_CounterWebApp.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 44557acdaf671c028ad1466cbda00b2b346207cb (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 44557acdaf671c028ad1466cbda00b2b346207cb
+Commit message: "modifying jdk verison"
+First time build. Skipping changelog.
+[Maven_CounterWebSlaveTomcat] $ /home/jenkins/tools/hudson.tasks.Maven_MavenInstallation/LocalMaven/bin/mvn compile package
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< com.mkyong:CounterWebApp >----------------------
+[INFO] Building CounterWebApp Maven Webapp 1.0-SNAPSHOT
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ CounterWebApp ---
+[8mha:////4B9hiNTi7UKoGwe6I08zfcchzFvqwNxs8N4lFpG4HptVAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 1 resource
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ CounterWebApp ---
+[8mha:////4B9hiNTi7UKoGwe6I08zfcchzFvqwNxs8N4lFpG4HptVAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 1 source file to /home/jenkins/workspace/Maven_CounterWebSlaveTomcat/target/classes
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ CounterWebApp ---
+[8mha:////4B9hiNTi7UKoGwe6I08zfcchzFvqwNxs8N4lFpG4HptVAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 1 resource
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ CounterWebApp ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ CounterWebApp ---
+[8mha:////4B9hiNTi7UKoGwe6I08zfcchzFvqwNxs8N4lFpG4HptVAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /home/jenkins/workspace/Maven_CounterWebSlaveTomcat/src/test/resources
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ CounterWebApp ---
+[INFO] No sources to compile
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ CounterWebApp ---
+[INFO] No tests to run.
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-war-plugin:2.2:war (default-war) @ CounterWebApp ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [CounterWebApp] in [/home/jenkins/workspace/Maven_CounterWebSlaveTomcat/target/CounterWebApp]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/home/jenkins/workspace/Maven_CounterWebSlaveTomcat/src/main/webapp]
+[INFO] Webapp assembled in [134 msecs]
+[INFO] Building war: /home/jenkins/workspace/Maven_CounterWebSlaveTomcat/target/CounterWebApp.war
+[INFO] WEB-INF/web.xml already added, skipping
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.606 s
+[INFO] Finished at: 2019-01-10T13:44:43Z
+[INFO] ------------------------------------------------------------------------
+[Maven_CounterWebSlaveTomcat] $ /bin/sh -xe /tmp/jenkins811521294014299105.sh
++ cd /home/jenkins/workspace/Maven_CounterWebSlaveTomcat
++ sudo pwd
+/home/jenkins/workspace/Maven_CounterWebSlaveTomcat
++ echo '########### Tomcat Stopping ###########'
+########### Tomcat Stopping ###########
++ sudo /usr/local/tomcat/bin/shutdown.sh
++ echo '########### Copy .war file to Webapps dir  ###########'
+########### Copy .war file to Webapps dir  ###########
++ sudo cp -r /home/jenkins/workspace/Maven_CounterWebSlaveTomcat/target/CounterWebApp.war /usr/local/tomcat/webapps/
++ echo '########### Changing the Ownership for webapps folder  ###########'
+########### Changing the Ownership for webapps folder  ###########
++ sudo chown -R tomcat:tomcat /usr/local/tomcat/webapps/CounterWebApp.war
++ echo '########### Tomcat Start ###########'
+########### Tomcat Start ###########
++ sudo /usr/local/tomcat/bin/startup.sh sleep 30
+Tomcat started.
++ echo '########### Tomcat WebApps listing ###########'
+########### Tomcat WebApps listing ###########
++ sudo ls -lrt /usr/local/tomcat/webapps/CounterWebApp.war /usr/local/tomcat/webapps/docs /usr/local/tomcat/webapps/examples /usr/local/tomcat/webapps/gameoflife /usr/local/tomcat/webapps/gameoflife.war /usr/local/tomcat/webapps/host-manager /usr/local/tomcat/webapps/manager /usr/local/tomcat/webapps/ROOT
+-rw-r--r--  1 tomcat tomcat 3192531 Jan 10 13:21 /usr/local/tomcat/webapps/gameoflife.war
+-rw-r--r--  1 tomcat tomcat 5552049 Jan 10 13:44 /usr/local/tomcat/webapps/CounterWebApp.war
+
+/usr/local/tomcat/webapps/ROOT:
+total 188
+drwxr-xr-x 2 tomcat tomcat    21 Jan  7 15:28 WEB-INF
+-rwxr-xr-x 1 tomcat tomcat 67795 Jan  7 15:28 tomcat.svg
+-rwxr-xr-x 1 tomcat tomcat  2376 Jan  7 15:28 tomcat-power.gif
+-rwxr-xr-x 1 tomcat tomcat  5103 Jan  7 15:28 tomcat.png
+-rwxr-xr-x 1 tomcat tomcat  2066 Jan  7 15:28 tomcat.gif
+-rwxr-xr-x 1 tomcat tomcat  5581 Jan  7 15:28 tomcat.css
+-rwxr-xr-x 1 tomcat tomcat  7142 Jan  7 15:28 RELEASE-NOTES.txt
+-rwxr-xr-x 1 tomcat tomcat 12290 Jan  7 15:28 index.jsp
+-rwxr-xr-x 1 tomcat tomcat 21630 Jan  7 15:28 favicon.ico
+-rwxr-xr-x 1 tomcat tomcat  3103 Jan  7 15:28 bg-upper.png
+-rwxr-xr-x 1 tomcat tomcat  1401 Jan  7 15:28 bg-nav.png
+-rwxr-xr-x 1 tomcat tomcat  1392 Jan  7 15:28 bg-nav-item.png
+-rwxr-xr-x 1 tomcat tomcat  1918 Jan  7 15:28 bg-middle.png
+-rwxr-xr-x 1 tomcat tomcat   713 Jan  7 15:28 bg-button.png
+-rwxr-xr-x 1 tomcat tomcat 27235 Jan  7 15:28 asf-logo-wide.svg
+
+/usr/local/tomcat/webapps/docs:
+total 1408
+drwxr-xr-x 2 tomcat tomcat     21 Jan  7 15:28 WEB-INF
+drwxr-xr-x 2 tomcat tomcat    233 Jan  7 15:28 funcspecs
+drwxr-xr-x 2 tomcat tomcat     24 Jan  7 15:28 elapi
+drwxr-xr-x 2 tomcat tomcat   4096 Jan  7 15:28 config
+drwxr-xr-x 4 tomcat tomcat    129 Jan  7 15:28 architecture
+drwxr-xr-x 3 tomcat tomcat    192 Jan  7 15:28 appdev
+drwxr-xr-x 2 tomcat tomcat     24 Jan  7 15:28 api
+-rwxr-xr-x 1 tomcat tomcat  23100 Jan  7 15:28 windows-service-howto.html
+-rwxr-xr-x 1 tomcat tomcat  22513 Jan  7 15:28 windows-auth-howto.html
+-rwxr-xr-x 1 tomcat tomcat  12606 Jan  7 15:28 web-socket-howto.html
+drwxr-xr-x 2 tomcat tomcat     24 Jan  7 15:28 websocketapi
+-rwxr-xr-x 1 tomcat tomcat  12269 Jan  7 15:28 virtual-hosting-howto.html
+drwxr-xr-x 2 tomcat tomcat    177 Jan  7 15:28 tribes
+-rwxr-xr-x 1 tomcat tomcat  41153 Jan  7 15:28 ssl-howto.html
+-rwxr-xr-x 1 tomcat tomcat  17494 Jan  7 15:28 ssi-howto.html
+-rwxr-xr-x 1 tomcat tomcat  14470 Jan  7 15:28 setup.html
+drwxr-xr-x 2 tomcat tomcat     24 Jan  7 15:28 servletapi
+-rwxr-xr-x 1 tomcat tomcat  30455 Jan  7 15:28 security-manager-howto.html
+-rwxr-xr-x 1 tomcat tomcat  35747 Jan  7 15:28 security-howto.html
+-rwxr-xr-x 1 tomcat tomcat  16262 Jan  7 15:28 RUNNING.txt
+-rwxr-xr-x 1 tomcat tomcat  35235 Jan  7 15:28 rewrite.html
+-rwxr-xr-x 1 tomcat tomcat   7142 Jan  7 15:28 RELEASE-NOTES.txt
+-rwxr-xr-x 1 tomcat tomcat  63220 Jan  7 15:28 realm-howto.html
+-rwxr-xr-x 1 tomcat tomcat  13290 Jan  7 15:28 proxy-howto.html
+-rwxr-xr-x 1 tomcat tomcat  39166 Jan  7 15:28 monitoring.html
+-rwxr-xr-x 1 tomcat tomcat   8517 Jan  7 15:28 mbeans-descriptors-howto.html
+-rwxr-xr-x 1 tomcat tomcat  10204 Jan  7 15:28 mbeans-descriptors.dtd
+-rwxr-xr-x 1 tomcat tomcat   8239 Jan  7 15:28 maven-jars.html
+-rwxr-xr-x 1 tomcat tomcat  75406 Jan  7 15:28 manager-howto.html
+-rwxr-xr-x 1 tomcat tomcat  25739 Jan  7 15:28 logging.html
+drwxr-xr-x 2 tomcat tomcat     24 Jan  7 15:28 jspapi
+-rwxr-xr-x 1 tomcat tomcat  53923 Jan  7 15:28 jndi-resources-howto.html
+-rwxr-xr-x 1 tomcat tomcat  35582 Jan  7 15:28 jndi-datasource-examples-howto.html
+-rwxr-xr-x 1 tomcat tomcat  66848 Jan  7 15:28 jdbc-pool.html
+-rwxr-xr-x 1 tomcat tomcat  23789 Jan  7 15:28 jasper-howto.html
+-rwxr-xr-x 1 tomcat tomcat  17804 Jan  7 15:28 introduction.html
+-rwxr-xr-x 1 tomcat tomcat  17146 Jan  7 15:28 index.html
+drwxr-xr-x 3 tomcat tomcat    279 Jan  7 15:28 images
+-rwxr-xr-x 1 tomcat tomcat  30208 Jan  7 15:28 html-manager-howto.html
+-rwxr-xr-x 1 tomcat tomcat  14322 Jan  7 15:28 html-host-manager-howto.html
+-rwxr-xr-x 1 tomcat tomcat  16502 Jan  7 15:28 host-manager-howto.html
+-rwxr-xr-x 1 tomcat tomcat  10522 Jan  7 15:28 extras.html
+-rwxr-xr-x 1 tomcat tomcat   8717 Jan  7 15:28 developers.html
+-rwxr-xr-x 1 tomcat tomcat  22760 Jan  7 15:28 deployer-howto.html
+-rwxr-xr-x 1 tomcat tomcat  18377 Jan  7 15:28 default-servlet.html
+-rwxr-xr-x 1 tomcat tomcat   8792 Jan  7 15:28 connectors.html
+-rwxr-xr-x 1 tomcat tomcat  10255 Jan  7 15:28 comments.html
+-rwxr-xr-x 1 tomcat tomcat  43706 Jan  7 15:28 cluster-howto.html
+-rwxr-xr-x 1 tomcat tomcat  19928 Jan  7 15:28 class-loader-howto.html
+-rwxr-xr-x 1 tomcat tomcat 329928 Jan  7 15:28 changelog.html
+-rwxr-xr-x 1 tomcat tomcat  12568 Jan  7 15:28 cgi-howto.html
+-rwxr-xr-x 1 tomcat tomcat  19539 Jan  7 15:28 BUILDING.txt
+-rwxr-xr-x 1 tomcat tomcat  15889 Jan  7 15:28 building.html
+-rwxr-xr-x 1 tomcat tomcat   7712 Jan  7 15:28 balancer-howto.html
+-rwxr-xr-x 1 tomcat tomcat  12836 Jan  7 15:28 apr.html
+-rwxr-xr-x 1 tomcat tomcat   9184 Jan  7 15:28 aio.html
+
+/usr/local/tomcat/webapps/manager:
+total 20
+-rwxr-xr-x 1 tomcat tomcat 4615 Jan  7 15:28 xform.xsl
+drwxr-xr-x 3 tomcat tomcat   32 Jan  7 15:28 WEB-INF
+-rwxr-xr-x 1 tomcat tomcat 4374 Jan  7 15:28 status.xsd
+drwxr-xr-x 2 tomcat tomcat   25 Jan  7 15:28 META-INF
+-rwxr-xr-x 1 tomcat tomcat  913 Jan  7 15:28 index.jsp
+drwxr-xr-x 2 tomcat tomcat  158 Jan  7 15:28 images
+
+/usr/local/tomcat/webapps/host-manager:
+total 8
+drwxr-xr-x 3 tomcat tomcat   32 Jan  7 15:28 WEB-INF
+drwxr-xr-x 2 tomcat tomcat   25 Jan  7 15:28 META-INF
+-rwxr-xr-x 1 tomcat tomcat 1021 Jan  7 15:28 manager.xml
+-rwxr-xr-x 1 tomcat tomcat  913 Jan  7 15:28 index.jsp
+drwxr-xr-x 2 tomcat tomcat  158 Jan  7 15:28 images
+
+/usr/local/tomcat/webapps/examples:
+total 4
+drwxr-xr-x  7 tomcat tomcat   82 Jan  7 15:28 WEB-INF
+drwxr-xr-x  2 tomcat tomcat  103 Jan  7 15:28 websocket
+drwxr-xr-x  4 tomcat tomcat  186 Jan  7 15:28 servlets
+drwxr-xr-x 21 tomcat tomcat  331 Jan  7 15:28 jsp
+-rwxr-xr-x  1 tomcat tomcat 1126 Jan  7 15:28 index.html
+
+/usr/local/tomcat/webapps/gameoflife:
+total 4
+-rw-r----- 1 root root 27 Jan 10 13:21 index.jsp
+drwxr-x--- 5 root root 88 Jan 10 13:21 WEB-INF
+drwxr-x--- 3 root root 57 Jan 10 13:21 META-INF
++ echo '########### CounterWeb Apps Deploy completed ###########'
+########### CounterWeb Apps Deploy completed ###########
+Finished: SUCCESS

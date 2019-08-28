@@ -1,0 +1,39 @@
+Started by user [8mha:////4Fk1k7e+48rHXUzmlNpYSU0RU1syiePVtwyB//KweiJrAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+[EnvInject] - Loading node environment variables.
+Building on master in workspace /var/lib/jenkins/workspace/Maven_CounterWebApp
+Cloning the remote Git repository
+Cloning repository https://github.com/KS-Organization/Maven_CounterWebApp.git
+ > git init /var/lib/jenkins/workspace/Maven_CounterWebApp # timeout=10
+Fetching upstream changes from https://github.com/KS-Organization/Maven_CounterWebApp.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/KS-Organization/Maven_CounterWebApp.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/KS-Organization/Maven_CounterWebApp.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/KS-Organization/Maven_CounterWebApp.git # timeout=10
+Fetching upstream changes from https://github.com/KS-Organization/Maven_CounterWebApp.git
+ > git fetch --tags --progress https://github.com/KS-Organization/Maven_CounterWebApp.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 9c0f8eff95c98a545d4c88f278a0c50d1cd01caa (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 9c0f8eff95c98a545d4c88f278a0c50d1cd01caa
+Commit message: "Merge pull request #1 from classgithub/master"
+First time build. Skipping changelog.
+[Maven_CounterWebApp] $ /var/lib/jenkins/tools/hudson.tasks.Maven_MavenInstallation/MAVEN_HOME/bin/mvn -f HighScoresServiceClient/pom.xml compile
+POM file HighScoresServiceClient/pom.xml specified with the -f/--file command line argument does not exist
+[INFO] Scanning for projects...
+[8mha:////4Gmebb97mmdsngOdE17BEnR+X1N+64JpNnnzl0BnTwlJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] [ERROR] Some problems were encountered while processing the POMs:
+[FATAL] Non-readable POM /var/lib/jenkins/workspace/Maven_CounterWebApp/HighScoresServiceClient/pom.xml: /var/lib/jenkins/workspace/Maven_CounterWebApp/HighScoresServiceClient/pom.xml (No such file or directory) @ 
+ @ 
+[8mha:////4Gmebb97mmdsngOdE17BEnR+X1N+64JpNnnzl0BnTwlJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] The build could not read 1 project -> [Help 1]
+[8mha:////4Gmebb97mmdsngOdE17BEnR+X1N+64JpNnnzl0BnTwlJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR]   
+[8mha:////4Gmebb97mmdsngOdE17BEnR+X1N+64JpNnnzl0BnTwlJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR]   The project  (/var/lib/jenkins/workspace/Maven_CounterWebApp/HighScoresServiceClient/pom.xml) has 1 error
+[8mha:////4Gmebb97mmdsngOdE17BEnR+X1N+64JpNnnzl0BnTwlJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR]     Non-readable POM /var/lib/jenkins/workspace/Maven_CounterWebApp/HighScoresServiceClient/pom.xml: /var/lib/jenkins/workspace/Maven_CounterWebApp/HighScoresServiceClient/pom.xml (No such file or directory)
+[8mha:////4Gmebb97mmdsngOdE17BEnR+X1N+64JpNnnzl0BnTwlJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] 
+[8mha:////4Gmebb97mmdsngOdE17BEnR+X1N+64JpNnnzl0BnTwlJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[8mha:////4Gmebb97mmdsngOdE17BEnR+X1N+64JpNnnzl0BnTwlJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[8mha:////4Gmebb97mmdsngOdE17BEnR+X1N+64JpNnnzl0BnTwlJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] 
+[8mha:////4Gmebb97mmdsngOdE17BEnR+X1N+64JpNnnzl0BnTwlJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[8mha:////4Gmebb97mmdsngOdE17BEnR+X1N+64JpNnnzl0BnTwlJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/ProjectBuildingException
+Build step 'Invoke top-level Maven targets' marked build as failure
+Finished: FAILURE

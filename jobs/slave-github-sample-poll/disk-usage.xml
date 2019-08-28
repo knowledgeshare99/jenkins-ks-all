@@ -1,0 +1,42 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<hudson.plugins.disk__usage.ProjectDiskUsage plugin="disk-usage@0.28">
+  <diskUsageWithoutBuilds>0</diskUsageWithoutBuilds>
+  <slaveWorkspacesUsage class="concurrent-hash-map">
+    <entry>
+      <string>slave2-class</string>
+      <concurrent-hash-map>
+        <entry>
+          <string>/home/jenkins/workspace/slave-github-sample-poll</string>
+          <long>1015290</long>
+        </entry>
+      </concurrent-hash-map>
+    </entry>
+  </slaveWorkspacesUsage>
+  <buildDiskUsage class="java.util.concurrent.CopyOnWriteArraySet">
+    <hudson.plugins.disk__usage.DiskUsageBuildInformation>
+      <id>1</id>
+      <timestamp>1551537019723</timestamp>
+      <number>1</number>
+      <size>6976</size>
+    </hudson.plugins.disk__usage.DiskUsageBuildInformation>
+    <hudson.plugins.disk__usage.DiskUsageBuildInformation>
+      <id>2</id>
+      <timestamp>1551537038313</timestamp>
+      <number>2</number>
+      <size>6475</size>
+    </hudson.plugins.disk__usage.DiskUsageBuildInformation>
+    <hudson.plugins.disk__usage.DiskUsageBuildInformation>
+      <id>3</id>
+      <timestamp>1551537204744</timestamp>
+      <number>3</number>
+      <size>7651</size>
+    </hudson.plugins.disk__usage.DiskUsageBuildInformation>
+    <hudson.plugins.disk__usage.DiskUsageBuildInformation>
+      <id>4</id>
+      <timestamp>1551537429767</timestamp>
+      <number>4</number>
+      <size>7391</size>
+    </hudson.plugins.disk__usage.DiskUsageBuildInformation>
+  </buildDiskUsage>
+  <allBuildsLoaded>false</allBuildsLoaded>
+</hudson.plugins.disk__usage.ProjectDiskUsage>

@@ -1,0 +1,138 @@
+Started by upstream project "[8mha:////4CM+9Mi4OXdtssyXinOfevHdZahcIxmlTOSYsIThA+1pAAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgZh/az8JH3fSl1nH8fgYF1nT2cXfQCDxhU9yAAAAA==[0mMy-CLASS-CICD" build number [8mha:////4I00ZKkNM/vi0W4ohEK1/YLrw1mcv95T/GQgI/kc0OFTAAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBhH9rPwkfd9KXWcfx+BgXWdPZxd9IwDoXbW8yQAAAA==[0m2
+originally caused by:
+ Started by user [8mha:////4Fk1k7e+48rHXUzmlNpYSU0RU1syiePVtwyB//KweiJrAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4AKVLJpkwkbdzHlJpuys9q6jr+fEEHJOlYmVQexP9aoQAAAAoh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgYx/eT83ILSktQi/eKcxLJUI93knMTiYgB9J+MfywAAAA==[0mslave2-class (mylabel-class) in workspace /home/jenkins/workspace/Mvn_GameOfLife_Build
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] Done
+Cloning the remote Git repository
+Cloning repository https://github.com/KS-Organization/game-of-life.git
+ > git init /home/jenkins/workspace/Mvn_GameOfLife_Build # timeout=10
+Fetching upstream changes from https://github.com/KS-Organization/game-of-life.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/KS-Organization/game-of-life.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/KS-Organization/game-of-life.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/KS-Organization/game-of-life.git # timeout=10
+Fetching upstream changes from https://github.com/KS-Organization/game-of-life.git
+ > git fetch --tags --progress https://github.com/KS-Organization/game-of-life.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 64d326f1bcec2a538fd0e24210aad5938ce5f16f (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 64d326f1bcec2a538fd0e24210aad5938ce5f16f
+Commit message: "Merge pull request #1 from KS-Organization/dev"
+ > git rev-list --no-walk 64d326f1bcec2a538fd0e24210aad5938ce5f16f # timeout=10
+[Mvn_GameOfLife_Build] $ /home/jenkins/tools/hudson.tasks.Maven_MavenInstallation/LocalMaven/bin/mvn clean compile
+[INFO] Scanning for projects...
+[8mha:////4B9hiNTi7UKoGwe6I08zfcchzFvqwNxs8N4lFpG4HptVAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] 
+[8mha:////4B9hiNTi7UKoGwe6I08zfcchzFvqwNxs8N4lFpG4HptVAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Some problems were encountered while building the effective model for com.wakaleo.gameoflife:gameoflife-build:jar:1.0-SNAPSHOT
+[8mha:////4B9hiNTi7UKoGwe6I08zfcchzFvqwNxs8N4lFpG4HptVAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter.
+[8mha:////4B9hiNTi7UKoGwe6I08zfcchzFvqwNxs8N4lFpG4HptVAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] 
+[8mha:////4B9hiNTi7UKoGwe6I08zfcchzFvqwNxs8N4lFpG4HptVAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Some problems were encountered while building the effective model for com.wakaleo.gameoflife:gameoflife-core:jar:1.0-SNAPSHOT
+[8mha:////4B9hiNTi7UKoGwe6I08zfcchzFvqwNxs8N4lFpG4HptVAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter.
+[8mha:////4B9hiNTi7UKoGwe6I08zfcchzFvqwNxs8N4lFpG4HptVAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] 
+[8mha:////4B9hiNTi7UKoGwe6I08zfcchzFvqwNxs8N4lFpG4HptVAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Some problems were encountered while building the effective model for com.wakaleo.gameoflife:gameoflife-web:war:1.0-SNAPSHOT
+[8mha:////4B9hiNTi7UKoGwe6I08zfcchzFvqwNxs8N4lFpG4HptVAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter.
+[8mha:////4B9hiNTi7UKoGwe6I08zfcchzFvqwNxs8N4lFpG4HptVAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] 
+[8mha:////4B9hiNTi7UKoGwe6I08zfcchzFvqwNxs8N4lFpG4HptVAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Some problems were encountered while building the effective model for com.wakaleo.gameoflife:gameoflife:pom:1.0-SNAPSHOT
+[8mha:////4B9hiNTi7UKoGwe6I08zfcchzFvqwNxs8N4lFpG4HptVAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter. @ line 302, column 40
+[8mha:////4B9hiNTi7UKoGwe6I08zfcchzFvqwNxs8N4lFpG4HptVAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] 
+[8mha:////4B9hiNTi7UKoGwe6I08zfcchzFvqwNxs8N4lFpG4HptVAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[8mha:////4B9hiNTi7UKoGwe6I08zfcchzFvqwNxs8N4lFpG4HptVAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] 
+[8mha:////4B9hiNTi7UKoGwe6I08zfcchzFvqwNxs8N4lFpG4HptVAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[8mha:////4B9hiNTi7UKoGwe6I08zfcchzFvqwNxs8N4lFpG4HptVAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] gameoflife                                                         [pom]
+[INFO] gameoflife-build                                                   [jar]
+[INFO] gameoflife-core                                                    [jar]
+[INFO] gameoflife-web                                                     [war]
+[INFO] 
+[INFO] -----------------< com.wakaleo.gameoflife:gameoflife >------------------
+[INFO] Building gameoflife 1.0-SNAPSHOT                                   [1/4]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ gameoflife ---
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-versions) @ gameoflife ---
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- jacoco-maven-plugin:0.7.2.201409121644:prepare-agent (jacoco-initialize) @ gameoflife ---
+[INFO] argLine set to -javaagent:/home/jenkins/.m2/repository/org/jacoco/org.jacoco.agent/0.7.2.201409121644/org.jacoco.agent-0.7.2.201409121644-runtime.jar=destfile=/home/jenkins/workspace/Mvn_GameOfLife_Build/target/jacoco.exec
+[INFO] 
+[INFO] --------------< com.wakaleo.gameoflife:gameoflife-build >---------------
+[INFO] Building gameoflife-build 1.0-SNAPSHOT                             [2/4]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ gameoflife-build ---
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-versions) @ gameoflife-build ---
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gameoflife-build ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- jacoco-maven-plugin:0.7.2.201409121644:prepare-agent (jacoco-initialize) @ gameoflife-build ---
+[INFO] argLine set to -javaagent:/home/jenkins/.m2/repository/org/jacoco/org.jacoco.agent/0.7.2.201409121644/org.jacoco.agent-0.7.2.201409121644-runtime.jar=destfile=/home/jenkins/workspace/Mvn_GameOfLife_Build/gameoflife-build/target/jacoco.exec
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ gameoflife-build ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] ---------------< com.wakaleo.gameoflife:gameoflife-core >---------------
+[INFO] Building gameoflife-core 1.0-SNAPSHOT                              [3/4]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ gameoflife-core ---
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-versions) @ gameoflife-core ---
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gameoflife-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/jenkins/workspace/Mvn_GameOfLife_Build/gameoflife-core/src/main/resources
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- jacoco-maven-plugin:0.7.2.201409121644:prepare-agent (jacoco-initialize) @ gameoflife-core ---
+[INFO] argLine set to -javaagent:/home/jenkins/.m2/repository/org/jacoco/org.jacoco.agent/0.7.2.201409121644/org.jacoco.agent-0.7.2.201409121644-runtime.jar=destfile=/home/jenkins/workspace/Mvn_GameOfLife_Build/gameoflife-core/target/jacoco.exec
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ gameoflife-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 5 source files to /home/jenkins/workspace/Mvn_GameOfLife_Build/gameoflife-core/target/classes
+[INFO] 
+[INFO] ---------------< com.wakaleo.gameoflife:gameoflife-web >----------------
+[INFO] Building gameoflife-web 1.0-SNAPSHOT                               [4/4]
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ gameoflife-web ---
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-versions) @ gameoflife-web ---
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gameoflife-web ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- jacoco-maven-plugin:0.7.2.201409121644:prepare-agent (jacoco-initialize) @ gameoflife-web ---
+[INFO] argLine set to -javaagent:/home/jenkins/.m2/repository/org/jacoco/org.jacoco.agent/0.7.2.201409121644/org.jacoco.agent-0.7.2.201409121644-runtime.jar=destfile=/home/jenkins/workspace/Mvn_GameOfLife_Build/gameoflife-web/target/jacoco.exec
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ gameoflife-web ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /home/jenkins/workspace/Mvn_GameOfLife_Build/gameoflife-web/target/classes
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for gameoflife 1.0-SNAPSHOT:
+[INFO] 
+[INFO] gameoflife ......................................... SUCCESS [  1.549 s]
+[INFO] gameoflife-build ................................... SUCCESS [  0.631 s]
+[INFO] gameoflife-core .................................... SUCCESS [  1.259 s]
+[INFO] gameoflife-web ..................................... SUCCESS [  0.440 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.686 s
+[INFO] Finished at: 2019-03-08T15:00:09Z
+[INFO] ------------------------------------------------------------------------
+Started calculate disk usage of build
+Finished Calculation of disk usage of build in 0 seconds
+Started calculate disk usage of workspace
+Finished Calculation of disk usage of workspace in 0 seconds
+Triggering a new build of [8mha:////4D0rgIOv507zVDz5mj6qYXfddhHUVk6/gLrCU3H22F2VAAAApR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzhEgZJ/az8JH3fsrx498TcVP80n8y01PiQ1OISfQD11zlqzgAAAA==[0mMvn_GameOfLife_Test
+Finished: SUCCESS

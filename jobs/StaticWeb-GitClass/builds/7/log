@@ -1,0 +1,39 @@
+Started by user [8mha:////4Fk1k7e+48rHXUzmlNpYSU0RU1syiePVtwyB//KweiJrAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+[EnvInject] - Loading node environment variables.
+Building on master in workspace /var/lib/jenkins/workspace/StaticWeb-GitClass
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+Cloning the remote Git repository
+Cloning repository https://github.com/knowledgeshare99/staticwebsite.git
+ > git init /var/lib/jenkins/workspace/StaticWeb-GitClass # timeout=10
+Fetching upstream changes from https://github.com/knowledgeshare99/staticwebsite.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/knowledgeshare99/staticwebsite.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/knowledgeshare99/staticwebsite.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/knowledgeshare99/staticwebsite.git # timeout=10
+Fetching upstream changes from https://github.com/knowledgeshare99/staticwebsite.git
+ > git fetch --tags --progress https://github.com/knowledgeshare99/staticwebsite.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 57a2eefb70bce2a03707089326e4a5cdc4371eb5 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 57a2eefb70bce2a03707089326e4a5cdc4371eb5
+Commit message: "Merge branch 'master' of https://github.com/knowledgeshare99/staticwebsite adding my remote content repo to my lcaol"
+ > git rev-list --no-walk 57a2eefb70bce2a03707089326e4a5cdc4371eb5 # timeout=10
+[StaticWeb-GitClass] $ /bin/bash /tmp/jenkins1525631755460582778.sh
+######### stop httpd service ##############
+Redirecting to /bin/systemctl stop httpd.service
+#############3 Uninstall httpd ###########
+############### Install httpd ############# 
+######### status httpd service ##############
+########## removing the existing content from the below /var/www/html/* #########3
+########3 copying the workspace job content to /var/www/html########## 
+########### Listing the content of /var/www/html ############
+######### startign httpd service ##########
+Redirecting to /bin/systemctl start httpd.service
+Started calculate disk usage of build
+Finished Calculation of disk usage of build in 0 seconds
+Started calculate disk usage of workspace
+Finished Calculation of disk usage of workspace in 0 seconds
+Finished: SUCCESS

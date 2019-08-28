@@ -1,0 +1,41 @@
+Started by user [8mha:////4Fk1k7e+48rHXUzmlNpYSU0RU1syiePVtwyB//KweiJrAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4AKVLJpkwkbdzHlJpuys9q6jr+fEEHJOlYmVQexP9aoQAAAAoh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgYx/eT83ILSktQi/eKcxLJUI93knMTiYgB9J+MfywAAAA==[0mslave2-class (mylabel-class) in workspace /home/jenkins/workspace/Maven_Job-class1
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/KS-Organization/simple-restful-file-storage.git # timeout=10
+Fetching upstream changes from https://github.com/KS-Organization/simple-restful-file-storage.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/KS-Organization/simple-restful-file-storage.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision c5f0ae3b0b384f22f4e3e909881a4f1aa0998db2 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f c5f0ae3b0b384f22f4e3e909881a4f1aa0998db2
+Commit message: "Merge pull request #1 from knowledgeshare99/master"
+ > git rev-list --no-walk c5f0ae3b0b384f22f4e3e909881a4f1aa0998db2 # timeout=10
+[Maven_Job-class1] $ /home/jenkins/tools/hudson.tasks.Maven_MavenInstallation/LocalMaven2/bin/mvn compile
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Velocity Temple
+[INFO]    task-segment: [compile]
+[INFO] ------------------------------------------------------------------------
+[8mha:////4I7uW7qPZb6Qzd3AXxUTBMcYZGsO4DiT4rrA5dhlYIY1AAAAXx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P0+vJLE4u1gvPjexLDVPzxdE+uZn5fvll6T+rlY5WiYVksXEwFBRxCAFVZ+cn1ecn5Oq5wyhQQoZIIARpLAAAFkNeyJfAAAA[0m[INFO] [resources:resources {execution: default-resources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 11 resources
+[8mha:////4I7uW7qPZb6Qzd3AXxUTBMcYZGsO4DiT4rrA5dhlYIY1AAAAXx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P0+vJLE4u1gvPjexLDVPzxdE+uZn5fvll6T+rlY5WiYVksXEwFBRxCAFVZ+cn1ecn5Oq5wyhQQoZIIARpLAAAFkNeyJfAAAA[0m[INFO] [jacoco:prepare-agent {execution: jacoco-initialize}]
+[INFO] argLine set to -javaagent:/home/jenkins/.m2/repository/org/jacoco/org.jacoco.agent/0.7.2.201409121644/org.jacoco.agent-0.7.2.201409121644-runtime.jar=destfile=/home/jenkins/workspace/Maven_Job-class1/target/jacoco.exec
+[8mha:////4I7uW7qPZb6Qzd3AXxUTBMcYZGsO4DiT4rrA5dhlYIY1AAAAXx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P0+vJLE4u1gvPjexLDVPzxdE+uZn5fvll6T+rlY5WiYVksXEwFBRxCAFVZ+cn1ecn5Oq5wyhQQoZIIARpLAAAFkNeyJfAAAA[0m[INFO] [compiler:compile {execution: default-compile}]
+[INFO] Compiling 6 source files to /home/jenkins/workspace/Maven_Job-class1/target/classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESSFUL
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 8 seconds
+[INFO] Finished at: Thu Mar 07 14:39:54 UTC 2019
+[INFO] Final Memory: 69M/164M
+[INFO] ------------------------------------------------------------------------
+Started calculate disk usage of build
+Finished Calculation of disk usage of build in 0 seconds
+Started calculate disk usage of workspace
+Finished Calculation of disk usage of workspace in 0 seconds
+Finished: SUCCESS

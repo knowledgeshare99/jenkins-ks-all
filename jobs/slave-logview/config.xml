@@ -1,0 +1,30 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description>this is simple job running on slave</description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.plugins.disk__usage.DiskUsageProperty plugin="disk-usage@0.28"/>
+    <com.sonyericsson.rebuild.RebuildSettings plugin="rebuild@1.29">
+      <autoRebuild>false</autoRebuild>
+      <rebuildDisabled>false</rebuildDisabled>
+    </com.sonyericsson.rebuild.RebuildSettings>
+    <org.jenkinsci.plugins.flow__plugin.FlowProjectProperty plugin="flow@1.3"/>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <assignedNode>mylabel-class</assignedNode>
+  <canRoam>false</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <jdk>(System)</jdk>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>sudo cat /var/log/messages</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

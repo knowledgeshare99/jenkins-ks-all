@@ -1,0 +1,20 @@
+Started by user [8mha:////4Fk1k7e+48rHXUzmlNpYSU0RU1syiePVtwyB//KweiJrAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+Building in workspace /var/lib/jenkins/workspace/GithubLocaljob
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/knowledgeshare99/staticwebsite.git # timeout=10
+Fetching upstream changes from https://github.com/knowledgeshare99/staticwebsite.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/knowledgeshare99/staticwebsite.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 778f5a8cdca2d4aa0b2cbee94887fdca3fba3c5a (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 778f5a8cdca2d4aa0b2cbee94887fdca3fba3c5a
+Commit message: "This is simple test"
+ > git rev-list --no-walk 778f5a8cdca2d4aa0b2cbee94887fdca3fba3c5a # timeout=10
+[GithubLocaljob] $ /bin/sh -xe /tmp/jenkins5009836846046163569.sh
++ sudo cp /var/lib/jenkins/workspace/GithubLocaljob /var/www/html/
+cp: omitting directory ‘/var/lib/jenkins/workspace/GithubLocaljob’
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

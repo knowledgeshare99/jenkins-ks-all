@@ -1,0 +1,25 @@
+Started by user [8mha:////4JnbKWjvNSZ919vuwoUe/IBgvxce/E8mKcY/WA60N1cJAAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgYu/dLi1CL9ktTcAgBbKcvPvwAAAA==[0mtemp
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4BL2z4AOJFdMr/O5k/XvJ6w87pkkJPmY09IaxWRBu/ZGAAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgYR/eT83ILSktQi/eKcxLLUPKBjDQGWHaLlyQAAAA==[0mslavenode1 (myslavenode) in workspace /home/jenkins/workspace/ClassGithubCI
+Cloning the remote Git repository
+Cloning repository https://github.com/knowledgeshareorg/orgrepoclass.git
+ > git init /home/jenkins/workspace/ClassGithubCI # timeout=10
+Fetching upstream changes from https://github.com/knowledgeshareorg/orgrepoclass.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/knowledgeshareorg/orgrepoclass.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/knowledgeshareorg/orgrepoclass.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/knowledgeshareorg/orgrepoclass.git # timeout=10
+Fetching upstream changes from https://github.com/knowledgeshareorg/orgrepoclass.git
+ > git fetch --tags --progress https://github.com/knowledgeshareorg/orgrepoclass.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision dd94d6bcf739325e7cdc1b4b990c94bdef1505c3 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f dd94d6bcf739325e7cdc1b4b990c94bdef1505c3
+Commit message: "Merge pull request #7 from knowledgeshare99/master"
+ > git rev-list --no-walk dd94d6bcf739325e7cdc1b4b990c94bdef1505c3 # timeout=10
+[ClassGithubCI] $ /bin/sh -xe /tmp/jenkins178616838433865218.sh
++ echo 'this is my testing for webhook integration'
+this is my testing for webhook integration
+Finished: SUCCESS

@@ -1,0 +1,15 @@
+Started by upstream project "[8mha:////4Cv8V1XegaxNbg8eCmtW6Q3WFxn54urhvgWNnMmGtwNWAAAApR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzhEgZJ/az8JP3gxNyCnNSQ1OISr/wk3eScxOJifQBL2h1CzgAAAA==[0mSampleTestJob-class" build number [8mha:////4B72SiTlleaOV3/2CzOtslcCxTEPtndJ5uawF8lGH+zfAAAApx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgZp/az8JP3gxNyCnNSQ1OISr/wk3eScxOJifUNjALkELa7QAAAA[0m13
+originally caused by:
+ Started by upstream project "[8mha:////4Fqugh2ToSDqryhEjarJpd5CHb/3r6Iuc0409sDqF2SeAAAAph+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzREgZp/az8JP3gxNyCnNSk0sycFCC3WDc5J7G4WB8A4gdL2NAAAAA=[0mSamplebuildjobs-class" build number [8mha:////4O7NGK+6iqz3raDXB0NNyADzAdhoAG6bVvo7L420jXXrAAAAqB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgZZ/az8JP3gxNyCnNSk0sycFCC3WDc5J7G4WN/QCAAQIytt0gAAAA==[0m12
+ originally caused by:
+  Started by user [8mha:////4Fk1k7e+48rHXUzmlNpYSU0RU1syiePVtwyB//KweiJrAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4AKVLJpkwkbdzHlJpuys9q6jr+fEEHJOlYmVQexP9aoQAAAAoh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgYx/eT83ILSktQi/eKcxLJUI93knMTiYgB9J+MfywAAAA==[0mslave2-class (mylabel-class) in workspace /home/jenkins/workspace/SampleDeployJob-class
+[SampleDeployJob-class] $ /bin/sh -xe /tmp/jenkins6722131183965256672.sh
++ echo '######## this is my 3rd deploy job :SampleDeployJOb ##########'
+######## this is my 3rd deploy job :SampleDeployJOb ##########
+Started calculate disk usage of build
+Finished Calculation of disk usage of build in 0 seconds
+Started calculate disk usage of workspace
+Finished Calculation of disk usage of workspace in 0 seconds
+Finished: SUCCESS

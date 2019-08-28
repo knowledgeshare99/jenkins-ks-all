@@ -1,0 +1,36 @@
+Started by an SCM change
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4DJf+k8qCy1S4a5ZKYq9zLhtCWqWT9vTkErxEwG2to2cAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAwOoBn6yfm5BaUlqUX6uZXFOYllqYYANV7kNscAAAA=[0mmyslave1 (myslavenode) in workspace /home/jenkins/workspace/Build_Retouch_GitHub_mvn
+Cloning the remote Git repository
+Cloning repository https://github.com/KS-Organization/staticwebsite.git
+ > git init /home/jenkins/workspace/Build_Retouch_GitHub_mvn # timeout=10
+Fetching upstream changes from https://github.com/KS-Organization/staticwebsite.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/KS-Organization/staticwebsite.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/KS-Organization/staticwebsite.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/KS-Organization/staticwebsite.git # timeout=10
+Fetching upstream changes from https://github.com/KS-Organization/staticwebsite.git
+ > git fetch --tags --progress https://github.com/KS-Organization/staticwebsite.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/develop^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/refs/heads/develop^{commit} # timeout=10
+Checking out Revision 7b7b0cc2da7f5bfa8560933c55b350779b70f57d (refs/remotes/origin/develop)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 7b7b0cc2da7f5bfa8560933c55b350779b70f57d
+Commit message: "Update index.html (#6)"
+First time build. Skipping changelog.
+[Build_Retouch_GitHub_mvn] $ /bin/sh -xe /tmp/jenkins8115383484418770443.sh
++ export JAVA_HOME_1_7=/usr/java/jdk1.8.0_45
++ JAVA_HOME_1_7=/usr/java/jdk1.8.0_45
++ export PATH=/usr/java/jdk1.8.0_45/bin:/bin:/home/jenkins/tools/hudson.model.JDK/JDK_1.8-192/bin:/usr/local/bin:/usr/bin
++ PATH=/usr/java/jdk1.8.0_45/bin:/bin:/home/jenkins/tools/hudson.model.JDK/JDK_1.8-192/bin:/usr/local/bin:/usr/bin
++ export 'MAVEN_OPTS=-Xms512m -Xmx512m -XX:MaxPermSize=256m'
++ MAVEN_OPTS='-Xms512m -Xmx512m -XX:MaxPermSize=256m'
++ mvn --settings /home/jenkins/workspace/Build_retouch_GitHub_mvn/settings.xml -Dmaven.repo.local=/home/jenkins/workspace/.repository clean install
+/tmp/jenkins8115383484418770443.sh: line 6: mvn: command not found
+Build step 'Execute shell' marked build as failure
+Discard old builds...
+Recording test results
+ERROR: Step ‘Publish JUnit test result report’ failed: No test report files were found. Configuration error?
+Sending e-mails to: knowledgeshare99@gmail.com
+Finished: FAILURE

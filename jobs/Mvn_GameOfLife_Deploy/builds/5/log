@@ -1,0 +1,163 @@
+Started by user [8mha:////4Fk1k7e+48rHXUzmlNpYSU0RU1syiePVtwyB//KweiJrAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4AKVLJpkwkbdzHlJpuys9q6jr+fEEHJOlYmVQexP9aoQAAAAoh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgYx/eT83ILSktQi/eKcxLJUI93knMTiYgB9J+MfywAAAA==[0mslave2-class (mylabel-class) in workspace /home/jenkins/workspace/Mvn_GameOfLife_Deploy
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] Done
+[Mvn_GameOfLife_Deploy] $ /bin/sh -xe /tmp/jenkins1487117584077994262.sh
++ echo '######## stop the tomcat server ##########'
+######## stop the tomcat server ##########
++ sudo sh /usr/local/tomcat/bin/shutdown.sh
+Mar 08, 2019 2:35:18 PM org.apache.catalina.startup.Catalina stopServer
+SEVERE: Could not contact [localhost:[8005]]. Tomcat may not be running.
+Mar 08, 2019 2:35:18 PM org.apache.catalina.startup.Catalina stopServer
+SEVERE: Catalina.stop: 
+java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at java.net.Socket.<init>(Socket.java:434)
+	at java.net.Socket.<init>(Socket.java:211)
+	at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:503)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:406)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:498)
+
++ cd /home/jenkins/workspace/Mvn_GameOfLife_package/gameoflife-web/target
++ echo '############### package downloading and copying into tomcat webapps########3'
+############### package downloading and copying into tomcat webapps########3
++ sudo cp -r /home/jenkins/workspace/Mvn_GameOfLife_package/gameoflife-web/target/gameoflife.war /usr/local/tomcat/webapps/
++ echo '############ changing the owner and group permissions for tomcat home dir########'
+############ changing the owner and group permissions for tomcat home dir########
++ sudo chown -R tomcat:tomcat /usr/local/tomcat
++ echo '########## start the tomcat server ##############'
+########## start the tomcat server ##############
++ sudo sh /usr/local/tomcat/bin/startup.sh
+Tomcat started.
++ echo '####### Tomcat Status ############'
+####### Tomcat Status ############
++ grep tomcat
++ sudo ps -ef
+jenkins   5151  5089  0 14:35 ?        00:00:00 grep tomcat
+root      5152     1  0 14:35 ?        00:00:00 //bin/java -Djava.util.logging.config.file=/usr/local/tomcat/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dorg.apache.catalina.security.SecurityListener.UMASK=0027 -Dignore.endorsed.dirs= -classpath /usr/local/tomcat/bin/bootstrap.jar:/usr/local/tomcat/bin/tomcat-juli.jar -Dcatalina.base=/usr/local/tomcat -Dcatalina.home=/usr/local/tomcat -Djava.io.tmpdir=/usr/local/tomcat/temp org.apache.catalina.startup.Bootstrap start
++ sudo echo '########## Tomcat WebApp directory listing of deployed app.war'
+########## Tomcat WebApp directory listing of deployed app.war
++ sudo ls -lrt /usr/local/tomcat/webapps/docs /usr/local/tomcat/webapps/examples /usr/local/tomcat/webapps/gameoflife.war /usr/local/tomcat/webapps/host-manager /usr/local/tomcat/webapps/manager /usr/local/tomcat/webapps/ROOT
+-rw-r--r--  1 tomcat tomcat 3192504 Mar  8 14:35 /usr/local/tomcat/webapps/gameoflife.war
+
+/usr/local/tomcat/webapps/ROOT:
+total 188
+drwxr-xr-x 2 tomcat tomcat    21 Mar  8 14:28 WEB-INF
+-rwxr-xr-x 1 tomcat tomcat  7142 Mar  8 14:28 RELEASE-NOTES.txt
+-rwxr-xr-x 1 tomcat tomcat  3103 Mar  8 14:28 bg-upper.png
+-rwxr-xr-x 1 tomcat tomcat  1401 Mar  8 14:28 bg-nav.png
+-rwxr-xr-x 1 tomcat tomcat  1392 Mar  8 14:28 bg-nav-item.png
+-rwxr-xr-x 1 tomcat tomcat  1918 Mar  8 14:28 bg-middle.png
+-rwxr-xr-x 1 tomcat tomcat   713 Mar  8 14:28 bg-button.png
+-rwxr-xr-x 1 tomcat tomcat 27235 Mar  8 14:28 asf-logo-wide.svg
+-rwxr-xr-x 1 tomcat tomcat 67795 Mar  8 14:28 tomcat.svg
+-rwxr-xr-x 1 tomcat tomcat  2376 Mar  8 14:28 tomcat-power.gif
+-rwxr-xr-x 1 tomcat tomcat  5103 Mar  8 14:28 tomcat.png
+-rwxr-xr-x 1 tomcat tomcat  2066 Mar  8 14:28 tomcat.gif
+-rwxr-xr-x 1 tomcat tomcat  5581 Mar  8 14:28 tomcat.css
+-rwxr-xr-x 1 tomcat tomcat 12290 Mar  8 14:28 index.jsp
+-rwxr-xr-x 1 tomcat tomcat 21630 Mar  8 14:28 favicon.ico
+
+/usr/local/tomcat/webapps/docs:
+total 1408
+drwxr-xr-x 2 tomcat tomcat     21 Mar  8 14:28 WEB-INF
+drwxr-xr-x 2 tomcat tomcat     24 Mar  8 14:28 api
+drwxr-xr-x 3 tomcat tomcat    192 Mar  8 14:28 appdev
+drwxr-xr-x 4 tomcat tomcat    129 Mar  8 14:28 architecture
+drwxr-xr-x 2 tomcat tomcat     24 Mar  8 14:28 elapi
+drwxr-xr-x 2 tomcat tomcat   4096 Mar  8 14:28 config
+drwxr-xr-x 2 tomcat tomcat    233 Mar  8 14:28 funcspecs
+drwxr-xr-x 2 tomcat tomcat     24 Mar  8 14:28 servletapi
+drwxr-xr-x 2 tomcat tomcat     24 Mar  8 14:28 jspapi
+drwxr-xr-x 3 tomcat tomcat    279 Mar  8 14:28 images
+drwxr-xr-x 2 tomcat tomcat     24 Mar  8 14:28 websocketapi
+drwxr-xr-x 2 tomcat tomcat    177 Mar  8 14:28 tribes
+-rwxr-xr-x 1 tomcat tomcat  16262 Mar  8 14:28 RUNNING.txt
+-rwxr-xr-x 1 tomcat tomcat   7142 Mar  8 14:28 RELEASE-NOTES.txt
+-rwxr-xr-x 1 tomcat tomcat  19539 Mar  8 14:28 BUILDING.txt
+-rwxr-xr-x 1 tomcat tomcat   7712 Mar  8 14:28 balancer-howto.html
+-rwxr-xr-x 1 tomcat tomcat  12836 Mar  8 14:28 apr.html
+-rwxr-xr-x 1 tomcat tomcat   9184 Mar  8 14:28 aio.html
+-rwxr-xr-x 1 tomcat tomcat  12568 Mar  8 14:28 cgi-howto.html
+-rwxr-xr-x 1 tomcat tomcat  15889 Mar  8 14:28 building.html
+-rwxr-xr-x 1 tomcat tomcat  18377 Mar  8 14:28 default-servlet.html
+-rwxr-xr-x 1 tomcat tomcat   8792 Mar  8 14:28 connectors.html
+-rwxr-xr-x 1 tomcat tomcat  10255 Mar  8 14:28 comments.html
+-rwxr-xr-x 1 tomcat tomcat  43706 Mar  8 14:28 cluster-howto.html
+-rwxr-xr-x 1 tomcat tomcat  19928 Mar  8 14:28 class-loader-howto.html
+-rwxr-xr-x 1 tomcat tomcat 329928 Mar  8 14:28 changelog.html
+-rwxr-xr-x 1 tomcat tomcat  30208 Mar  8 14:28 html-manager-howto.html
+-rwxr-xr-x 1 tomcat tomcat  14322 Mar  8 14:28 html-host-manager-howto.html
+-rwxr-xr-x 1 tomcat tomcat  16502 Mar  8 14:28 host-manager-howto.html
+-rwxr-xr-x 1 tomcat tomcat  10522 Mar  8 14:28 extras.html
+-rwxr-xr-x 1 tomcat tomcat   8717 Mar  8 14:28 developers.html
+-rwxr-xr-x 1 tomcat tomcat  22760 Mar  8 14:28 deployer-howto.html
+-rwxr-xr-x 1 tomcat tomcat  35582 Mar  8 14:28 jndi-datasource-examples-howto.html
+-rwxr-xr-x 1 tomcat tomcat  66848 Mar  8 14:28 jdbc-pool.html
+-rwxr-xr-x 1 tomcat tomcat  23789 Mar  8 14:28 jasper-howto.html
+-rwxr-xr-x 1 tomcat tomcat  17804 Mar  8 14:28 introduction.html
+-rwxr-xr-x 1 tomcat tomcat  17146 Mar  8 14:28 index.html
+-rwxr-xr-x 1 tomcat tomcat   8517 Mar  8 14:28 mbeans-descriptors-howto.html
+-rwxr-xr-x 1 tomcat tomcat   8239 Mar  8 14:28 maven-jars.html
+-rwxr-xr-x 1 tomcat tomcat  75406 Mar  8 14:28 manager-howto.html
+-rwxr-xr-x 1 tomcat tomcat  25739 Mar  8 14:28 logging.html
+-rwxr-xr-x 1 tomcat tomcat  53923 Mar  8 14:28 jndi-resources-howto.html
+-rwxr-xr-x 1 tomcat tomcat  35747 Mar  8 14:28 security-howto.html
+-rwxr-xr-x 1 tomcat tomcat  35235 Mar  8 14:28 rewrite.html
+-rwxr-xr-x 1 tomcat tomcat  63220 Mar  8 14:28 realm-howto.html
+-rwxr-xr-x 1 tomcat tomcat  13290 Mar  8 14:28 proxy-howto.html
+-rwxr-xr-x 1 tomcat tomcat  39166 Mar  8 14:28 monitoring.html
+-rwxr-xr-x 1 tomcat tomcat  10204 Mar  8 14:28 mbeans-descriptors.dtd
+-rwxr-xr-x 1 tomcat tomcat  17494 Mar  8 14:28 ssi-howto.html
+-rwxr-xr-x 1 tomcat tomcat  14470 Mar  8 14:28 setup.html
+-rwxr-xr-x 1 tomcat tomcat  30455 Mar  8 14:28 security-manager-howto.html
+-rwxr-xr-x 1 tomcat tomcat  23100 Mar  8 14:28 windows-service-howto.html
+-rwxr-xr-x 1 tomcat tomcat  22513 Mar  8 14:28 windows-auth-howto.html
+-rwxr-xr-x 1 tomcat tomcat  12606 Mar  8 14:28 web-socket-howto.html
+-rwxr-xr-x 1 tomcat tomcat  12269 Mar  8 14:28 virtual-hosting-howto.html
+-rwxr-xr-x 1 tomcat tomcat  41153 Mar  8 14:28 ssl-howto.html
+
+/usr/local/tomcat/webapps/examples:
+total 4
+drwxr-xr-x  7 tomcat tomcat   82 Mar  8 14:28 WEB-INF
+drwxr-xr-x 21 tomcat tomcat  331 Mar  8 14:28 jsp
+drwxr-xr-x  4 tomcat tomcat  186 Mar  8 14:28 servlets
+drwxr-xr-x  2 tomcat tomcat  103 Mar  8 14:28 websocket
+-rwxr-xr-x  1 tomcat tomcat 1126 Mar  8 14:28 index.html
+
+/usr/local/tomcat/webapps/host-manager:
+total 8
+drwxr-xr-x 2 tomcat tomcat   25 Mar  8 14:28 META-INF
+drwxr-xr-x 3 tomcat tomcat   32 Mar  8 14:28 WEB-INF
+-rwxr-xr-x 1 tomcat tomcat 1021 Mar  8 14:28 manager.xml
+-rwxr-xr-x 1 tomcat tomcat  913 Mar  8 14:28 index.jsp
+drwxr-xr-x 2 tomcat tomcat  158 Mar  8 14:28 images
+
+/usr/local/tomcat/webapps/manager:
+total 20
+drwxr-xr-x 2 tomcat tomcat   25 Mar  8 14:28 META-INF
+drwxr-xr-x 3 tomcat tomcat   32 Mar  8 14:28 WEB-INF
+drwxr-xr-x 2 tomcat tomcat  158 Mar  8 14:28 images
+-rwxr-xr-x 1 tomcat tomcat 4615 Mar  8 14:28 xform.xsl
+-rwxr-xr-x 1 tomcat tomcat 4374 Mar  8 14:28 status.xsd
+-rwxr-xr-x 1 tomcat tomcat  913 Mar  8 14:28 index.jsp
++ sudo echo '######### Deployment completed #########'
+######### Deployment completed #########
+Sending e-mails to: knowledgeshare99@gmail.com
+Started calculate disk usage of build
+Finished Calculation of disk usage of build in 0 seconds
+Started calculate disk usage of workspace
+Finished Calculation of disk usage of workspace in 0 seconds
+Finished: SUCCESS

@@ -1,0 +1,33 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description>this is my logviewer job</description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <com.sonyericsson.rebuild.RebuildSettings plugin="rebuild@1.29">
+      <autoRebuild>false</autoRebuild>
+      <rebuildDisabled>false</rebuildDisabled>
+    </com.sonyericsson.rebuild.RebuildSettings>
+    <org.jenkinsci.plugins.flow__plugin.FlowProjectProperty plugin="flow@1.3"/>
+    <hudson.plugins.disk__usage.DiskUsageProperty plugin="disk-usage@0.28"/>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers>
+    <hudson.triggers.SCMTrigger>
+      <spec>H/2 * * * *</spec>
+      <ignorePostCommitHooks>false</ignorePostCommitHooks>
+    </hudson.triggers.SCMTrigger>
+  </triggers>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>sudo cat /var/log/messages &gt; $workspace/sample-message.out</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

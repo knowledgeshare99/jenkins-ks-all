@@ -1,0 +1,14 @@
+Started by upstream project "[8mha:////4Fqugh2ToSDqryhEjarJpd5CHb/3r6Iuc0409sDqF2SeAAAAph+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzREgZp/az8JP3gxNyCnNSk0sycFCC3WDc5J7G4WB8A4gdL2NAAAAA=[0mSamplebuildjobs-class" build number [8mha:////4CPeVs5eKJVfoe45TBx8aGxW1UEsJEvKrFx+5wrLp9F5AAAAqB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgZZ/az8JP3gxNyCnNSk0sycFCC3WDc5J7G4WN/QBAAlhkiE0gAAAA==[0m14
+originally caused by:
+ Started by user [8mha:////4Fk1k7e+48rHXUzmlNpYSU0RU1syiePVtwyB//KweiJrAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4AKVLJpkwkbdzHlJpuys9q6jr+fEEHJOlYmVQexP9aoQAAAAoh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgYx/eT83ILSktQi/eKcxLJUI93knMTiYgB9J+MfywAAAA==[0mslave2-class (mylabel-class) in workspace /home/jenkins/workspace/SampleTestJob-class
+[SampleTestJob-class] $ /bin/sh -xe /tmp/jenkins6764209891342487511.sh
++ echo '####### This is my 2nd SampleTestJob-class job ###########'
+####### This is my 2nd SampleTestJob-class job ###########
+Started calculate disk usage of build
+Finished Calculation of disk usage of build in 0 seconds
+Started calculate disk usage of workspace
+Finished Calculation of disk usage of workspace in 0 seconds
+Triggering a new build of [8mha:////4C+F3XA/q/vFFEP9J+PQbbnooOSyJVamd/f9I8ioaEw8AAAApx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzREgZp/az8JP3gxNyCnFSX1IKc/Eqv/CTd5JzE4mJ9AKpRz77QAAAA[0mSampleDeployJob-class
+Finished: SUCCESS

@@ -1,0 +1,11 @@
+Started by upstream project "[8mha:////4P9fvfFellSlJSTU4YO9oK3TQzvYJxscy1cil5MW25zOAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/az8JP2Q1OISLyANAK9aRfLCAAAA[0mTestJob" build number [8mha:////4IhTCjNy6z8OEULweLsaOf0Sg4NV445OgduS4CS0qVb4AAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBj79rPwk/ZDU4hIvIG0CAOc2LKrDAAAA[0m4
+originally caused by:
+ Started by upstream project "[8mha:////4CN4N1KeoziVHc8Nj0C8jvOIl6WU4Ywu8w5KYnb0yGIMAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyOEgY+/az8JH2n0sycFBADAAxtIFPDAAAA[0mBuildjob" build number [8mha:////4KjqZmc9h/bssP5+u6Ue00pjjTDgSFeSSx6Rk3Z1gi2WAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBn79rPwkfafSzJwUEMMYAJHuHBTEAAAA[0m3
+ originally caused by:
+  Started by user [8mha:////4Fk1k7e+48rHXUzmlNpYSU0RU1syiePVtwyB//KweiJrAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4BL2z4AOJFdMr/O5k/XvJ6w87pkkJPmY09IaxWRBu/ZGAAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgYR/eT83ILSktQi/eKcxLLUPKBjDQGWHaLlyQAAAA==[0mslavenode1 (myslavenode) in workspace /home/jenkins/workspace/DeployJob
+[DeployJob] $ /bin/sh -xe /tmp/jenkins7980010368673125609.sh
++ echo '######### Deploy Job pipeline##########'
+######### Deploy Job pipeline##########
+Finished: SUCCESS

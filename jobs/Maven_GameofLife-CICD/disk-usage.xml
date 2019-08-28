@@ -1,0 +1,36 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<hudson.plugins.disk__usage.ProjectDiskUsage plugin="disk-usage@0.28">
+  <diskUsageWithoutBuilds>0</diskUsageWithoutBuilds>
+  <slaveWorkspacesUsage class="concurrent-hash-map">
+    <entry>
+      <string>myslave1</string>
+      <concurrent-hash-map>
+        <entry>
+          <string>/home/jenkins/workspace/Maven_GameofLife-CICD</string>
+          <long>79124901</long>
+        </entry>
+      </concurrent-hash-map>
+    </entry>
+  </slaveWorkspacesUsage>
+  <buildDiskUsage class="java.util.concurrent.CopyOnWriteArraySet">
+    <hudson.plugins.disk__usage.DiskUsageBuildInformation>
+      <id>1</id>
+      <timestamp>1551970652264</timestamp>
+      <number>1</number>
+      <size>19835</size>
+    </hudson.plugins.disk__usage.DiskUsageBuildInformation>
+    <hudson.plugins.disk__usage.DiskUsageBuildInformation>
+      <id>2</id>
+      <timestamp>1552057385995</timestamp>
+      <number>2</number>
+      <size>20895</size>
+    </hudson.plugins.disk__usage.DiskUsageBuildInformation>
+    <hudson.plugins.disk__usage.DiskUsageBuildInformation>
+      <id>3</id>
+      <timestamp>1552312086290</timestamp>
+      <number>3</number>
+      <size>21565</size>
+    </hudson.plugins.disk__usage.DiskUsageBuildInformation>
+  </buildDiskUsage>
+  <allBuildsLoaded>false</allBuildsLoaded>
+</hudson.plugins.disk__usage.ProjectDiskUsage>

@@ -1,0 +1,10 @@
+Started by an SCM change
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4DJf+k8qCy1S4a5ZKYq9zLhtCWqWT9vTkErxEwG2to2cAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAwOoBn6yfm5BaUlqUX6uZXFOYllqYYANV7kNscAAAA=[0mmyslave1 (myslavenode) in workspace /home/jenkins/workspace/SamplePollSCM
+[SamplePollSCM] $ /bin/sh -xe /tmp/jenkins2119156155247298143.sh
++ sudo cat /var/log/messages
+Jan 10 13:07:01 ip-10-0-2-151 rsyslogd: [origin software="rsyslogd" swVersion="8.24.0" x-pid="3192" x-info="http://www.rsyslog.com"] rsyslogd was HUPed
+Jan 10 13:07:49 ip-10-0-2-151 systemd: Started Session 6 of user jenkins.
+Jan 10 13:07:49 ip-10-0-2-151 systemd-logind: New session 6 of user jenkins.
+Jan 10 13:07:49 ip-10-0-2-151 systemd: Starting Session 6 of user jenkins.
+Finished: SUCCESS

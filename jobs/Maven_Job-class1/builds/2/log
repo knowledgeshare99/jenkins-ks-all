@@ -1,0 +1,152 @@
+Started by user [8mha:////4Fk1k7e+48rHXUzmlNpYSU0RU1syiePVtwyB//KweiJrAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4AKVLJpkwkbdzHlJpuys9q6jr+fEEHJOlYmVQexP9aoQAAAAoh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgYx/eT83ILSktQi/eKcxLJUI93knMTiYgB9J+MfywAAAA==[0mslave2-class (mylabel-class) in workspace /home/jenkins/workspace/Maven_Job-class1
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/KS-Organization/simple-restful-file-storage.git # timeout=10
+Fetching upstream changes from https://github.com/KS-Organization/simple-restful-file-storage.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/KS-Organization/simple-restful-file-storage.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision c5f0ae3b0b384f22f4e3e909881a4f1aa0998db2 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f c5f0ae3b0b384f22f4e3e909881a4f1aa0998db2
+Commit message: "Merge pull request #1 from knowledgeshare99/master"
+ > git rev-list --no-walk c5f0ae3b0b384f22f4e3e909881a4f1aa0998db2 # timeout=10
+Unpacking https://repo.maven.apache.org/maven2/org/apache/maven/apache-maven/2.2.1/apache-maven-2.2.1-bin.zip to /home/jenkins/tools/hudson.tasks.Maven_MavenInstallation/LocalMaven2 on slave2-class
+[Maven_Job-class1] $ /home/jenkins/tools/hudson.tasks.Maven_MavenInstallation/LocalMaven2/bin/mvn compile
+Warning: JAVA_HOME environment variable is not set.
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Velocity Temple
+[INFO]    task-segment: [compile]
+[INFO] ------------------------------------------------------------------------
+Downloading: https://repository.apache.org/content/repositories/releases//org/apache/maven/plugins/maven-release-plugin/2.5/maven-release-plugin-2.5.pom
+4/10K7/10K8/10K10/10K10K downloaded  (maven-release-plugin-2.5.pom)
+Downloading: https://repository.apache.org/content/repositories/releases//org/apache/maven/release/maven-release/2.5/maven-release-2.5.pom
+4/4K4/4K4K downloaded  (maven-release-2.5.pom)
+Downloading: https://repository.apache.org/content/repositories/releases//org/apache/maven/plugins/maven-release-plugin/2.5/maven-release-plugin-2.5.jar
+4/49K7/49K8/49K12/49K15/49K16/49K20/49K23/49K24/49K28/49K30/49K32/49K36/49K39/49K40/49K44/49K47/49K48/49K49/49K49K downloaded  (maven-release-plugin-2.5.jar)
+Downloading: https://repository.apache.org/content/repositories/releases//org/apache/maven/plugins/maven-deploy-plugin/2.8.2/maven-deploy-plugin-2.8.2.pom
+4/6K6/6K6K downloaded  (maven-deploy-plugin-2.8.2.pom)
+Downloading: https://repository.apache.org/content/repositories/releases//org/apache/maven/plugins/maven-plugins/25/maven-plugins-25.pom
+4/9K7/9K8/9K9/9K9K downloaded  (maven-plugins-25.pom)
+Downloading: https://repository.apache.org/content/repositories/releases//org/apache/maven/maven-parent/24/maven-parent-24.pom
+4/36K7/36K8/36K12/36K15/36K16/36K20/36K23/36K24/36K28/36K30/36K32/36K36/36K36/36K36K downloaded  (maven-parent-24.pom)
+Downloading: https://repository.apache.org/content/repositories/releases//org/apache/maven/plugins/maven-deploy-plugin/2.8.2/maven-deploy-plugin-2.8.2.jar
+4/33K7/33K8/33K12/33K15/33K16/33K20/33K23/33K24/33K28/33K30/33K32/33K33/33K33K downloaded  (maven-deploy-plugin-2.8.2.jar)
+Downloading: https://repository.apache.org/content/repositories/releases//com/jelastic/jelastic-maven-plugin/1.6/jelastic-maven-plugin-1.6.pom
+[INFO] Unable to find resource 'com.jelastic:jelastic-maven-plugin:pom:1.6' in repository apache.releases (https://repository.apache.org/content/repositories/releases/)
+Downloading: http://repo.fusesource.com/nexus/content/repositories/releases/com/jelastic/jelastic-maven-plugin/1.6/jelastic-maven-plugin-1.6.pom
+[INFO] Unable to find resource 'com.jelastic:jelastic-maven-plugin:pom:1.6' in repository release.fusesource.org (http://repo.fusesource.com/nexus/content/repositories/releases)
+Downloading: http://repo.fusesource.com/nexus/content/groups/ea/com/jelastic/jelastic-maven-plugin/1.6/jelastic-maven-plugin-1.6.pom
+[INFO] Unable to find resource 'com.jelastic:jelastic-maven-plugin:pom:1.6' in repository ea.fusesource.org (http://repo.fusesource.com/nexus/content/groups/ea)
+Downloading: http://repo1.maven.org/maven2/com/jelastic/jelastic-maven-plugin/1.6/jelastic-maven-plugin-1.6.pom
+4/10K8/10K10/10K10K downloaded  (jelastic-maven-plugin-1.6.pom)
+Downloading: https://repository.apache.org/content/repositories/releases//com/jelastic/jelastic-maven-plugin/1.6/jelastic-maven-plugin-1.6.jar
+[INFO] Unable to find resource 'com.jelastic:jelastic-maven-plugin:maven-plugin:1.6' in repository apache.releases (https://repository.apache.org/content/repositories/releases/)
+Downloading: http://repo.fusesource.com/nexus/content/repositories/releases/com/jelastic/jelastic-maven-plugin/1.6/jelastic-maven-plugin-1.6.jar
+[INFO] Unable to find resource 'com.jelastic:jelastic-maven-plugin:maven-plugin:1.6' in repository release.fusesource.org (http://repo.fusesource.com/nexus/content/repositories/releases)
+Downloading: http://repo.fusesource.com/nexus/content/groups/ea/com/jelastic/jelastic-maven-plugin/1.6/jelastic-maven-plugin-1.6.jar
+[INFO] Unable to find resource 'com.jelastic:jelastic-maven-plugin:maven-plugin:1.6' in repository ea.fusesource.org (http://repo.fusesource.com/nexus/content/groups/ea)
+Downloading: http://repo1.maven.org/maven2/com/jelastic/jelastic-maven-plugin/1.6/jelastic-maven-plugin-1.6.jar
+4/29K8/29K12/29K16/29K20/29K24/29K24/29K28/29K29/29K29K downloaded  (jelastic-maven-plugin-1.6.jar)
+[8mha:////4I7uW7qPZb6Qzd3AXxUTBMcYZGsO4DiT4rrA5dhlYIY1AAAAXx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P0+vJLE4u1gvPjexLDVPzxdE+uZn5fvll6T+rlY5WiYVksXEwFBRxCAFVZ+cn1ecn5Oq5wyhQQoZIIARpLAAAFkNeyJfAAAA[0m[INFO] [resources:resources {execution: default-resources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 11 resources
+[8mha:////4B9hiNTi7UKoGwe6I08zfcchzFvqwNxs8N4lFpG4HptVAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] POM for 'com.sun.xml.bind:jaxb-core:pom:2.2.11:compile' is invalid.
+
+Its dependencies (if any) will NOT be available to the current build.
+[8mha:////4B9hiNTi7UKoGwe6I08zfcchzFvqwNxs8N4lFpG4HptVAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] POM for 'com.sun.xml.bind:jaxb-impl:pom:2.2.11:compile' is invalid.
+
+Its dependencies (if any) will NOT be available to the current build.
+Downloading: https://repository.apache.org/content/repositories/releases//org/apache/maven/wagon/wagon-provider-api/1.0-beta-6/wagon-provider-api-1.0-beta-6.pom
+1/1K1K downloaded  (wagon-provider-api-1.0-beta-6.pom)
+Downloading: https://repository.apache.org/content/repositories/releases//org/apache/maven/wagon/wagon/1.0-beta-6/wagon-1.0-beta-6.pom
+4/12K7/12K8/12K12/12K12/12K12K downloaded  (wagon-1.0-beta-6.pom)
+Downloading: https://repository.apache.org/content/repositories/releases//org/codehaus/plexus/plexus-utils/1.4.2/plexus-utils-1.4.2.pom
+[INFO] Unable to find resource 'org.codehaus.plexus:plexus-utils:pom:1.4.2' in repository apache.releases (https://repository.apache.org/content/repositories/releases/)
+Downloading: http://repo.fusesource.com/nexus/content/repositories/releases/org/codehaus/plexus/plexus-utils/1.4.2/plexus-utils-1.4.2.pom
+[INFO] Unable to find resource 'org.codehaus.plexus:plexus-utils:pom:1.4.2' in repository release.fusesource.org (http://repo.fusesource.com/nexus/content/repositories/releases)
+Downloading: http://repo.fusesource.com/nexus/content/groups/ea/org/codehaus/plexus/plexus-utils/1.4.2/plexus-utils-1.4.2.pom
+[INFO] Unable to find resource 'org.codehaus.plexus:plexus-utils:pom:1.4.2' in repository ea.fusesource.org (http://repo.fusesource.com/nexus/content/groups/ea)
+Downloading: http://repo.fusesource.com/nexus/content/repositories/releases/org/codehaus/plexus/plexus-utils/1.4.2/plexus-utils-1.4.2.pom
+[INFO] Unable to find resource 'org.codehaus.plexus:plexus-utils:pom:1.4.2' in repository release.fusesource.org (http://repo.fusesource.com/nexus/content/repositories/releases)
+Downloading: http://repo.fusesource.com/nexus/content/groups/ea/org/codehaus/plexus/plexus-utils/1.4.2/plexus-utils-1.4.2.pom
+[INFO] Unable to find resource 'org.codehaus.plexus:plexus-utils:pom:1.4.2' in repository ea.fusesource.org (http://repo.fusesource.com/nexus/content/groups/ea)
+Downloading: http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-utils/1.4.2/plexus-utils-1.4.2.pom
+1/1K1K downloaded  (plexus-utils-1.4.2.pom)
+[8mha:////4I7uW7qPZb6Qzd3AXxUTBMcYZGsO4DiT4rrA5dhlYIY1AAAAXx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P0+vJLE4u1gvPjexLDVPzxdE+uZn5fvll6T+rlY5WiYVksXEwFBRxCAFVZ+cn1ecn5Oq5wyhQQoZIIARpLAAAFkNeyJfAAAA[0m[INFO] [jacoco:prepare-agent {execution: jacoco-initialize}]
+[INFO] argLine set to -javaagent:/home/jenkins/.m2/repository/org/jacoco/org.jacoco.agent/0.7.2.201409121644/org.jacoco.agent-0.7.2.201409121644-runtime.jar=destfile=/home/jenkins/workspace/Maven_Job-class1/target/jacoco.exec
+Downloading: https://repository.apache.org/content/repositories/releases//org/apache/maven/wagon/wagon-webdav/1.0-beta-2/wagon-webdav-1.0-beta-2.pom
+1/1K1K downloaded  (wagon-webdav-1.0-beta-2.pom)
+Downloading: https://repository.apache.org/content/repositories/releases//slide/slide-webdavlib/2.1/slide-webdavlib-2.1.pom
+[INFO] Unable to find resource 'slide:slide-webdavlib:pom:2.1' in repository apache.releases (https://repository.apache.org/content/repositories/releases/)
+Downloading: http://repo.fusesource.com/nexus/content/repositories/releases/slide/slide-webdavlib/2.1/slide-webdavlib-2.1.pom
+[INFO] Unable to find resource 'slide:slide-webdavlib:pom:2.1' in repository release.fusesource.org (http://repo.fusesource.com/nexus/content/repositories/releases)
+Downloading: http://repo.fusesource.com/nexus/content/groups/ea/slide/slide-webdavlib/2.1/slide-webdavlib-2.1.pom
+[INFO] Unable to find resource 'slide:slide-webdavlib:pom:2.1' in repository ea.fusesource.org (http://repo.fusesource.com/nexus/content/groups/ea)
+Downloading: http://repo.fusesource.com/nexus/content/repositories/releases/slide/slide-webdavlib/2.1/slide-webdavlib-2.1.pom
+[INFO] Unable to find resource 'slide:slide-webdavlib:pom:2.1' in repository release.fusesource.org (http://repo.fusesource.com/nexus/content/repositories/releases)
+Downloading: http://repo.fusesource.com/nexus/content/groups/ea/slide/slide-webdavlib/2.1/slide-webdavlib-2.1.pom
+[INFO] Unable to find resource 'slide:slide-webdavlib:pom:2.1' in repository ea.fusesource.org (http://repo.fusesource.com/nexus/content/groups/ea)
+Downloading: http://repo1.maven.org/maven2/slide/slide-webdavlib/2.1/slide-webdavlib-2.1.pom
+648/648b648b downloaded  (slide-webdavlib-2.1.pom)
+Downloading: https://repository.apache.org/content/repositories/releases//commons-httpclient/commons-httpclient/2.0.2/commons-httpclient-2.0.2.pom
+[INFO] Unable to find resource 'commons-httpclient:commons-httpclient:pom:2.0.2' in repository apache.releases (https://repository.apache.org/content/repositories/releases/)
+Downloading: http://repo.fusesource.com/nexus/content/repositories/releases/commons-httpclient/commons-httpclient/2.0.2/commons-httpclient-2.0.2.pom
+[INFO] Unable to find resource 'commons-httpclient:commons-httpclient:pom:2.0.2' in repository release.fusesource.org (http://repo.fusesource.com/nexus/content/repositories/releases)
+Downloading: http://repo.fusesource.com/nexus/content/groups/ea/commons-httpclient/commons-httpclient/2.0.2/commons-httpclient-2.0.2.pom
+[INFO] Unable to find resource 'commons-httpclient:commons-httpclient:pom:2.0.2' in repository ea.fusesource.org (http://repo.fusesource.com/nexus/content/groups/ea)
+Downloading: http://repo.fusesource.com/nexus/content/repositories/releases/commons-httpclient/commons-httpclient/2.0.2/commons-httpclient-2.0.2.pom
+[INFO] Unable to find resource 'commons-httpclient:commons-httpclient:pom:2.0.2' in repository release.fusesource.org (http://repo.fusesource.com/nexus/content/repositories/releases)
+Downloading: http://repo.fusesource.com/nexus/content/groups/ea/commons-httpclient/commons-httpclient/2.0.2/commons-httpclient-2.0.2.pom
+[INFO] Unable to find resource 'commons-httpclient:commons-httpclient:pom:2.0.2' in repository ea.fusesource.org (http://repo.fusesource.com/nexus/content/groups/ea)
+Downloading: http://repo1.maven.org/maven2/commons-httpclient/commons-httpclient/2.0.2/commons-httpclient-2.0.2.pom
+4/6K6/6K6K downloaded  (commons-httpclient-2.0.2.pom)
+Downloading: https://repository.apache.org/content/repositories/releases//jdom/jdom/1.0/jdom-1.0.pom
+[INFO] Unable to find resource 'jdom:jdom:pom:1.0' in repository apache.releases (https://repository.apache.org/content/repositories/releases/)
+Downloading: http://repo.fusesource.com/nexus/content/repositories/releases/jdom/jdom/1.0/jdom-1.0.pom
+[INFO] Unable to find resource 'jdom:jdom:pom:1.0' in repository release.fusesource.org (http://repo.fusesource.com/nexus/content/repositories/releases)
+Downloading: http://repo.fusesource.com/nexus/content/groups/ea/jdom/jdom/1.0/jdom-1.0.pom
+[INFO] Unable to find resource 'jdom:jdom:pom:1.0' in repository ea.fusesource.org (http://repo.fusesource.com/nexus/content/groups/ea)
+Downloading: http://repo.fusesource.com/nexus/content/repositories/releases/jdom/jdom/1.0/jdom-1.0.pom
+[INFO] Unable to find resource 'jdom:jdom:pom:1.0' in repository release.fusesource.org (http://repo.fusesource.com/nexus/content/repositories/releases)
+Downloading: http://repo.fusesource.com/nexus/content/groups/ea/jdom/jdom/1.0/jdom-1.0.pom
+[INFO] Unable to find resource 'jdom:jdom:pom:1.0' in repository ea.fusesource.org (http://repo.fusesource.com/nexus/content/groups/ea)
+Downloading: http://repo1.maven.org/maven2/jdom/jdom/1.0/jdom-1.0.pom
+1/1K1K downloaded  (jdom-1.0.pom)
+Downloading: https://repository.apache.org/content/repositories/releases//de/zeigermann/xml/xml-im-exporter/1.1/xml-im-exporter-1.1.pom
+[INFO] Unable to find resource 'de.zeigermann.xml:xml-im-exporter:pom:1.1' in repository apache.releases (https://repository.apache.org/content/repositories/releases/)
+Downloading: http://repo.fusesource.com/nexus/content/repositories/releases/de/zeigermann/xml/xml-im-exporter/1.1/xml-im-exporter-1.1.pom
+[INFO] Unable to find resource 'de.zeigermann.xml:xml-im-exporter:pom:1.1' in repository release.fusesource.org (http://repo.fusesource.com/nexus/content/repositories/releases)
+Downloading: http://repo.fusesource.com/nexus/content/groups/ea/de/zeigermann/xml/xml-im-exporter/1.1/xml-im-exporter-1.1.pom
+[INFO] Unable to find resource 'de.zeigermann.xml:xml-im-exporter:pom:1.1' in repository ea.fusesource.org (http://repo.fusesource.com/nexus/content/groups/ea)
+Downloading: http://repo.fusesource.com/nexus/content/repositories/releases/de/zeigermann/xml/xml-im-exporter/1.1/xml-im-exporter-1.1.pom
+[INFO] Unable to find resource 'de.zeigermann.xml:xml-im-exporter:pom:1.1' in repository release.fusesource.org (http://repo.fusesource.com/nexus/content/repositories/releases)
+Downloading: http://repo.fusesource.com/nexus/content/groups/ea/de/zeigermann/xml/xml-im-exporter/1.1/xml-im-exporter-1.1.pom
+[INFO] Unable to find resource 'de.zeigermann.xml:xml-im-exporter:pom:1.1' in repository ea.fusesource.org (http://repo.fusesource.com/nexus/content/groups/ea)
+Downloading: http://repo1.maven.org/maven2/de/zeigermann/xml/xml-im-exporter/1.1/xml-im-exporter-1.1.pom
+248/248b248b downloaded  (xml-im-exporter-1.1.pom)
+[8mha:////4I7uW7qPZb6Qzd3AXxUTBMcYZGsO4DiT4rrA5dhlYIY1AAAAXx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P0+vJLE4u1gvPjexLDVPzxdE+uZn5fvll6T+rlY5WiYVksXEwFBRxCAFVZ+cn1ecn5Oq5wyhQQoZIIARpLAAAFkNeyJfAAAA[0m[INFO] [compiler:compile {execution: default-compile}]
+[INFO] Compiling 6 source files to /home/jenkins/workspace/Maven_Job-class1/target/classes
+[INFO] ------------------------------------------------------------------------
+[8mha:////4Gmebb97mmdsngOdE17BEnR+X1N+64JpNnnzl0BnTwlJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] BUILD ERROR
+[INFO] ------------------------------------------------------------------------
+[INFO] Fatal error compiling
+
+Embedded error: tools.jar not found: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-0.amzn2.x86_64/jre/../lib/tools.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] For more information, run Maven with the -e switch
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 20 seconds
+[INFO] Finished at: Thu Mar 07 14:38:50 UTC 2019
+[INFO] Final Memory: 57M/136M
+[INFO] ------------------------------------------------------------------------
+Build step 'Invoke top-level Maven targets' marked build as failure
+Started calculate disk usage of build
+Finished Calculation of disk usage of build in 0 seconds
+Started calculate disk usage of workspace
+Finished Calculation of disk usage of workspace in 0 seconds
+Finished: FAILURE

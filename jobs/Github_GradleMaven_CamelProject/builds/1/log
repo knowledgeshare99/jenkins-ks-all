@@ -1,0 +1,30 @@
+Started by user [8mha:////4Fk1k7e+48rHXUzmlNpYSU0RU1syiePVtwyB//KweiJrAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4BL2z4AOJFdMr/O5k/XvJ6w87pkkJPmY09IaxWRBu/ZGAAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgYR/eT83ILSktQi/eKcxLLUPKBjDQGWHaLlyQAAAA==[0mslavenode1 (myslavenode) in workspace /home/jenkins/workspace/Github_GradleMaven_CamelProject
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+Cloning the remote Git repository
+Cloning repository https://github.com/knowledgeshare99/simple-restful-file-storage.git
+ > git init /home/jenkins/workspace/Github_GradleMaven_CamelProject # timeout=10
+Fetching upstream changes from https://github.com/knowledgeshare99/simple-restful-file-storage.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/knowledgeshare99/simple-restful-file-storage.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/knowledgeshare99/simple-restful-file-storage.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/knowledgeshare99/simple-restful-file-storage.git # timeout=10
+Fetching upstream changes from https://github.com/knowledgeshare99/simple-restful-file-storage.git
+ > git fetch --tags --progress https://github.com/knowledgeshare99/simple-restful-file-storage.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 9f6a268a1301f297ff964e657088b615f3be45d8 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 9f6a268a1301f297ff964e657088b615f3be45d8
+Commit message: "adding test JUnit test results on pom.xml"
+First time build. Skipping changelog.
+Unpacking https://repo.maven.apache.org/maven2/org/apache/maven/apache-maven/3.6.0/apache-maven-3.6.0-bin.zip to /home/jenkins/tools/hudson.tasks.Maven_MavenInstallation/LocalMaven on slavenode1
+[Github_GradleMaven_CamelProject] $ /home/jenkins/tools/hudson.tasks.Maven_MavenInstallation/LocalMaven/bin/mvn clean compile
+Error: Could not find or load main class .usr.local.maven-3.4
+Build step 'Invoke top-level Maven targets' marked build as failure
+Recording test results
+ERROR: Step ‘Publish JUnit test result report’ failed: No test report files were found. Configuration error?
+Finished: FAILURE

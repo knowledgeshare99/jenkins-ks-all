@@ -1,0 +1,20 @@
+Started by user [8mha:////4Fk1k7e+48rHXUzmlNpYSU0RU1syiePVtwyB//KweiJrAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4BL2z4AOJFdMr/O5k/XvJ6w87pkkJPmY09IaxWRBu/ZGAAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgYR/eT83ILSktQi/eKcxLLUPKBjDQGWHaLlyQAAAA==[0mslavenode1 (myslavenode) in workspace /home/jenkins/workspace/MavenSimpleCompile
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/itcuties/Axis-2-client.git # timeout=10
+Fetching upstream changes from https://github.com/itcuties/Axis-2-client.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/itcuties/Axis-2-client.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 9371dfab673c6e5d9fb720a73c56cc5bc0814686 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 9371dfab673c6e5d9fb720a73c56cc5bc0814686
+Commit message: "Create README.md"
+ > git rev-list --no-walk 9371dfab673c6e5d9fb720a73c56cc5bc0814686 # timeout=10
+[MavenSimpleCompile] $ /home/jenkins/tools/hudson.tasks.Maven_MavenInstallation/MAVEN_HOME/bin/mvn compile
+Error: Could not find or load main class .usr.local.maven-3.4
+Build step 'Invoke top-level Maven targets' marked build as failure
+Finished: FAILURE

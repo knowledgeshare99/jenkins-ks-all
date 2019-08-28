@@ -1,0 +1,90 @@
+Started by user [8mha:////4Fk1k7e+48rHXUzmlNpYSU0RU1syiePVtwyB//KweiJrAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+[EnvInject] - Loading node environment variables.
+Unable to auto-install JDK until the license is accepted.
+Building remotely on [8mha:////4BL2z4AOJFdMr/O5k/XvJ6w87pkkJPmY09IaxWRBu/ZGAAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgYR/eT83ILSktQi/eKcxLLUPKBjDQGWHaLlyQAAAA==[0mslavenode1 (myslavenode) in workspace /home/jenkins/workspace/SamplePollSCM
+Unable to auto-install JDK until the license is accepted.
+[SamplePollSCM] $ /bin/sh -xe /tmp/jenkins2367621520116924438.sh
++ sudo cat /var/log/messages
+Jan  3 14:32:01 ip-10-0-2-151 rsyslogd: [origin software="rsyslogd" swVersion="8.24.0" x-pid="3183" x-info="http://www.rsyslog.com"] rsyslogd was HUPed
+Jan  3 14:32:42 ip-10-0-2-151 dhclient[3004]: XMT: Solicit on eth0, interval 115790ms.
+Jan  3 14:34:38 ip-10-0-2-151 dhclient[3004]: XMT: Solicit on eth0, interval 110940ms.
+Jan  3 14:36:29 ip-10-0-2-151 dhclient[3004]: XMT: Solicit on eth0, interval 125510ms.
+Jan  3 14:38:35 ip-10-0-2-151 dhclient[3004]: XMT: Solicit on eth0, interval 126410ms.
+Jan  3 14:40:01 ip-10-0-2-151 systemd: Started Session 12 of user root.
+Jan  3 14:40:01 ip-10-0-2-151 systemd: Starting Session 12 of user root.
+Jan  3 14:40:41 ip-10-0-2-151 dhclient[3004]: XMT: Solicit on eth0, interval 110990ms.
+Jan  3 14:42:32 ip-10-0-2-151 dhclient[3004]: XMT: Solicit on eth0, interval 110230ms.
+Jan  3 14:43:30 ip-10-0-2-151 amazon-ssm-agent: 2019-01-03 14:43:30 INFO Backing off health check to every 2400 seconds for 7200 seconds.
+Jan  3 14:43:30 ip-10-0-2-151 amazon-ssm-agent: 2019-01-03 14:43:30 ERROR Health ping failed with error - NoCredentialProviders: no valid providers in chain. Deprecated.
+Jan  3 14:43:30 ip-10-0-2-151 amazon-ssm-agent: For verbose messaging see aws.Config.CredentialsChainVerboseErrors
+Jan  3 14:44:22 ip-10-0-2-151 dhclient[3004]: XMT: Solicit on eth0, interval 112150ms.
+Jan  3 14:46:15 ip-10-0-2-151 dhclient[3004]: XMT: Solicit on eth0, interval 124360ms.
+Jan  3 14:48:19 ip-10-0-2-151 dhclient[3004]: XMT: Solicit on eth0, interval 116400ms.
+Jan  3 14:49:41 ip-10-0-2-151 dhclient[2873]: DHCPREQUEST on eth0 to 10.0.2.1 port 67 (xid=0xf01fa7f)
+Jan  3 14:49:41 ip-10-0-2-151 dhclient[2873]: DHCPACK from 10.0.2.1 (xid=0xf01fa7f)
+Jan  3 14:49:41 ip-10-0-2-151 dhclient[2873]: bound to 10.0.2.151 -- renewal in 1362 seconds.
+Jan  3 14:49:41 ip-10-0-2-151 ec2net: [get_meta] Trying to get http://169.254.169.254/latest/meta-data/network/interfaces/macs/0a:52:b2:38:a2:aa/local-ipv4s
+Jan  3 14:49:41 ip-10-0-2-151 ec2net: [rewrite_aliases] Rewriting aliases of eth0
+Jan  3 14:50:01 ip-10-0-2-151 systemd: Started Session 13 of user root.
+Jan  3 14:50:01 ip-10-0-2-151 systemd: Starting Session 13 of user root.
+Jan  3 14:50:16 ip-10-0-2-151 dhclient[3004]: XMT: Solicit on eth0, interval 131390ms.
+Jan  3 14:52:01 ip-10-0-2-151 systemd: Removed slice User Slice of root.
+Jan  3 14:52:01 ip-10-0-2-151 systemd: Stopping User Slice of root.
+Jan  3 14:52:27 ip-10-0-2-151 dhclient[3004]: XMT: Solicit on eth0, interval 120530ms.
+Jan  3 14:54:28 ip-10-0-2-151 dhclient[3004]: XMT: Solicit on eth0, interval 125450ms.
+Jan  3 14:56:33 ip-10-0-2-151 dhclient[3004]: XMT: Solicit on eth0, interval 110510ms.
+Jan  3 14:58:24 ip-10-0-2-151 dhclient[3004]: XMT: Solicit on eth0, interval 108320ms.
+Jan  3 15:00:01 ip-10-0-2-151 systemd: Created slice User Slice of root.
+Jan  3 15:00:01 ip-10-0-2-151 systemd: Starting User Slice of root.
+Jan  3 15:00:01 ip-10-0-2-151 systemd: Started Session 14 of user root.
+Jan  3 15:00:01 ip-10-0-2-151 systemd: Starting Session 14 of user root.
+Jan  3 15:00:01 ip-10-0-2-151 systemd: Removed slice User Slice of root.
+Jan  3 15:00:01 ip-10-0-2-151 systemd: Stopping User Slice of root.
+Jan  3 15:00:12 ip-10-0-2-151 dhclient[3004]: XMT: Solicit on eth0, interval 112790ms.
+Jan  3 15:01:01 ip-10-0-2-151 systemd: Created slice User Slice of root.
+Jan  3 15:01:01 ip-10-0-2-151 systemd: Starting User Slice of root.
+Jan  3 15:01:01 ip-10-0-2-151 systemd: Started Session 15 of user root.
+Jan  3 15:01:01 ip-10-0-2-151 systemd: Starting Session 15 of user root.
+Jan  3 15:01:01 ip-10-0-2-151 systemd: Removed slice User Slice of root.
+Jan  3 15:01:01 ip-10-0-2-151 systemd: Stopping User Slice of root.
+Jan  3 15:02:05 ip-10-0-2-151 dhclient[3004]: XMT: Solicit on eth0, interval 117840ms.
+Jan  3 15:02:13 ip-10-0-2-151 yum[4269]: Erased: httpd-2.4.34-1.amzn2.1.1.x86_64
+Jan  3 15:02:13 ip-10-0-2-151 systemd: Reloading.
+Jan  3 15:02:13 ip-10-0-2-151 systemd: [/usr/lib/systemd/system/irqbalance.service:12] Unknown lvalue 'ReadOnlyPaths' in section 'Service'
+Jan  3 15:02:13 ip-10-0-2-151 systemd: [/usr/lib/systemd/system/irqbalance.service:13] Unknown lvalue 'ReadWritePaths' in section 'Service'
+Jan  3 15:02:13 ip-10-0-2-151 systemd: [/usr/lib/systemd/system/irqbalance.service:15] Unknown lvalue 'TemporaryFileSystem' in section 'Service'
+Jan  3 15:02:13 ip-10-0-2-151 yum[4269]: Erased: mod_http2-1.11.1-1.amzn2.x86_64
+Jan  3 15:02:13 ip-10-0-2-151 systemd: Stopping Dynamically Generate Message Of The Day...
+Jan  3 15:02:13 ip-10-0-2-151 systemd: Starting Dynamically Generate Message Of The Day...
+Jan  3 15:02:16 ip-10-0-2-151 systemd: Reloading.
+Jan  3 15:02:16 ip-10-0-2-151 systemd: [/usr/lib/systemd/system/irqbalance.service:12] Unknown lvalue 'ReadOnlyPaths' in section 'Service'
+Jan  3 15:02:16 ip-10-0-2-151 systemd: [/usr/lib/systemd/system/irqbalance.service:13] Unknown lvalue 'ReadWritePaths' in section 'Service'
+Jan  3 15:02:16 ip-10-0-2-151 systemd: [/usr/lib/systemd/system/irqbalance.service:15] Unknown lvalue 'TemporaryFileSystem' in section 'Service'
+Jan  3 15:02:16 ip-10-0-2-151 yum[4317]: Installed: httpd-2.4.34-1.amzn2.1.1.x86_64
+Jan  3 15:02:16 ip-10-0-2-151 yum[4317]: Installed: mod_http2-1.11.1-1.amzn2.x86_64
+Jan  3 15:02:16 ip-10-0-2-151 systemd: Starting Dynamically Generate Message Of The Day...
+Jan  3 15:02:17 ip-10-0-2-151 systemd: Cannot add dependency job for unit httpd-init.service, ignoring: Unit not found.
+Jan  3 15:02:17 ip-10-0-2-151 systemd: Starting The Apache HTTP Server...
+Jan  3 15:02:17 ip-10-0-2-151 systemd: Started The Apache HTTP Server.
+Jan  3 15:02:20 ip-10-0-2-151 systemd: Started Dynamically Generate Message Of The Day.
+Jan  3 15:04:03 ip-10-0-2-151 dhclient[3004]: XMT: Solicit on eth0, interval 122700ms.
+Jan  3 15:06:06 ip-10-0-2-151 dhclient[3004]: XMT: Solicit on eth0, interval 123520ms.
+Jan  3 15:08:09 ip-10-0-2-151 dhclient[3004]: XMT: Solicit on eth0, interval 111190ms.
+Jan  3 15:10:01 ip-10-0-2-151 dhclient[3004]: XMT: Solicit on eth0, interval 116300ms.
+Jan  3 15:10:01 ip-10-0-2-151 systemd: Created slice User Slice of root.
+Jan  3 15:10:01 ip-10-0-2-151 systemd: Starting User Slice of root.
+Jan  3 15:10:01 ip-10-0-2-151 systemd: Started Session 16 of user root.
+Jan  3 15:10:01 ip-10-0-2-151 systemd: Starting Session 16 of user root.
+Jan  3 15:10:01 ip-10-0-2-151 systemd: Removed slice User Slice of root.
+Jan  3 15:10:01 ip-10-0-2-151 systemd: Stopping User Slice of root.
+Jan  3 15:11:57 ip-10-0-2-151 dhclient[3004]: XMT: Solicit on eth0, interval 126490ms.
+Jan  3 15:12:23 ip-10-0-2-151 dhclient[2873]: DHCPREQUEST on eth0 to 10.0.2.1 port 67 (xid=0xf01fa7f)
+Jan  3 15:12:23 ip-10-0-2-151 dhclient[2873]: DHCPACK from 10.0.2.1 (xid=0xf01fa7f)
+Jan  3 15:12:23 ip-10-0-2-151 dhclient[2873]: bound to 10.0.2.151 -- renewal in 1568 seconds.
+Jan  3 15:12:23 ip-10-0-2-151 ec2net: [get_meta] Trying to get http://169.254.169.254/latest/meta-data/network/interfaces/macs/0a:52:b2:38:a2:aa/local-ipv4s
+Jan  3 15:12:23 ip-10-0-2-151 ec2net: [rewrite_aliases] Rewriting aliases of eth0
+Jan  3 15:14:04 ip-10-0-2-151 dhclient[3004]: XMT: Solicit on eth0, interval 109270ms.
+Jan  3 15:15:53 ip-10-0-2-151 dhclient[3004]: XMT: Solicit on eth0, interval 131010ms.
+Jan  3 15:18:04 ip-10-0-2-151 dhclient[3004]: XMT: Solicit on eth0, interval 117820ms.
+Unable to auto-install JDK until the license is accepted.
+Finished: SUCCESS

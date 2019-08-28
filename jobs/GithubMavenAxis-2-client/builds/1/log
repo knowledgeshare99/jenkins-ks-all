@@ -1,0 +1,41 @@
+Started by user [8mha:////4Fk1k7e+48rHXUzmlNpYSU0RU1syiePVtwyB//KweiJrAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4DJf+k8qCy1S4a5ZKYq9zLhtCWqWT9vTkErxEwG2to2cAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAwOoBn6yfm5BaUlqUX6uZXFOYllqYYANV7kNscAAAA=[0mmyslave1 (myslavenode) in workspace /home/jenkins/workspace/GithubMavenAxis-2-client
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+Cloning the remote Git repository
+Cloning repository https://github.com/KS-Organization/Axis-2-client.git
+ > git init /home/jenkins/workspace/GithubMavenAxis-2-client # timeout=10
+Fetching upstream changes from https://github.com/KS-Organization/Axis-2-client.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/KS-Organization/Axis-2-client.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/KS-Organization/Axis-2-client.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/KS-Organization/Axis-2-client.git # timeout=10
+Fetching upstream changes from https://github.com/KS-Organization/Axis-2-client.git
+ > git fetch --tags --progress https://github.com/KS-Organization/Axis-2-client.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 9371dfab673c6e5d9fb720a73c56cc5bc0814686 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 9371dfab673c6e5d9fb720a73c56cc5bc0814686
+Commit message: "Create README.md"
+First time build. Skipping changelog.
+[GithubMavenAxis-2-client] $ /home/jenkins/tools/hudson.tasks.Maven_MavenInstallation/LocalMaven/bin/mvn clean compile package
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.222 s
+[INFO] Finished at: 2019-01-10T13:34:03Z
+[INFO] ------------------------------------------------------------------------
+[8mha:////4Gmebb97mmdsngOdE17BEnR+X1N+64JpNnnzl0BnTwlJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/home/jenkins/workspace/GithubMavenAxis-2-client). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[8mha:////4Gmebb97mmdsngOdE17BEnR+X1N+64JpNnnzl0BnTwlJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] 
+[8mha:////4Gmebb97mmdsngOdE17BEnR+X1N+64JpNnnzl0BnTwlJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[8mha:////4Gmebb97mmdsngOdE17BEnR+X1N+64JpNnnzl0BnTwlJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[8mha:////4Gmebb97mmdsngOdE17BEnR+X1N+64JpNnnzl0BnTwlJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] 
+[8mha:////4Gmebb97mmdsngOdE17BEnR+X1N+64JpNnnzl0BnTwlJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[8mha:////4Gmebb97mmdsngOdE17BEnR+X1N+64JpNnnzl0BnTwlJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+Build step 'Invoke top-level Maven targets' marked build as failure
+Sending e-mails to: knowledgeshare99@gmail.com
+Finished: FAILURE

@@ -1,0 +1,93 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description>this is my static website deploy job running on slave</description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <jenkins.model.BuildDiscarderProperty>
+      <strategy class="hudson.tasks.LogRotator">
+        <daysToKeep>90</daysToKeep>
+        <numToKeep>30</numToKeep>
+        <artifactDaysToKeep>-1</artifactDaysToKeep>
+        <artifactNumToKeep>-1</artifactNumToKeep>
+      </strategy>
+    </jenkins.model.BuildDiscarderProperty>
+    <hudson.plugins.disk__usage.DiskUsageProperty plugin="disk-usage@0.28"/>
+    <com.sonyericsson.rebuild.RebuildSettings plugin="rebuild@1.29">
+      <autoRebuild>false</autoRebuild>
+      <rebuildDisabled>false</rebuildDisabled>
+    </com.sonyericsson.rebuild.RebuildSettings>
+    <org.jenkinsci.plugins.flow__plugin.FlowProjectProperty plugin="flow@1.3"/>
+  </properties>
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@3.9.1">
+    <configVersion>2</configVersion>
+    <userRemoteConfigs>
+      <hudson.plugins.git.UserRemoteConfig>
+        <url>https://github.com/knowledgeshare99/staticwebsite.git</url>
+      </hudson.plugins.git.UserRemoteConfig>
+    </userRemoteConfigs>
+    <branches>
+      <hudson.plugins.git.BranchSpec>
+        <name>*/master</name>
+      </hudson.plugins.git.BranchSpec>
+    </branches>
+    <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+    <submoduleCfg class="list"/>
+    <extensions/>
+  </scm>
+  <assignedNode>myslave1</assignedNode>
+  <canRoam>false</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <jdk>(System)</jdk>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>#!/bin/bash
+
+echo &quot;######### stop httpd service ##############&quot;
+sudo service httpd stop
+
+echo &quot;#############3 Uninstall httpd ###########&quot;
+sudo yum remove -y httpd
+
+echo &quot;############### Install httpd ############# &quot;
+sudo yum install -y httpd
+
+echo &quot;######### status httpd service ##############&quot;
+sudo service httpd status
+
+echo &quot;########## removing the existing content from the below /var/www/html/* #########3&quot;
+sudo rm -rf /var/www/html/*
+
+echo &quot;########3 copying the workspace job content to /var/www/html########## &quot;
+#sudo cp -r &lt;yourjob-workspace&gt;/* &lt;destination-where-you-want-to-deploy
+sudo cp -r /home/jenkins/workspace/slave-StaticWeb-GitClass/* /var/www/html/
+
+echo &quot;########### Listing the content of /var/www/html ############&quot;
+
+ls -lrt /var/www/html/
+
+echo &quot;######### startign httpd service ##########&quot;
+
+sudo systemctl start httpd</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers>
+    <hudson.tasks.Mailer plugin="mailer@1.22">
+      <recipients>knowledgeshare99@gmail.com</recipients>
+      <dontNotifyEveryUnstableBuild>false</dontNotifyEveryUnstableBuild>
+      <sendToIndividuals>false</sendToIndividuals>
+    </hudson.tasks.Mailer>
+  </publishers>
+  <buildWrappers>
+    <hudson.plugins.ws__cleanup.PreBuildCleanup plugin="ws-cleanup@0.36">
+      <deleteDirs>false</deleteDirs>
+      <cleanupParameter></cleanupParameter>
+      <externalDelete></externalDelete>
+      <disableDeferredWipeout>false</disableDeferredWipeout>
+    </hudson.plugins.ws__cleanup.PreBuildCleanup>
+  </buildWrappers>
+</project>

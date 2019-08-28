@@ -1,0 +1,85 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description>this is my maven compilation project</description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <jenkins.model.BuildDiscarderProperty>
+      <strategy class="hudson.tasks.LogRotator">
+        <daysToKeep>30</daysToKeep>
+        <numToKeep>20</numToKeep>
+        <artifactDaysToKeep>-1</artifactDaysToKeep>
+        <artifactNumToKeep>-1</artifactNumToKeep>
+      </strategy>
+    </jenkins.model.BuildDiscarderProperty>
+    <com.sonyericsson.rebuild.RebuildSettings plugin="rebuild@1.29">
+      <autoRebuild>false</autoRebuild>
+      <rebuildDisabled>false</rebuildDisabled>
+    </com.sonyericsson.rebuild.RebuildSettings>
+    <org.jenkinsci.plugins.flow__plugin.FlowProjectProperty plugin="flow@1.3"/>
+    <hudson.plugins.disk__usage.DiskUsageProperty plugin="disk-usage@0.28"/>
+  </properties>
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@3.9.1">
+    <configVersion>2</configVersion>
+    <userRemoteConfigs>
+      <hudson.plugins.git.UserRemoteConfig>
+        <url>https://github.com/KS-Organization/game-of-life.git</url>
+      </hudson.plugins.git.UserRemoteConfig>
+    </userRemoteConfigs>
+    <branches>
+      <hudson.plugins.git.BranchSpec>
+        <name>*/master</name>
+      </hudson.plugins.git.BranchSpec>
+    </branches>
+    <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+    <submoduleCfg class="list"/>
+    <extensions/>
+  </scm>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <jdk>JDK_1.8-192</jdk>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Maven>
+      <targets>clean compile package</targets>
+      <mavenName>LocalMaven</mavenName>
+      <usePrivateRepository>false</usePrivateRepository>
+      <settings class="jenkins.mvn.DefaultSettingsProvider"/>
+      <globalSettings class="jenkins.mvn.FilePathGlobalSettingsProvider">
+        <path></path>
+      </globalSettings>
+      <injectBuildVariables>false</injectBuildVariables>
+    </hudson.tasks.Maven>
+    <hudson.tasks.Shell>
+      <command>#sudo yum install tomcat
+#sudo service tomcat start
+cd $workspace
+sudo /usr/local/tomcat/shutdown.sh
+sudo cp -r /var/lib/jenkins/workspace/Maven_Game-Of-Life/gameoflife-web/target/*.war /usr/local/tomcat/webapps/
+sudo chown -R tomcat:tomcat /usr/local/tomcat
+sudo /usr/local/tomcat/startup.sh
+sudo echo &quot;########## Tomcat WebApp directory listing of deployed app.war&quot;
+sudo ls -lrt /usr/local/tomcat/webapps/*
+sudo echo &quot;######### Deployment completed #########&quot;</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers>
+    <hudson.tasks.junit.JUnitResultArchiver plugin="junit@1.26.1">
+      <testResults>**/target/surefire-reports/*.xml</testResults>
+      <keepLongStdio>false</keepLongStdio>
+      <healthScaleFactor>1.0</healthScaleFactor>
+      <allowEmptyResults>false</allowEmptyResults>
+    </hudson.tasks.junit.JUnitResultArchiver>
+  </publishers>
+  <buildWrappers>
+    <hudson.plugins.ws__cleanup.PreBuildCleanup plugin="ws-cleanup@0.36">
+      <deleteDirs>false</deleteDirs>
+      <cleanupParameter></cleanupParameter>
+      <externalDelete></externalDelete>
+      <disableDeferredWipeout>false</disableDeferredWipeout>
+    </hudson.plugins.ws__cleanup.PreBuildCleanup>
+  </buildWrappers>
+</project>

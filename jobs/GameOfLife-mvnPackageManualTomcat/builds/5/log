@@ -1,0 +1,408 @@
+Started by user [8mha:////4Fk1k7e+48rHXUzmlNpYSU0RU1syiePVtwyB//KweiJrAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4DJf+k8qCy1S4a5ZKYq9zLhtCWqWT9vTkErxEwG2to2cAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAwOoBn6yfm5BaUlqUX6uZXFOYllqYYANV7kNscAAAA=[0mmyslave1 (myslavenode) in workspace /home/jenkins/workspace/GameOfLife-mvnPackageManualTomcat
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] Done
+Cloning the remote Git repository
+Cloning repository https://github.com/KS-Organization/game-of-life.git
+ > git init /home/jenkins/workspace/GameOfLife-mvnPackageManualTomcat # timeout=10
+Fetching upstream changes from https://github.com/KS-Organization/game-of-life.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/KS-Organization/game-of-life.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/KS-Organization/game-of-life.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/KS-Organization/game-of-life.git # timeout=10
+Fetching upstream changes from https://github.com/KS-Organization/game-of-life.git
+ > git fetch --tags --progress https://github.com/KS-Organization/game-of-life.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision c24bb1ae41bfd5980ce9f0aa8b9a636b920c71fd (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f c24bb1ae41bfd5980ce9f0aa8b9a636b920c71fd
+Commit message: "Merge pull request #198 from GeraldScott/master"
+ > git rev-list --no-walk c24bb1ae41bfd5980ce9f0aa8b9a636b920c71fd # timeout=10
+[GameOfLife-mvnPackageManualTomcat] $ /home/jenkins/tools/hudson.tasks.Maven_MavenInstallation/LocalMaven/bin/mvn package
+[INFO] Scanning for projects...
+[8mha:////4B9hiNTi7UKoGwe6I08zfcchzFvqwNxs8N4lFpG4HptVAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] 
+[8mha:////4B9hiNTi7UKoGwe6I08zfcchzFvqwNxs8N4lFpG4HptVAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Some problems were encountered while building the effective model for com.wakaleo.gameoflife:gameoflife-build:jar:1.0-SNAPSHOT
+[8mha:////4B9hiNTi7UKoGwe6I08zfcchzFvqwNxs8N4lFpG4HptVAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter.
+[8mha:////4B9hiNTi7UKoGwe6I08zfcchzFvqwNxs8N4lFpG4HptVAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] 
+[8mha:////4B9hiNTi7UKoGwe6I08zfcchzFvqwNxs8N4lFpG4HptVAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Some problems were encountered while building the effective model for com.wakaleo.gameoflife:gameoflife-core:jar:1.0-SNAPSHOT
+[8mha:////4B9hiNTi7UKoGwe6I08zfcchzFvqwNxs8N4lFpG4HptVAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter.
+[8mha:////4B9hiNTi7UKoGwe6I08zfcchzFvqwNxs8N4lFpG4HptVAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] 
+[8mha:////4B9hiNTi7UKoGwe6I08zfcchzFvqwNxs8N4lFpG4HptVAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Some problems were encountered while building the effective model for com.wakaleo.gameoflife:gameoflife-web:war:1.0-SNAPSHOT
+[8mha:////4B9hiNTi7UKoGwe6I08zfcchzFvqwNxs8N4lFpG4HptVAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter.
+[8mha:////4B9hiNTi7UKoGwe6I08zfcchzFvqwNxs8N4lFpG4HptVAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] 
+[8mha:////4B9hiNTi7UKoGwe6I08zfcchzFvqwNxs8N4lFpG4HptVAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Some problems were encountered while building the effective model for com.wakaleo.gameoflife:gameoflife:pom:1.0-SNAPSHOT
+[8mha:////4B9hiNTi7UKoGwe6I08zfcchzFvqwNxs8N4lFpG4HptVAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter. @ line 302, column 40
+[8mha:////4B9hiNTi7UKoGwe6I08zfcchzFvqwNxs8N4lFpG4HptVAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] 
+[8mha:////4B9hiNTi7UKoGwe6I08zfcchzFvqwNxs8N4lFpG4HptVAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[8mha:////4B9hiNTi7UKoGwe6I08zfcchzFvqwNxs8N4lFpG4HptVAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] 
+[8mha:////4B9hiNTi7UKoGwe6I08zfcchzFvqwNxs8N4lFpG4HptVAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[8mha:////4B9hiNTi7UKoGwe6I08zfcchzFvqwNxs8N4lFpG4HptVAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] gameoflife                                                         [pom]
+[INFO] gameoflife-build                                                   [jar]
+[INFO] gameoflife-core                                                    [jar]
+[INFO] gameoflife-web                                                     [war]
+[INFO] 
+[INFO] -----------------< com.wakaleo.gameoflife:gameoflife >------------------
+[INFO] Building gameoflife 1.0-SNAPSHOT                                   [1/4]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-versions) @ gameoflife ---
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- jacoco-maven-plugin:0.7.2.201409121644:prepare-agent (jacoco-initialize) @ gameoflife ---
+[INFO] argLine set to -javaagent:/home/jenkins/.m2/repository/org/jacoco/org.jacoco.agent/0.7.2.201409121644/org.jacoco.agent-0.7.2.201409121644-runtime.jar=destfile=/home/jenkins/workspace/GameOfLife-mvnPackageManualTomcat/target/jacoco.exec
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.11:test (unit-tests) @ gameoflife ---
+[INFO] No tests to run.
+[INFO] Surefire report directory: /home/jenkins/workspace/GameOfLife-mvnPackageManualTomcat/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-easyb-plugin:1.4:test (default) @ gameoflife ---
+[INFO] /home/jenkins/workspace/GameOfLife-mvnPackageManualTomcat/src/test/stories does not exists.  Skipping easyb testing
+[INFO] 
+[INFO] --------------< com.wakaleo.gameoflife:gameoflife-build >---------------
+[INFO] Building gameoflife-build 1.0-SNAPSHOT                             [2/4]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-versions) @ gameoflife-build ---
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gameoflife-build ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- jacoco-maven-plugin:0.7.2.201409121644:prepare-agent (jacoco-initialize) @ gameoflife-build ---
+[INFO] argLine set to -javaagent:/home/jenkins/.m2/repository/org/jacoco/org.jacoco.agent/0.7.2.201409121644/org.jacoco.agent-0.7.2.201409121644-runtime.jar=destfile=/home/jenkins/workspace/GameOfLife-mvnPackageManualTomcat/gameoflife-build/target/jacoco.exec
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ gameoflife-build ---
+[INFO] No sources to compile
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gameoflife-build ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/jenkins/workspace/GameOfLife-mvnPackageManualTomcat/gameoflife-build/src/test/resources
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ gameoflife-build ---
+[INFO] No sources to compile
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.11:test (default-test) @ gameoflife-build ---
+[INFO] Tests are skipped.
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.11:test (unit-tests) @ gameoflife-build ---
+[INFO] No tests to run.
+[INFO] Surefire report directory: /home/jenkins/workspace/GameOfLife-mvnPackageManualTomcat/gameoflife-build/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-easyb-plugin:1.4:test (default) @ gameoflife-build ---
+[INFO] /home/jenkins/workspace/GameOfLife-mvnPackageManualTomcat/gameoflife-build/src/test/stories does not exists.  Skipping easyb testing
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ gameoflife-build ---
+[INFO] Building jar: /home/jenkins/workspace/GameOfLife-mvnPackageManualTomcat/gameoflife-build/target/gameoflife-build-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] ---------------< com.wakaleo.gameoflife:gameoflife-core >---------------
+[INFO] Building gameoflife-core 1.0-SNAPSHOT                              [3/4]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-versions) @ gameoflife-core ---
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gameoflife-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/jenkins/workspace/GameOfLife-mvnPackageManualTomcat/gameoflife-core/src/main/resources
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- jacoco-maven-plugin:0.7.2.201409121644:prepare-agent (jacoco-initialize) @ gameoflife-core ---
+[INFO] argLine set to -javaagent:/home/jenkins/.m2/repository/org/jacoco/org.jacoco.agent/0.7.2.201409121644/org.jacoco.agent-0.7.2.201409121644-runtime.jar=destfile=/home/jenkins/workspace/GameOfLife-mvnPackageManualTomcat/gameoflife-core/target/jacoco.exec
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ gameoflife-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 5 source files to /home/jenkins/workspace/GameOfLife-mvnPackageManualTomcat/gameoflife-core/target/classes
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gameoflife-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/jenkins/workspace/GameOfLife-mvnPackageManualTomcat/gameoflife-core/src/test/resources
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ gameoflife-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 10 source files to /home/jenkins/workspace/GameOfLife-mvnPackageManualTomcat/gameoflife-core/target/test-classes
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.11:test (default-test) @ gameoflife-core ---
+[INFO] Tests are skipped.
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.11:test (unit-tests) @ gameoflife-core ---
+[INFO] Surefire report directory: /home/jenkins/workspace/GameOfLife-mvnPackageManualTomcat/gameoflife-core/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.wakaleo.gameoflife.domain.WhenYouReadAGridFromAString
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.227 sec
+Running com.wakaleo.gameoflife.domain.WhenYouCreateACell
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec
+Running com.wakaleo.gameoflife.domain.WhenYouPrintAGrid
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+Running com.wakaleo.gameoflife.domain.WhenYouCreateAGrid
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 sec
+Running com.wakaleo.gameoflife.domain.WhenYouCreateANewUniverse
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 sec
+Running com.wakaleo.gameoflife.domain.WhenYouPlayTheGameOfLife
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+
+Results :
+
+Tests run: 49, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-easyb-plugin:1.4:test (default) @ gameoflife-core ---
+[INFO] Using easyb dependency org.easyb:easyb-core:jar:1.6:compile
+[INFO] Using easyb dependency org.easyb:easyb-composite-groovy:pom:1.2:compile
+[INFO] Using easyb dependency org.codehaus.groovy:groovy-all:jar:2.3.6:compile
+[INFO] Using easyb dependency org.easyb:easyb-ast:jar:1.1:compile
+[INFO] Using easyb dependency commons-cli:commons-cli:jar:1.2:compile
+[INFO] Using easyb dependency commons-lang:commons-lang:jar:2.5:compile
+     [java] Running counting things story (/home/jenkins/workspace/GameOfLife-mvnPackageManualTomcat/gameoflife-core/src/test/stories/CountingThings.story)
+     [java] Scenarios run: 1, Failures: 0, Pending: 0, Time elapsed: 0.933 sec
+     [java] Running multiplying things story (/home/jenkins/workspace/GameOfLife-mvnPackageManualTomcat/gameoflife-core/src/test/stories/MultiplyingThings.story)
+     [java] Scenarios run: 1, Failures: 0, Pending: 1, Time elapsed: 0.066 sec
+     [java] 2 total behaviors ran with no failures
+     [java] Writing JUnit report to /home/jenkins/workspace/GameOfLife-mvnPackageManualTomcat/gameoflife-core/target/surefire-reports/TEST-behavior.CountingThings.xml
+     [java] JUnit report written to /home/jenkins/workspace/GameOfLife-mvnPackageManualTomcat/gameoflife-core/target/surefire-reports/TEST-behavior.CountingThings.xml
+     [java] Writing JUnit report to /home/jenkins/workspace/GameOfLife-mvnPackageManualTomcat/gameoflife-core/target/surefire-reports/TEST-behavior.MultiplyingThings.xml
+     [java] JUnit report written to /home/jenkins/workspace/GameOfLife-mvnPackageManualTomcat/gameoflife-core/target/surefire-reports/TEST-behavior.MultiplyingThings.xml
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ gameoflife-core ---
+[INFO] Building jar: /home/jenkins/workspace/GameOfLife-mvnPackageManualTomcat/gameoflife-core/target/gameoflife-core-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] ---------------< com.wakaleo.gameoflife:gameoflife-web >----------------
+[INFO] Building gameoflife-web 1.0-SNAPSHOT                               [4/4]
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-versions) @ gameoflife-web ---
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gameoflife-web ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- jacoco-maven-plugin:0.7.2.201409121644:prepare-agent (jacoco-initialize) @ gameoflife-web ---
+[INFO] argLine set to -javaagent:/home/jenkins/.m2/repository/org/jacoco/org.jacoco.agent/0.7.2.201409121644/org.jacoco.agent-0.7.2.201409121644-runtime.jar=destfile=/home/jenkins/workspace/GameOfLife-mvnPackageManualTomcat/gameoflife-web/target/jacoco.exec
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ gameoflife-web ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /home/jenkins/workspace/GameOfLife-mvnPackageManualTomcat/gameoflife-web/target/classes
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gameoflife-web ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/jenkins/workspace/GameOfLife-mvnPackageManualTomcat/gameoflife-web/src/test/resources
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ gameoflife-web ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /home/jenkins/workspace/GameOfLife-mvnPackageManualTomcat/gameoflife-web/target/test-classes
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.11:test (default-test) @ gameoflife-web ---
+[INFO] Tests are skipped.
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.11:test (unit-tests) @ gameoflife-web ---
+[INFO] Surefire report directory: /home/jenkins/workspace/GameOfLife-mvnPackageManualTomcat/gameoflife-web/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.wakaleo.gameoflife.webtests.controllers.WhenDisplayingTheHomePage
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.23 sec
+Running com.wakaleo.gameoflife.webtests.controllers.WhenSpawningANewGeneration
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.576 sec
+Running com.wakaleo.gameoflife.webtests.controllers.WhenCreatingANewGame
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.066 sec
+
+Results :
+
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-easyb-plugin:1.4:test (default) @ gameoflife-web ---
+[INFO] /home/jenkins/workspace/GameOfLife-mvnPackageManualTomcat/gameoflife-web/src/test/stories does not exists.  Skipping easyb testing
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-war-plugin:2.1.1:war (default-war) @ gameoflife-web ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [gameoflife-web] in [/home/jenkins/workspace/GameOfLife-mvnPackageManualTomcat/gameoflife-web/target/gameoflife]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/home/jenkins/workspace/GameOfLife-mvnPackageManualTomcat/gameoflife-web/src/main/webapp]
+[INFO] Webapp assembled in [103 msecs]
+[INFO] Building war: /home/jenkins/workspace/GameOfLife-mvnPackageManualTomcat/gameoflife-web/target/gameoflife.war
+[INFO] WEB-INF/web.xml already added, skipping
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for gameoflife 1.0-SNAPSHOT:
+[INFO] 
+[INFO] gameoflife ......................................... SUCCESS [  4.062 s]
+[INFO] gameoflife-build ................................... SUCCESS [  2.070 s]
+[INFO] gameoflife-core .................................... SUCCESS [  7.684 s]
+[INFO] gameoflife-web ..................................... SUCCESS [  3.433 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  18.094 s
+[INFO] Finished at: 2019-01-10T13:21:35Z
+[INFO] ------------------------------------------------------------------------
+[GameOfLife-mvnPackageManualTomcat] $ /bin/sh -xe /tmp/jenkins4452903785819118653.sh
++ cd
++ sudo /usr/local/tomcat/bin/shutdown.sh
+Jan 10, 2019 1:21:35 PM org.apache.catalina.startup.Catalina stopServer
+SEVERE: Could not contact [localhost:[8005]]. Tomcat may not be running.
+Jan 10, 2019 1:21:35 PM org.apache.catalina.startup.Catalina stopServer
+SEVERE: Catalina.stop: 
+java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at java.net.Socket.<init>(Socket.java:434)
+	at java.net.Socket.<init>(Socket.java:211)
+	at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:503)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:406)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:498)
+
++ sudo cp -r /home/jenkins/workspace/GameOfLife-mvnPackageManualTomcat/gameoflife-web/target/gameoflife.war /usr/local/tomcat/webapps/
++ sudo chown -R tomcat:tomcat /usr/local/tomcat
++ sudo /usr/local/tomcat/bin/startup.sh
+Tomcat started.
++ echo '####### Tomcat Status ############'
+####### Tomcat Status ############
++ grep tomcat
++ sudo ps -ef
+jenkins   7410  7360  0 13:21 ?        00:00:00 grep tomcat
+root      7411     1  0 13:21 ?        00:00:00 //bin/java -Djava.util.logging.config.file=/usr/local/tomcat/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dorg.apache.catalina.security.SecurityListener.UMASK=0027 -Dignore.endorsed.dirs= -classpath /usr/local/tomcat/bin/bootstrap.jar:/usr/local/tomcat/bin/tomcat-juli.jar -Dcatalina.base=/usr/local/tomcat -Dcatalina.home=/usr/local/tomcat -Djava.io.tmpdir=/usr/local/tomcat/temp org.apache.catalina.startup.Bootstrap start
++ sudo echo '########## Tomcat WebApp directory listing of deployed app.war'
+########## Tomcat WebApp directory listing of deployed app.war
++ sudo ls -lrt /usr/local/tomcat/webapps/docs /usr/local/tomcat/webapps/examples /usr/local/tomcat/webapps/gameoflife.war /usr/local/tomcat/webapps/host-manager /usr/local/tomcat/webapps/manager /usr/local/tomcat/webapps/ROOT
+-rw-r--r--  1 tomcat tomcat 3192531 Jan 10 13:21 /usr/local/tomcat/webapps/gameoflife.war
+
+/usr/local/tomcat/webapps/ROOT:
+total 188
+drwxr-xr-x 2 tomcat tomcat    21 Jan  7 15:28 WEB-INF
+-rwxr-xr-x 1 tomcat tomcat 67795 Jan  7 15:28 tomcat.svg
+-rwxr-xr-x 1 tomcat tomcat  2376 Jan  7 15:28 tomcat-power.gif
+-rwxr-xr-x 1 tomcat tomcat  5103 Jan  7 15:28 tomcat.png
+-rwxr-xr-x 1 tomcat tomcat  2066 Jan  7 15:28 tomcat.gif
+-rwxr-xr-x 1 tomcat tomcat  5581 Jan  7 15:28 tomcat.css
+-rwxr-xr-x 1 tomcat tomcat  7142 Jan  7 15:28 RELEASE-NOTES.txt
+-rwxr-xr-x 1 tomcat tomcat 12290 Jan  7 15:28 index.jsp
+-rwxr-xr-x 1 tomcat tomcat 21630 Jan  7 15:28 favicon.ico
+-rwxr-xr-x 1 tomcat tomcat  3103 Jan  7 15:28 bg-upper.png
+-rwxr-xr-x 1 tomcat tomcat  1401 Jan  7 15:28 bg-nav.png
+-rwxr-xr-x 1 tomcat tomcat  1392 Jan  7 15:28 bg-nav-item.png
+-rwxr-xr-x 1 tomcat tomcat  1918 Jan  7 15:28 bg-middle.png
+-rwxr-xr-x 1 tomcat tomcat   713 Jan  7 15:28 bg-button.png
+-rwxr-xr-x 1 tomcat tomcat 27235 Jan  7 15:28 asf-logo-wide.svg
+
+/usr/local/tomcat/webapps/docs:
+total 1408
+drwxr-xr-x 2 tomcat tomcat     21 Jan  7 15:28 WEB-INF
+drwxr-xr-x 2 tomcat tomcat    233 Jan  7 15:28 funcspecs
+drwxr-xr-x 2 tomcat tomcat     24 Jan  7 15:28 elapi
+drwxr-xr-x 2 tomcat tomcat   4096 Jan  7 15:28 config
+drwxr-xr-x 4 tomcat tomcat    129 Jan  7 15:28 architecture
+drwxr-xr-x 3 tomcat tomcat    192 Jan  7 15:28 appdev
+drwxr-xr-x 2 tomcat tomcat     24 Jan  7 15:28 api
+-rwxr-xr-x 1 tomcat tomcat  23100 Jan  7 15:28 windows-service-howto.html
+-rwxr-xr-x 1 tomcat tomcat  22513 Jan  7 15:28 windows-auth-howto.html
+-rwxr-xr-x 1 tomcat tomcat  12606 Jan  7 15:28 web-socket-howto.html
+drwxr-xr-x 2 tomcat tomcat     24 Jan  7 15:28 websocketapi
+-rwxr-xr-x 1 tomcat tomcat  12269 Jan  7 15:28 virtual-hosting-howto.html
+drwxr-xr-x 2 tomcat tomcat    177 Jan  7 15:28 tribes
+-rwxr-xr-x 1 tomcat tomcat  41153 Jan  7 15:28 ssl-howto.html
+-rwxr-xr-x 1 tomcat tomcat  17494 Jan  7 15:28 ssi-howto.html
+-rwxr-xr-x 1 tomcat tomcat  14470 Jan  7 15:28 setup.html
+drwxr-xr-x 2 tomcat tomcat     24 Jan  7 15:28 servletapi
+-rwxr-xr-x 1 tomcat tomcat  30455 Jan  7 15:28 security-manager-howto.html
+-rwxr-xr-x 1 tomcat tomcat  35747 Jan  7 15:28 security-howto.html
+-rwxr-xr-x 1 tomcat tomcat  16262 Jan  7 15:28 RUNNING.txt
+-rwxr-xr-x 1 tomcat tomcat  35235 Jan  7 15:28 rewrite.html
+-rwxr-xr-x 1 tomcat tomcat   7142 Jan  7 15:28 RELEASE-NOTES.txt
+-rwxr-xr-x 1 tomcat tomcat  63220 Jan  7 15:28 realm-howto.html
+-rwxr-xr-x 1 tomcat tomcat  13290 Jan  7 15:28 proxy-howto.html
+-rwxr-xr-x 1 tomcat tomcat  39166 Jan  7 15:28 monitoring.html
+-rwxr-xr-x 1 tomcat tomcat   8517 Jan  7 15:28 mbeans-descriptors-howto.html
+-rwxr-xr-x 1 tomcat tomcat  10204 Jan  7 15:28 mbeans-descriptors.dtd
+-rwxr-xr-x 1 tomcat tomcat   8239 Jan  7 15:28 maven-jars.html
+-rwxr-xr-x 1 tomcat tomcat  75406 Jan  7 15:28 manager-howto.html
+-rwxr-xr-x 1 tomcat tomcat  25739 Jan  7 15:28 logging.html
+drwxr-xr-x 2 tomcat tomcat     24 Jan  7 15:28 jspapi
+-rwxr-xr-x 1 tomcat tomcat  53923 Jan  7 15:28 jndi-resources-howto.html
+-rwxr-xr-x 1 tomcat tomcat  35582 Jan  7 15:28 jndi-datasource-examples-howto.html
+-rwxr-xr-x 1 tomcat tomcat  66848 Jan  7 15:28 jdbc-pool.html
+-rwxr-xr-x 1 tomcat tomcat  23789 Jan  7 15:28 jasper-howto.html
+-rwxr-xr-x 1 tomcat tomcat  17804 Jan  7 15:28 introduction.html
+-rwxr-xr-x 1 tomcat tomcat  17146 Jan  7 15:28 index.html
+drwxr-xr-x 3 tomcat tomcat    279 Jan  7 15:28 images
+-rwxr-xr-x 1 tomcat tomcat  30208 Jan  7 15:28 html-manager-howto.html
+-rwxr-xr-x 1 tomcat tomcat  14322 Jan  7 15:28 html-host-manager-howto.html
+-rwxr-xr-x 1 tomcat tomcat  16502 Jan  7 15:28 host-manager-howto.html
+-rwxr-xr-x 1 tomcat tomcat  10522 Jan  7 15:28 extras.html
+-rwxr-xr-x 1 tomcat tomcat   8717 Jan  7 15:28 developers.html
+-rwxr-xr-x 1 tomcat tomcat  22760 Jan  7 15:28 deployer-howto.html
+-rwxr-xr-x 1 tomcat tomcat  18377 Jan  7 15:28 default-servlet.html
+-rwxr-xr-x 1 tomcat tomcat   8792 Jan  7 15:28 connectors.html
+-rwxr-xr-x 1 tomcat tomcat  10255 Jan  7 15:28 comments.html
+-rwxr-xr-x 1 tomcat tomcat  43706 Jan  7 15:28 cluster-howto.html
+-rwxr-xr-x 1 tomcat tomcat  19928 Jan  7 15:28 class-loader-howto.html
+-rwxr-xr-x 1 tomcat tomcat 329928 Jan  7 15:28 changelog.html
+-rwxr-xr-x 1 tomcat tomcat  12568 Jan  7 15:28 cgi-howto.html
+-rwxr-xr-x 1 tomcat tomcat  19539 Jan  7 15:28 BUILDING.txt
+-rwxr-xr-x 1 tomcat tomcat  15889 Jan  7 15:28 building.html
+-rwxr-xr-x 1 tomcat tomcat   7712 Jan  7 15:28 balancer-howto.html
+-rwxr-xr-x 1 tomcat tomcat  12836 Jan  7 15:28 apr.html
+-rwxr-xr-x 1 tomcat tomcat   9184 Jan  7 15:28 aio.html
+
+/usr/local/tomcat/webapps/manager:
+total 20
+-rwxr-xr-x 1 tomcat tomcat 4615 Jan  7 15:28 xform.xsl
+drwxr-xr-x 3 tomcat tomcat   32 Jan  7 15:28 WEB-INF
+-rwxr-xr-x 1 tomcat tomcat 4374 Jan  7 15:28 status.xsd
+drwxr-xr-x 2 tomcat tomcat   25 Jan  7 15:28 META-INF
+-rwxr-xr-x 1 tomcat tomcat  913 Jan  7 15:28 index.jsp
+drwxr-xr-x 2 tomcat tomcat  158 Jan  7 15:28 images
+
+/usr/local/tomcat/webapps/host-manager:
+total 8
+drwxr-xr-x 3 tomcat tomcat   32 Jan  7 15:28 WEB-INF
+drwxr-xr-x 2 tomcat tomcat   25 Jan  7 15:28 META-INF
+-rwxr-xr-x 1 tomcat tomcat 1021 Jan  7 15:28 manager.xml
+-rwxr-xr-x 1 tomcat tomcat  913 Jan  7 15:28 index.jsp
+drwxr-xr-x 2 tomcat tomcat  158 Jan  7 15:28 images
+
+/usr/local/tomcat/webapps/examples:
+total 4
+drwxr-xr-x  7 tomcat tomcat   82 Jan  7 15:28 WEB-INF
+drwxr-xr-x  2 tomcat tomcat  103 Jan  7 15:28 websocket
+drwxr-xr-x  4 tomcat tomcat  186 Jan  7 15:28 servlets
+drwxr-xr-x 21 tomcat tomcat  331 Jan  7 15:28 jsp
+-rwxr-xr-x  1 tomcat tomcat 1126 Jan  7 15:28 index.html
++ sudo echo '######### Deployment completed #########'
+######### Deployment completed #########
+Sending e-mails to: knowledgeshare99@gmail.com
+Finished: SUCCESS

@@ -1,0 +1,33 @@
+Started by upstream project "[8mha:////4NkktRBe/2fL0v1NcPzE4CBPdf9xWgTN469vWEGHP8/8AAAApB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyhEgYJ/az8JH33xNxU/zSfzLRU3dyyvJDU4hJ9ABPYFUfNAAAA[0mGameOfLife-mvnTest" build number [8mha:////4L3rp39Paqadz2lbu9ntjfTfzB2t00N+TRit8W/NcJq7AAAApB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBkn9rPwkfffE3FT/NJ/MtFTd3LK8kNTiEn1jAGOa9i3OAAAA[0m3
+originally caused by:
+ Started by upstream project "[8mha:////4D+qIXF/Nh8bVu1YWXZ9WMJZW3ANj1R7AM+spNGh3aKZAAAApx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzREgZp/az8JH33xNxU/zSfzLRU3dyyPOf83ILMnFR9ANnHz73QAAAA[0mGameOfLife-mvnCompile" build number [8mha:////4KckY7NVutVTGCDOCpu46ZsGH6vD5GiDaoEI2au4mMtPAAAApx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBhn9rPwkfffE3FT/NJ/MtFTd3LI85/zcgsycVH1TAGfztuXRAAAA[0m5
+ originally caused by:
+  Started by user [8mha:////4Fk1k7e+48rHXUzmlNpYSU0RU1syiePVtwyB//KweiJrAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4DJf+k8qCy1S4a5ZKYq9zLhtCWqWT9vTkErxEwG2to2cAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAwOoBn6yfm5BaUlqUX6uZXFOYllqYYANV7kNscAAAA=[0mmyslave1 (myslavenode) in workspace /home/jenkins/workspace/GameOfLife-mvnPackageManualTomcat
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+Cloning the remote Git repository
+Cloning repository https://github.com/KS-Organization/game-of-life.git
+ > git init /home/jenkins/workspace/GameOfLife-mvnPackageManualTomcat # timeout=10
+Fetching upstream changes from https://github.com/KS-Organization/game-of-life.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/KS-Organization/game-of-life.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/KS-Organization/game-of-life.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/KS-Organization/game-of-life.git # timeout=10
+Fetching upstream changes from https://github.com/KS-Organization/game-of-life.git
+ > git fetch --tags --progress https://github.com/KS-Organization/game-of-life.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision c24bb1ae41bfd5980ce9f0aa8b9a636b920c71fd (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f c24bb1ae41bfd5980ce9f0aa8b9a636b920c71fd
+Commit message: "Merge pull request #198 from GeraldScott/master"
+ > git rev-list --no-walk c24bb1ae41bfd5980ce9f0aa8b9a636b920c71fd # timeout=10
+[GameOfLife-mvnPackageManualTomcat] $ /bin/sh -xe /tmp/jenkins4351418028605756989.sh
++ mvn package
+/tmp/jenkins4351418028605756989.sh: line 2: mvn: command not found
+Build step 'Execute shell' marked build as failure
+Sending e-mails to: knowledgeshare99@gmail.com
+Finished: FAILURE

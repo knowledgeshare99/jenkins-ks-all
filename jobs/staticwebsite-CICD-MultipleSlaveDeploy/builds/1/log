@@ -1,0 +1,34 @@
+Started by an SCM change
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4OgAaaA4y/AHXGRMOATfxjlPO8lZbIuL+QrTX0xKwF5+AAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZB/eT83ILSktQi/dzK4pzEslQA8eHtTsYAAAA=[0mmyslave (myslavenode) in workspace /home/jenkins/workspace/staticwebsite-CICD-MultipleSlaveDeploy
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+Cloning the remote Git repository
+Cloning repository https://github.com/KS-Organization/staticwebsite.git
+ > git init /home/jenkins/workspace/staticwebsite-CICD-MultipleSlaveDeploy # timeout=10
+Fetching upstream changes from https://github.com/KS-Organization/staticwebsite.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/KS-Organization/staticwebsite.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/KS-Organization/staticwebsite.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/KS-Organization/staticwebsite.git # timeout=10
+Fetching upstream changes from https://github.com/KS-Organization/staticwebsite.git
+ > git fetch --tags --progress https://github.com/KS-Organization/staticwebsite.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 99cee3a4150c21ef481c9d814ab0c345c91dab3d (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 99cee3a4150c21ef481c9d814ab0c345c91dab3d
+Commit message: "testing my Pull request KS-99 (#16)"
+First time build. Skipping changelog.
+[staticwebsite-CICD-MultipleSlaveDeploy] $ /bin/bash /tmp/jenkins1582845580232740734.sh
+cp: cannot stat ‘/home/jenkins/workspace/statiwebsite_remote’: No such file or directory
+chown: cannot access ‘/tmp/statiwebsite_remote’: No such file or directory
+ssh: Could not resolve hostname ip-10-0-2-194.ec2.internal: Name or service not known
+lost connection
+ssh: Could not resolve hostname ip-10-0-2-194.ec2.internal: Name or service not known
+Build step 'Execute shell' marked build as failure
+Sending e-mails to: knowledgeshare99@gmail.com
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Skipped based on build state FAILURE
+Finished: FAILURE

@@ -1,0 +1,81 @@
+Started by user [8mha:////4Fk1k7e+48rHXUzmlNpYSU0RU1syiePVtwyB//KweiJrAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+[EnvInject] - Loading node environment variables.
+Building on master in workspace /var/lib/jenkins/workspace/Github_GradleMaven_CamelProject
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+Cloning the remote Git repository
+Cloning repository https://github.com/knowledgeshare99/simple-restful-file-storage.git
+ > git init /var/lib/jenkins/workspace/Github_GradleMaven_CamelProject # timeout=10
+Fetching upstream changes from https://github.com/knowledgeshare99/simple-restful-file-storage.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/knowledgeshare99/simple-restful-file-storage.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/knowledgeshare99/simple-restful-file-storage.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/knowledgeshare99/simple-restful-file-storage.git # timeout=10
+Fetching upstream changes from https://github.com/knowledgeshare99/simple-restful-file-storage.git
+ > git fetch --tags --progress https://github.com/knowledgeshare99/simple-restful-file-storage.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 9f6a268a1301f297ff964e657088b615f3be45d8 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 9f6a268a1301f297ff964e657088b615f3be45d8
+Commit message: "adding test JUnit test results on pom.xml"
+ > git rev-list --no-walk 9f6a268a1301f297ff964e657088b615f3be45d8 # timeout=10
+[Github_GradleMaven_CamelProject] $ /var/lib/jenkins/tools/hudson.tasks.Maven_MavenInstallation/LocalMaven/bin/mvn clean compile
+[INFO] Scanning for projects...
+[8mha:////4B9hiNTi7UKoGwe6I08zfcchzFvqwNxs8N4lFpG4HptVAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] 
+[8mha:////4B9hiNTi7UKoGwe6I08zfcchzFvqwNxs8N4lFpG4HptVAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Some problems were encountered while building the effective model for com.mycompany:camel-spring4:jar:0.0.1-SNAPSHOT
+[8mha:////4B9hiNTi7UKoGwe6I08zfcchzFvqwNxs8N4lFpG4HptVAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-compiler-plugin @ line 334, column 15
+[8mha:////4B9hiNTi7UKoGwe6I08zfcchzFvqwNxs8N4lFpG4HptVAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] 
+[8mha:////4B9hiNTi7UKoGwe6I08zfcchzFvqwNxs8N4lFpG4HptVAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[8mha:////4B9hiNTi7UKoGwe6I08zfcchzFvqwNxs8N4lFpG4HptVAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] 
+[8mha:////4B9hiNTi7UKoGwe6I08zfcchzFvqwNxs8N4lFpG4HptVAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[8mha:////4B9hiNTi7UKoGwe6I08zfcchzFvqwNxs8N4lFpG4HptVAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] 
+[INFO] 
+[INFO] --------------------< com.mycompany:camel-spring4 >---------------------
+[INFO] Building Velocity Temple 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ camel-spring4 ---
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ camel-spring4 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 11 resources
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- jacoco-maven-plugin:0.7.2.201409121644:prepare-agent (jacoco-initialize) @ camel-spring4 ---
+[INFO] argLine set to -javaagent:/var/lib/jenkins/.m2/repository/org/jacoco/org.jacoco.agent/0.7.2.201409121644/org.jacoco.agent-0.7.2.201409121644-runtime.jar=destfile=/var/lib/jenkins/workspace/Github_GradleMaven_CamelProject/target/jacoco.exec
+[INFO] 
+[8mha:////4NK5HW032uYpPQBABfv+KGcywHRcygNvzSr49p5IQPOWAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ camel-spring4 ---
+[INFO] Compiling 6 source files to /var/lib/jenkins/workspace/Github_GradleMaven_CamelProject/target/classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  6.899 s
+[INFO] Finished at: 2019-01-08T14:23:01Z
+[INFO] ------------------------------------------------------------------------
+[Gradle] - Launching build.
+Unpacking https://services.gradle.org/distributions/gradle-5.1-bin.zip to /var/lib/jenkins/tools/hudson.plugins.gradle.GradleInstallation/GradleMaster on Jenkins
+[Github_GradleMaven_CamelProject] $ /var/lib/jenkins/tools/hudson.plugins.gradle.GradleInstallation/GradleMaster/bin/gradle jar
+
+Welcome to Gradle 5.1!
+
+Here are the highlights of this release:
+ - Control which dependencies can be retrieved from which repositories
+ - Production-ready configuration avoidance APIs
+
+For more details see https://docs.gradle.org/5.1/release-notes.html
+
+Starting a Gradle Daemon (subsequent builds will be faster)
+
+> Configure project :
+POM relocation to an other version number is not fully supported in Gradle : xml-apis:xml-apis:2.0.2 relocated to xml-apis:xml-apis:1.0.b2.
+Please update your dependency to directly use the correct version 'xml-apis:xml-apis:1.0.b2'.
+Resolution will only pick dependencies of the relocated element.  Artifacts and other metadata will be ignored.
+
+[8mha:////4L46sHkFxihEnzD+6vp95txpLT/62YceNQsL2Lwe1Bn/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m> Task :compileJava
+warning: [options] bootstrap class path not set in conjunction with -source 1.6
+Note: /var/lib/jenkins/workspace/Github_GradleMaven_CamelProject/src/main/java/de/oveits/simplerestfulfilestorage/MyExceptionHandler.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /var/lib/jenkins/workspace/Github_GradleMaven_CamelProject/src/main/java/de/oveits/simplerestfulfilestorage/MyExceptionHandler.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning
