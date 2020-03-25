@@ -1,0 +1,32 @@
+Started by GitHub push by knowledgeshare99
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/apache-install-staticdeploy
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] Done
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/ksgroup-org/jenkins-githut-auto-staticwebsite.git
+ > git init /var/lib/jenkins/workspace/apache-install-staticdeploy # timeout=10
+Fetching upstream changes from https://github.com/ksgroup-org/jenkins-githut-auto-staticwebsite.git
+ > git --version # timeout=10
+ > git fetch --tags --force --progress -- https://github.com/ksgroup-org/jenkins-githut-auto-staticwebsite.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/ksgroup-org/jenkins-githut-auto-staticwebsite.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/ksgroup-org/jenkins-githut-auto-staticwebsite.git # timeout=10
+Fetching upstream changes from https://github.com/ksgroup-org/jenkins-githut-auto-staticwebsite.git
+ > git fetch --tags --force --progress -- https://github.com/ksgroup-org/jenkins-githut-auto-staticwebsite.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 913e52f460c4264b59990ebc7b3f1253b60d67cb (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 913e52f460c4264b59990ebc7b3f1253b60d67cb # timeout=10
+Commit message: "Merge pull request #8 from ksgroup-org/dev"
+ > git rev-list --no-walk 5acd9894b347145c27dcde057d99b7cec0d3b0fe # timeout=10
+[apache-install-staticdeploy] $ /bin/sh -xe /tmp/jenkins3944008622279246085.sh
++ echo '######### stop httpd service ##############'
+######### stop httpd service ##############
++ sudo service stop
+The service command supports only basic LSB actions (start, stop, restart, try-restart, reload, force-reload, status). For other actions, please try to use systemctl.
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

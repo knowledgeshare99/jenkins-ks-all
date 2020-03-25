@@ -1,0 +1,9 @@
+commit 9abf78b8f93449cb10b6b11da58e4da6c2f87019
+tree 2778588ad01a9467d51e0947ed49bc3901173a18
+parent f682f9bb771ff5e1d50e92cdef6dab15978b1b59
+author knowledgeshare99 <knowledgeshare99@gmail.com> 2020-03-21 18:46:37 +0530
+committer GitHub <noreply@github.com> 2020-03-21 18:46:37 +0530
+
+    adding rigth
+
+:100644 100644 85b3e4ff616c0cb205e019b798eb7268527518e2 5df9dfc887d8aa163694d8160015c69babf8131e M	copyartifact.yml

@@ -1,0 +1,29 @@
+Started by user [8mha:////4MQJZdb9I5lNO70uCvhLqfOxAhh+dtd14bnc2zQ1tHvAAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4MLPRpVOyVNsUHgA9d0DaLrZIyNgk0SoTmEmXmcFp40SAAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgYR/eT83ILSktQi/eKcxLLUPKBjDQGWHaLlyQAAAA==[0mslavenode1 (linux-group) in workspace /home/jenkins/slave-repo/workspace/simple-job
+[ssh-agent] Looking for ssh-agent implementation...
+[ssh-agent]   Exec ssh-agent (binary ssh-agent on a remote machine)
+$ ssh-agent
+SSH_AUTH_SOCK=/tmp/ssh-mH4KcSZKpVgs/agent.5947
+SSH_AGENT_PID=5950
+[ssh-agent] Started.
+Running ssh-add (command line suppressed)
+Identity added: /home/jenkins/slave-repo/workspace/simple-job@tmp/private_key_5491320524414821927.key (/home/jenkins/slave-repo/workspace/simple-job@tmp/private_key_5491320524414821927.key)
+[ssh-agent] Using credentials jenkins (this is my slavenode1 user jenkins)
+[simple-job] $ /bin/sh -xe /tmp/jenkins3344049080201578779.sh
++ echo 'hello I am jenkins simple job execution'
+hello I am jenkins simple job execution
++ sudo ls -lrt /var/lib/jenkins/
+ls: cannot access /var/lib/jenkins/: No such file or directory
+Build step 'Execute shell' marked build as failure
+$ ssh-agent -k
+unset SSH_AUTH_SOCK;
+unset SSH_AGENT_PID;
+echo Agent pid 5950 killed;
+[ssh-agent] Stopped.
+Started calculate disk usage of build
+Finished Calculation of disk usage of build in 0 seconds
+Started calculate disk usage of workspace
+Finished Calculation of disk usage of workspace in 0 seconds
+Finished: FAILURE

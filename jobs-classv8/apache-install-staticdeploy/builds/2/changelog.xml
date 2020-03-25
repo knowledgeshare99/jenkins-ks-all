@@ -1,0 +1,10 @@
+commit 8311d4a961cb4ff8c5c787b2a1f2420456e90e92
+tree 0a30014c21fb784b9fb5c2e3dcc16a0ee3a7231f
+parent 5acd9894b347145c27dcde057d99b7cec0d3b0fe
+author root <root@ip-172-31-18-75.us-west-2.compute.internal> 2020-03-17 01:49:37 +0000
+committer root <root@ip-172-31-18-75.us-west-2.compute.internal> 2020-03-17 01:49:37 +0000
+
+    modified owner of the name in index.html
+
+
+:100755 100755 8f53fdcc44e27c63d0222f381267d6b2d843c397 b7821ee0065d05c35b840f6605ba8c2918415ef0 M	index.html

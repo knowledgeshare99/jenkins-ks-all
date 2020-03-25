@@ -1,0 +1,121 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?><project>
+  <actions/>
+  <description>this is my build deploy job into appservers&#13;
+&lt;br&gt; this is my own project &lt;\br&gt;</description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.plugins.jira.JiraProjectProperty plugin="jira@3.0.13"/>
+    <jenkins.model.BuildDiscarderProperty>
+      <strategy class="hudson.tasks.LogRotator">
+        <daysToKeep>90</daysToKeep>
+        <numToKeep>30</numToKeep>
+        <artifactDaysToKeep>-1</artifactDaysToKeep>
+        <artifactNumToKeep>-1</artifactNumToKeep>
+      </strategy>
+    </jenkins.model.BuildDiscarderProperty>
+    <hudson.plugins.disk__usage.DiskUsageProperty plugin="disk-usage@0.28"/>
+    <com.sonyericsson.rebuild.RebuildSettings plugin="rebuild@1.31">
+      <autoRebuild>false</autoRebuild>
+      <rebuildDisabled>false</rebuildDisabled>
+    </com.sonyericsson.rebuild.RebuildSettings>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.StringParameterDefinition>
+          <name>WORKSPACE</name>
+          <description>this is my job 3_package workspace</description>
+          <defaultValue>/home/jenkins/slave-repo/workspace/3_Mvn_GameOfLife_package/gameoflife-web/target</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+    
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <assignedNode>linux-group</assignedNode>
+  <canRoam>false</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <jdk>JAVA_1.8_202</jdk>
+  <triggers>
+    <jenkins.triggers.ReverseBuildTrigger>
+      <spec/>
+      <upstreamProjects>3_Mvn_GameOfLife_package</upstreamProjects>
+      <threshold>
+        <name>SUCCESS</name>
+        <ordinal>0</ordinal>
+        <color>BLUE</color>
+        <completeBuild>true</completeBuild>
+      </threshold>
+    </jenkins.triggers.ReverseBuildTrigger>
+  </triggers>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>#mvn package
+
+#Maven should not install manual on any slave nodes.it installs by default through "Global tool configuratoin Maven Auot install Option"
+#sudo yum install tomcat
+#sudo service tomcat start
+
+echo " ######## Checking Java version #########"
+sudo java -version
+sudo cd /tmp
+pwd
+sudo cd /home/jenkins/slave-repo/workspace/4_Mvn_GameOfLife_Deploy/
+echo "############ DOWNLOAD TOMCAT 8.5######### "
+sudo wget https://downloads.apache.org/tomcat/tomcat-8/v8.5.51/bin/apache-tomcat-8.5.51.tar.gz
+echo "########## Extracting using tar command ###########"
+sudo tar -zxvf apache-tomcat-8.5.51.tar.gz
+echo "##########Creating a tomcat folder structure##########"
+#sudo mkdir /usr/local/tomcat/
+echo "######### Creating a tomcat user home dir##########"
+#sudo useradd -d /home/tomcat -m tomcat 
+#sudo cd /tmp/
+#sudo cd /tmp/apache-tomcat-8.5.51/
+sudo pwd
+echo "######## copying all the conter of tomcat version to new tomcat path ########"
+sudo cp -r //home/jenkins/slave-repo/workspace/4_Mvn_GameOfLife_Deploy/apache-tomcat-8.5.51/* /usr/local/tomcat/
+echo "########## changing the ownershipt and file permissions modes############"
+
+sudo chown -R tomcat:tomcat /usr/local/tomcat/
+sudo chmod -R 755 /usr/local/tomcat/
+sudo ls -lrt /usr/local/tomcat/
+echo "######## stop the tomcat server ##########"
+sudo sh /usr/local/tomcat/bin/shutdown.sh
+
+cd ${WORKSPACE}
+echo "############### package downloading and copying into tomcat webapps########3"
+sudo cp -r ${WORKSPACE}/*.war /usr/local/tomcat/webapps/
+
+#sudo cp -r /home/jenkins/workspace/GameOfLife-mvnPackageManualTomcat/gameoflife-web/target/*.war /usr/local/tomcat/webapps/
+
+echo "############ changing the owner and group permissions for tomcat home dir########"
+sudo chown -R tomcat:tomcat /usr/local/tomcat
+
+echo "########## start the tomcat server ##############"
+sudo sh /usr/local/tomcat/bin/startup.sh
+
+echo "####### Tomcat Status ############"
+sudo ps -ef|grep tomcat
+sudo echo "########## Tomcat WebApp directory listing of deployed app.war"
+sudo ls -lrt /usr/local/tomcat/webapps/*
+sudo echo "######### Deployment completed #########"</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers>
+    <hudson.tasks.Mailer plugin="mailer@1.30">
+      <recipients>knowledgeshare99@gmail.com</recipients>
+      <dontNotifyEveryUnstableBuild>false</dontNotifyEveryUnstableBuild>
+      <sendToIndividuals>false</sendToIndividuals>
+    </hudson.tasks.Mailer>
+  </publishers>
+  <buildWrappers>
+    <hudson.plugins.ws__cleanup.PreBuildCleanup plugin="ws-cleanup@0.38">
+      <deleteDirs>false</deleteDirs>
+      <cleanupParameter/>
+      <externalDelete/>
+      <disableDeferredWipeout>false</disableDeferredWipeout>
+    </hudson.plugins.ws__cleanup.PreBuildCleanup>
+  </buildWrappers>
+</project>

@@ -1,0 +1,36 @@
+Started by user [8mha:////4MQJZdb9I5lNO70uCvhLqfOxAhh+dtd14bnc2zQ1tHvAAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4BkuLOX8okEx8L/Zsjc7D9gkTXR03v8BkHkJtLuRSGneAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYB/eT83ILSktQi/eKcxLJUQwA49mDyxQAAAA==[0mslave1 (linux-group) in workspace /home/jenkins/slave-repo/workspace/ansible-playbook-job
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/knowledgeshare99/ansible-ks-all.git # timeout=10
+Fetching upstream changes from https://github.com/knowledgeshare99/ansible-ks-all.git
+ > git --version # timeout=10
+ > git fetch --tags --force --progress -- https://github.com/knowledgeshare99/ansible-ks-all.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision b958ca23c54b66e8c6640ea627cf344b1ab23b81 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f b958ca23c54b66e8c6640ea627cf344b1ab23b81 # timeout=10
+Commit message: "Update copyartifact.yml"
+ > git rev-list --no-walk 4a9b62c89cf655d462c1a77533d35d19f2f6c452 # timeout=10
+[ansible-playbook-job] $ ansible-playbook ping.yml -i 172.31.5.160 -l slavegroup -f 5 --private-key /tmp/ssh2692503875543578438.key -u jenkins
+[WARNING]: Unable to parse /home/jenkins/slave-repo/workspace/ansible-playbook-
+job/172.31.5.160 as an inventory source
+[WARNING]: No inventory was parsed, only implicit localhost is available
+[WARNING]: provided hosts list is empty, only localhost is available. Note that
+the implicit localhost does not match 'all'
+[WARNING]: Could not match supplied host pattern, ignoring: slavegroup
+
+PLAY [all] *********************************************************************
+skipping: no hosts matched
+
+PLAY RECAP *********************************************************************
+
+Started calculate disk usage of build
+Finished Calculation of disk usage of build in 0 seconds
+Started calculate disk usage of workspace
+Finished Calculation of disk usage of workspace in 0 seconds
+Finished: SUCCESS

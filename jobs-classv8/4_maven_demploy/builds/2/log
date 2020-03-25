@@ -1,0 +1,18 @@
+Started by upstream project "[8mha:////4KPHnDqlTY56BXMnG7UgkiXDmqYmkKYNtwbVPUWaBwKKAAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz+EgZR/az8JH3j+NzEstS8+ILE5OzE9FR9AP8sfC7KAAAA[0m3_maven_package" build number [8mha:////4FNB93hky5WtKineRssnYSMWreEl8IvDxU4l7DHQDo9kAAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBjH9rPwkfeP43MSy1Lz4gsTk7MT0VH0jAJzk6yvLAAAA[0m2
+originally caused by:
+ Started by upstream project "[8mha:////4Dp8rlHrntYDnTqnsM4qNPTV5Mao0RoK9V2rRofmiZb9AAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAweoBn6WflJ+kbxuYllqXnxJanFJfoArNoPXscAAAA=[0m2_maven_test" build number [8mha:////4H3LIQ58xYH26mDgHtJ0DwMMXKMN0Rcck07qor88Hu5IAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBmH9rPwkfaP43MSy1Lz4ktTiEn0jADNtGjvIAAAA[0m2
+ originally caused by:
+  Started by upstream project "[8mha:////4HkPU6BJvOV7dLXjNdrrHuxSzqI0KN8SDj33cmm2jb+OAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/az8JH3DeKfSzJwUfQDb6oBywgAAAA==[0m1_Build" build number [8mha:////4LYpGZ9z8nsJfXkmsZe71IlKP4/kw+IYLrjdlhOJn2VNAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBj79rPwkfcN4p9LMnBR9IwBH46cUwwAAAA==[0m2
+  originally caused by:
+   Started by user [8mha:////4MQJZdb9I5lNO70uCvhLqfOxAhh+dtd14bnc2zQ1tHvAAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4MLPRpVOyVNsUHgA9d0DaLrZIyNgk0SoTmEmXmcFp40SAAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgYR/eT83ILSktQi/eKcxLLUPKBjDQGWHaLlyQAAAA==[0mslavenode1 (linux-group) in workspace /home/jenkins/slave-repo/workspace/4_maven_demploy
+[4_maven_demploy] $ /bin/sh -xe /tmp/jenkins6234642225402717721.sh
++ echo ' ######### this is my Package deploy into appservers ################ '
+ ######### this is my Package deploy into appservers ################ 
+Started calculate disk usage of build
+Finished Calculation of disk usage of build in 0 seconds
+Started calculate disk usage of workspace
+Finished Calculation of disk usage of workspace in 0 seconds
+Finished: SUCCESS

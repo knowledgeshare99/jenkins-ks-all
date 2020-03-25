@@ -1,0 +1,31 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<result plugin="junit@1.28">
+  <suites>
+    <suite>
+      <file>/var/lib/jenkins/workspace/docker-hello-world-spring-boot/target/surefire-reports/TEST-com.dockerforjavadevelopers.hello.DummyTest.xml</file>
+      <name>com.dockerforjavadevelopers.hello.DummyTest</name>
+      <duration>0.152</duration>
+      <time>0.152</time>
+      <nodeId>24</nodeId>
+      <enclosingBlocks>
+        <string>21</string>
+        <string>18</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>publishJunitTestsResultsToJenkins</string>
+        <string>Publish Tests Results</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.004</duration>
+          <className>com.dockerforjavadevelopers.hello.DummyTest</className>
+          <testName>aTest</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+  </suites>
+  <duration>0.152</duration>
+  <keepLongStdio>false</keepLongStdio>
+</result>

@@ -1,0 +1,9 @@
+commit f682f9bb771ff5e1d50e92cdef6dab15978b1b59
+tree a9729bfe3fdd2ada8ed0de11b17a3ea2c67ef86f
+parent b958ca23c54b66e8c6640ea627cf344b1ab23b81
+author knowledgeshare99 <knowledgeshare99@gmail.com> 2020-03-21 18:22:25 +0530
+committer GitHub <noreply@github.com> 2020-03-21 18:22:25 +0530
+
+    adde new 3nd remote for appservers
+
+:100755 100755 35e6398c6537f84d973d66085caaa73510829949 da994d87787e18d0c16214a41a65a7958801752a M	hosts

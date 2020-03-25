@@ -1,0 +1,11 @@
+Started on Mar 18, 2020, 1:35:11 AM
+Started by event from 192.30.252.96 ⇒ http://jenkins.ksgroup99.info/github-webhook/ on Wed Mar 18 01:35:11 UTC 2020
+Using strategy: Default
+[poll] Last Built Revision: Revision 29b8b8263bb43dc606c9f92d5effeb8c2d083fd8 (refs/remotes/origin/master)
+No credentials specified
+ > git --version # timeout=10
+ > git ls-remote -h -- https://github.com/ksgroup-org/jenkins-githut-auto-staticwebsite.git # timeout=10
+Found 5 remote heads on https://github.com/ksgroup-org/jenkins-githut-auto-staticwebsite.git
+[poll] Latest remote head revision on refs/heads/master is: 9244f000745e821571222dbd9ccee69af9c17382
+Done. Took 0.19 sec
+Changes found

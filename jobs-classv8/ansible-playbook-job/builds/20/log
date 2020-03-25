@@ -1,0 +1,100 @@
+Started by user [8mha:////4MQJZdb9I5lNO70uCvhLqfOxAhh+dtd14bnc2zQ1tHvAAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4BkuLOX8okEx8L/Zsjc7D9gkTXR03v8BkHkJtLuRSGneAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYB/eT83ILSktQi/eKcxLJUQwA49mDyxQAAAA==[0mslave1 (linux-group) in workspace /home/jenkins/slave-repo/workspace/ansible-playbook-job
+using credential 2576fb98-9a6b-4dc4-b51c-f8bc467c52cb
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/knowledgeshare99/ansible-ks-all.git # timeout=10
+Fetching upstream changes from https://github.com/knowledgeshare99/ansible-ks-all.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials this is my API-AuthToken for knowledgeshare99/class github
+ > git fetch --tags --force --progress -- https://github.com/knowledgeshare99/ansible-ks-all.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision f682f9bb771ff5e1d50e92cdef6dab15978b1b59 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f f682f9bb771ff5e1d50e92cdef6dab15978b1b59 # timeout=10
+Commit message: "adde new 3nd remote for appservers"
+ > git rev-list --no-walk f682f9bb771ff5e1d50e92cdef6dab15978b1b59 # timeout=10
+[ansible-playbook-job] $ /bin/sh -xe /tmp/jenkins5271716576112941236.sh
++ echo 'Ansible workspave listing'
+Ansible workspave listing
++ pwd
+/home/jenkins/slave-repo/workspace/ansible-playbook-job
++ ls -lrt
+total 1844
+-rw-rw-r--  1 jenkins jenkins     258 Mar 20 13:27 README.md
+-rw-rw-r--  1 jenkins jenkins    1327 Mar 20 13:27 ec2-remote.yml
+-rw-rw-r--  1 jenkins jenkins    1169 Mar 20 13:27 ec2-luanching.yml
+-rw-rw-r--  1 jenkins jenkins      10 Mar 20 13:27 ec2-luanching.retry
+-rw-rw-r--  1 jenkins jenkins     766 Mar 20 13:27 EC2-LaunchingInstance.yml
+-rw-rw-r--  1 jenkins jenkins      11 Mar 20 13:27 EC2-LaunchingInstance.retry
+-rw-rw-r--  1 jenkins jenkins     770 Mar 20 13:27 ec2-instance.yml
+-rw-rw-r--  1 jenkins jenkins      11 Mar 20 13:27 ec2-instance.retry
+-rw-rw-r--  1 jenkins jenkins     241 Mar 20 13:27 ec2-instance-removed.yml
+-rw-rw-r--  1 jenkins jenkins      10 Mar 20 13:27 ec2-instance-removed.retry
+-rw-rw-r--  1 jenkins jenkins     672 Mar 20 13:27 ec2-createSecurityGroup.yml
+-rw-rw-r--  1 jenkins jenkins     296 Mar 20 13:27 creat-user.yml
+-rw-rw-r--  1 jenkins jenkins     258 Mar 20 13:27 creat-users-loop.yml
+-rw-rw-r--  1 jenkins jenkins      11 Mar 20 13:27 creat-user.retry
+-rw-rw-r--  1 jenkins jenkins     169 Mar 20 13:27 copy-slave.yml
+-rw-rw-r--  1 jenkins jenkins     174 Mar 20 13:27 copy-data-emp.yml
+-rw-rw-r--  1 jenkins jenkins      84 Mar 20 13:27 apache-site-role.yml
+-rw-rw-r--  1 jenkins jenkins      11 Mar 20 13:27 apache-site-role.retry
+-rw-rw-r--  1 jenkins jenkins     284 Mar 20 13:27 apache-httpd.yml
+-rw-rw-r--  1 jenkins jenkins      11 Mar 20 13:27 apache-httpd.retry
+-rw-rw-r--  1 jenkins jenkins     217 Mar 20 13:27 apache-httpd-local-remote.yml
+-rw-rw-r--  1 jenkins jenkins     106 Mar 20 13:27 apache-basic.yml
+-rw-rw-r--  1 jenkins jenkins      11 Mar 20 13:27 apache-basic.retry
+-rwxrwxr-x  1 jenkins jenkins   19155 Mar 20 13:27 ansible.cfg
+-rw-rw-r--  1 jenkins jenkins     559 Mar 20 13:27 remote-root-httpd.yml
+-rw-rw-r--  1 jenkins jenkins      11 Mar 20 13:27 remote-root-httpd.retry
+-rw-rw-r--  1 jenkins jenkins      61 Mar 20 13:27 ping.yml
+-rw-rw-r--  1 jenkins jenkins      57 Mar 20 13:27 master-play.yml
+-rw-rw-r--  1 jenkins jenkins      66 Mar 20 13:27 master-playbook.yml
+-rw-rw-r--  1 jenkins jenkins      11 Mar 20 13:27 master-playbook.retry
+drwxrwxr-x  3 jenkins jenkins      23 Mar 20 13:27 ks-skel-role
+-rw-rw-r--  1 jenkins jenkins     531 Mar 20 13:27 httpd-postgresql.yml
+-rw-rw-r--  1 jenkins jenkins      11 Mar 20 13:27 httpd-postgresql.retry
+-rw-rw-r--  1 jenkins jenkins     534 Mar 20 13:27 httpd-all.yml
+-rw-rw-r--  1 jenkins jenkins      11 Mar 20 13:27 httpd-all.retry
+-rwxrwxr-x  1 jenkins jenkins    1016 Mar 20 13:27 hosts-ORG
+-rw-rw-r--  1 jenkins jenkins     276 Mar 20 13:27 get-url-tomcat.yml
+-rw-rw-r--  1 jenkins jenkins 1661676 Mar 20 13:27 get-pip.py
+drwxrwxr-x 13 jenkins jenkins     184 Mar 20 13:27 roles
+-rw-rw-r--  1 jenkins jenkins      90 Mar 20 13:27 yum-install.yml
+-rw-rw-r--  1 jenkins jenkins      21 Mar 20 13:27 yum-install.retry
+-rw-rw-r--  1 jenkins jenkins    1003 Mar 20 13:27 valut-ec2test.yml
+-rw-rw-r--  1 jenkins jenkins     142 Mar 20 13:27 tomcat-roles.yml
+-rw-rw-r--  1 jenkins jenkins      11 Mar 20 13:27 tomcat-roles.retry
+-rw-rw-r--  1 jenkins jenkins       5 Mar 20 13:27 tomcat-roles.py
+-rw-rw-r--  1 jenkins jenkins    1418 Mar 20 13:27 tomcat-installation-playbook.yml
+-rw-rw-r--  1 jenkins jenkins     324 Mar 20 13:27 tags-ex-httpd-packages.yml
+drwxrwxr-x  2 jenkins jenkins      22 Mar 20 13:27 srv
+-rw-rw-r--  1 jenkins jenkins      23 Mar 20 13:27 slave1.txt
+-rw-rw-r--  1 jenkins jenkins     108 Mar 20 13:27 simple.yml
+-rw-rw-r--  1 jenkins jenkins     792 Mar 20 13:27 setpassword.yml
+-rw-rw-r--  1 jenkins jenkins      31 Mar 20 13:27 script.sh
+-rw-rw-r--  1 jenkins jenkins      89 Mar 20 13:27 sample-httpd.yml
+-rw-rw-r--  1 jenkins jenkins     234 Mar 21 12:47 copyartifact.yml
+-rwxrwxr-x  1 jenkins jenkins      81 Mar 21 12:52 hosts
+[ansible-playbook-job] $ ansible-playbook ping.yml -i hosts -l slavegroup -f 5 --private-key /tmp/ssh4998373301963102119.key -u ansadm
+
+PLAY [all] *********************************************************************
+
+TASK [ping] ********************************************************************
+[WARNING]: Platform linux on host 172.31.58.249 is using the discovered Python
+interpreter at /usr/bin/python, but future installation of another Python
+interpreter could change this. See https://docs.ansible.com/ansible/2.9/referen
+ce_appendices/interpreter_discovery.html for more information.
+ok: [172.31.58.249]
+
+PLAY RECAP *********************************************************************
+172.31.58.249              : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+Started calculate disk usage of build
+Finished Calculation of disk usage of build in 0 seconds
+Started calculate disk usage of workspace
+Finished Calculation of disk usage of workspace in 0 seconds
+Finished: SUCCESS

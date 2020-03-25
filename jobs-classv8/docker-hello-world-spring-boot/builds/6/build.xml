@@ -1,0 +1,199 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.37">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>jenkins</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.16">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@2.80">
+      <env class="tree-map"/>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+    <hudson.plugins.git.util.BuildData plugin="git@4.2.2">
+      <buildsByBranchName>
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@3.2.1">
+              <sha1>ad24ac6b49599efe034482447ef4a4fa46dab242</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>refs/remotes/origin/master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>6</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>https://github.com/dstar55/docker-hello-world-spring-boot.git</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <hudson.plugins.git.GitTagAction plugin="git@4.2.2">
+      <tags class="hudson.util.CopyOnWriteMap$Tree">
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <list/>
+        </entry>
+      </tags>
+      <ws>/var/lib/jenkins/workspace/docker-hello-world-spring-boot</ws>
+    </hudson.plugins.git.GitTagAction>
+    <org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState plugin="workflow-scm-step@2.10">
+      <revisionStates>
+        <entry>
+          <string>git https://github.com/dstar55/docker-hello-world-spring-boot.git</string>
+          <hudson.scm.SCMRevisionState_-None/>
+        </entry>
+      </revisionStates>
+    </org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState>
+    <com.cloudbees.jenkins.plugins.bitbucket.FirstCheckoutCompletedInvisibleAction plugin="cloudbees-bitbucket-branch-source@2.7.0"/>
+    <hudson.tasks.junit.TestResultAction plugin="junit@1.28">
+      <descriptions class="concurrent-hash-map"/>
+      <failCount>0</failCount>
+      <skipCount>0</skipCount>
+      <totalCount>1</totalCount>
+      <healthScaleFactor>1.0</healthScaleFactor>
+      <testData/>
+    </hudson.tasks.junit.TestResultAction>
+    <com.sonyericsson.rebuild.RebuildAction plugin="rebuild@1.31"/>
+  </actions>
+  <queueId>2111</queueId>
+  <timestamp>1585145427362</timestamp>
+  <startTime>1585145427366</startTime>
+  <result>FAILURE</result>
+  <duration>52157</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script>node {
+    // reference to maven
+    // ** NOTE: This &apos;maven-3.6.1&apos; Maven tool must be configured in the Jenkins Global Configuration.   
+    def mvnHome = tool &apos;maven-3.6.1&apos;
+
+    // holds reference to docker image
+    def dockerImage
+    // ip address of the docker private repository(nexus)
+    
+    def dockerRepoUrl = &quot;localhost:8083&quot;
+    def dockerImageName = &quot;hello-world-java&quot;
+    def dockerImageTag = &quot;${dockerRepoUrl}/${dockerImageName}:${env.BUILD_NUMBER}&quot;
+    
+    stage(&apos;Clone Repo&apos;) { // for display purposes
+      // Get some code from a GitHub repository
+      git &apos;https://github.com/dstar55/docker-hello-world-spring-boot.git&apos;
+      // Get the Maven tool.
+      // ** NOTE: This &apos;maven-3.6.1&apos; Maven tool must be configured
+      // **       in the global configuration.           
+      mvnHome = tool &apos;maven-3.6.1&apos;
+    }    
+  
+    stage(&apos;Build Project&apos;) {
+      // build project via maven
+      sh &quot;&apos;${mvnHome}/bin/mvn&apos; -Dmaven.test.failure.ignore clean package&quot;
+    }
+	
+	stage(&apos;Publish Tests Results&apos;){
+      parallel(
+        publishJunitTestsResultsToJenkins: {
+          echo &quot;Publish junit Tests Results&quot;
+		  junit &apos;**/target/surefire-reports/TEST-*.xml&apos;
+		  archive &apos;target/*.jar&apos;
+        },
+        publishJunitTestsResultsToSonar: {
+          echo &quot;This is branch b&quot;
+      })
+    }
+		
+    stage(&apos;Build Docker Image&apos;) {
+      // build docker image
+      sh &quot;whoami&quot;
+      sh &quot;ls -all /var/run/docker.sock&quot;
+      sh &quot;mv ./target/hello*.jar ./data&quot; 
+      
+      dockerImage = docker.build(&quot;hello-world-java&quot;)
+    }
+   
+    stage(&apos;Deploy Docker Image&apos;){
+      
+      // deploy docker image to nexus
+
+      echo &quot;Docker Image Tag Name: ${dockerImageTag}&quot;
+
+      sh &quot;docker login -u admin -p admin123 ${dockerRepoUrl}&quot;
+      sh &quot;docker tag ${dockerImageName} ${dockerImageTag}&quot;
+      sh &quot;docker push ${dockerImageTag}&quot;
+    }
+}
+</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>229501452</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>369792298</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>1092739077</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>86790775</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>228113105</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>49</iota>
+    <head>1:49</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList">
+    <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+      <scm class="hudson.plugins.git.GitSCM" plugin="git@4.2.2">
+        <configVersion>2</configVersion>
+        <userRemoteConfigs>
+          <hudson.plugins.git.UserRemoteConfig>
+            <url>https://github.com/dstar55/docker-hello-world-spring-boot.git</url>
+          </hudson.plugins.git.UserRemoteConfig>
+        </userRemoteConfigs>
+        <branches class="singleton-list">
+          <hudson.plugins.git.BranchSpec>
+            <name>*/master</name>
+          </hudson.plugins.git.BranchSpec>
+        </branches>
+        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+        <submoduleCfg class="empty-list"/>
+        <extensions>
+          <hudson.plugins.git.extensions.impl.LocalBranch>
+            <localBranch>master</localBranch>
+          </hudson.plugins.git.extensions.impl.LocalBranch>
+        </extensions>
+      </scm>
+      <node></node>
+      <workspace>/var/lib/jenkins/workspace/docker-hello-world-spring-boot</workspace>
+      <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
+    </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+  </checkouts>
+</flow-build>

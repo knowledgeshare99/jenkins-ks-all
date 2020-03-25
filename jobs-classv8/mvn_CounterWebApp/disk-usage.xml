@@ -1,0 +1,36 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<hudson.plugins.disk__usage.ProjectDiskUsage plugin="disk-usage@0.28">
+  <diskUsageWithoutBuilds>0</diskUsageWithoutBuilds>
+  <slaveWorkspacesUsage class="concurrent-hash-map">
+    <entry>
+      <string>slavenode1</string>
+      <concurrent-hash-map>
+        <entry>
+          <string>/home/jenkins/slave-repo/workspace/mvn_CounterWebApp</string>
+          <long>11872151</long>
+        </entry>
+      </concurrent-hash-map>
+    </entry>
+  </slaveWorkspacesUsage>
+  <buildDiskUsage class="java.util.concurrent.CopyOnWriteArraySet">
+    <hudson.plugins.disk__usage.DiskUsageBuildInformation>
+      <id>1</id>
+      <timestamp>1584585640080</timestamp>
+      <number>1</number>
+      <size>3978</size>
+    </hudson.plugins.disk__usage.DiskUsageBuildInformation>
+    <hudson.plugins.disk__usage.DiskUsageBuildInformation>
+      <id>2</id>
+      <timestamp>1584585686500</timestamp>
+      <number>2</number>
+      <size>3978</size>
+    </hudson.plugins.disk__usage.DiskUsageBuildInformation>
+    <hudson.plugins.disk__usage.DiskUsageBuildInformation>
+      <id>3</id>
+      <timestamp>1584585974102</timestamp>
+      <number>3</number>
+      <size>174924</size>
+    </hudson.plugins.disk__usage.DiskUsageBuildInformation>
+  </buildDiskUsage>
+  <allBuildsLoaded>false</allBuildsLoaded>
+</hudson.plugins.disk__usage.ProjectDiskUsage>

@@ -1,0 +1,27 @@
+commit b958ca23c54b66e8c6640ea627cf344b1ab23b81
+tree 0b828d82fc40bf5230349920a6acd06be99df53c
+parent 6dc905a1286090b7fa2eb8e9ba20099d68d25991
+author knowledgeshare99 <knowledgeshare99@gmail.com> 2020-03-21 18:14:30 +0530
+committer GitHub <noreply@github.com> 2020-03-21 18:14:30 +0530
+
+    Update copyartifact.yml
+
+:100644 100644 5df9dfc887d8aa163694d8160015c69babf8131e 85b3e4ff616c0cb205e019b798eb7268527518e2 M	copyartifact.yml
+commit 6dc905a1286090b7fa2eb8e9ba20099d68d25991
+tree 6475191d201da6b4aa81b2fbd513708dd6609ed4
+parent 7442f5d31fe074f8daad0e41dfebe7e028cb7769
+author knowledgeshare99 <knowledgeshare99@gmail.com> 2020-03-21 18:07:52 +0530
+committer GitHub <noreply@github.com> 2020-03-21 18:07:52 +0530
+
+    cpopry artifact
+
+:100644 100644 4e0cf41d471a5ca76e3eebe3a3d7de0ad86589fc 5df9dfc887d8aa163694d8160015c69babf8131e M	copyartifact.yml
+commit 7442f5d31fe074f8daad0e41dfebe7e028cb7769
+tree 11c55106d250eb469c0b845103e68fbf1696b00c
+parent 4a9b62c89cf655d462c1a77533d35d19f2f6c452
+author knowledgeshare99 <knowledgeshare99@gmail.com> 2020-03-21 18:05:40 +0530
+committer GitHub <noreply@github.com> 2020-03-21 18:05:40 +0530
+
+    creating artifact file for s3 to all appsevers
+
+:000000 100644 0000000000000000000000000000000000000000 4e0cf41d471a5ca76e3eebe3a3d7de0ad86589fc A	copyartifact.yml

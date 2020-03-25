@@ -1,0 +1,10 @@
+Started by user [8mha:////4MQJZdb9I5lNO70uCvhLqfOxAhh+dtd14bnc2zQ1tHvAAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/simple-job
+[simple-job] $ /bin/sh -xe /tmp/jenkins14678459377691521906.sh
++ echo 'hello I am jenkins simple job execution'
+hello I am jenkins simple job execution
++ sudo cat /var/lib/jenkins/
+cat: /var/lib/jenkins/: Is a directory
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

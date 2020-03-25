@@ -1,0 +1,131 @@
+Started by user [8mha:////4MQJZdb9I5lNO70uCvhLqfOxAhh+dtd14bnc2zQ1tHvAAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+Running as SYSTEM
+Building remotely on [8mha:////4MLPRpVOyVNsUHgA9d0DaLrZIyNgk0SoTmEmXmcFp40SAAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgYR/eT83ILSktQi/eKcxLLUPKBjDQGWHaLlyQAAAA==[0mslavenode1 (linux-group) in workspace /home/jenkins/slave-repo/workspace/apache-install-staticdeploy-remote
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/ksgroup-org/jenkins-githut-auto-staticwebsite.git
+ > git init /home/jenkins/slave-repo/workspace/apache-install-staticdeploy-remote # timeout=10
+Fetching upstream changes from https://github.com/ksgroup-org/jenkins-githut-auto-staticwebsite.git
+ > git --version # timeout=10
+ > git fetch --tags --force --progress -- https://github.com/ksgroup-org/jenkins-githut-auto-staticwebsite.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/ksgroup-org/jenkins-githut-auto-staticwebsite.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/ksgroup-org/jenkins-githut-auto-staticwebsite.git # timeout=10
+Fetching upstream changes from https://github.com/ksgroup-org/jenkins-githut-auto-staticwebsite.git
+ > git fetch --tags --force --progress -- https://github.com/ksgroup-org/jenkins-githut-auto-staticwebsite.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 34ce2ae34a1487f0bf5cd2dc79262030fc4872de (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 34ce2ae34a1487f0bf5cd2dc79262030fc4872de # timeout=10
+Commit message: "Merge pull request #9 from ksgroup-org/dev"
+First time build. Skipping changelog.
+[apache-install-staticdeploy-remote] $ /bin/sh -xe /tmp/jenkins1414052599201500244.sh
++ echo '######### stop httpd service ##############'
+######### stop httpd service ##############
++ sudo service httpd stop
+Redirecting to /bin/systemctl stop httpd.service
++ echo '############# Uninstall httpd ###########'
+############# Uninstall httpd ###########
++ sudo yum remove -y httpd
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Resolving Dependencies
+--> Running transaction check
+---> Package httpd.x86_64 0:2.4.41-1.amzn2.0.1 will be erased
+--> Processing Dependency: httpd-mmn = 20120211x8664 for package: mod_http2-1.15.3-2.amzn2.x86_64
+--> Running transaction check
+---> Package mod_http2.x86_64 0:1.15.3-2.amzn2 will be erased
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package         Arch         Version                   Repository         Size
+================================================================================
+Removing:
+ httpd           x86_64       2.4.41-1.amzn2.0.1        @amzn2-core       4.0 M
+Removing for dependencies:
+ mod_http2       x86_64       1.15.3-2.amzn2            @amzn2-core       378 k
+
+Transaction Summary
+================================================================================
+Remove  1 Package (+1 Dependent package)
+
+Installed size: 4.3 M
+Downloading packages:
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Erasing    : httpd-2.4.41-1.amzn2.0.1.x86_64                              1/2 
+  Erasing    : mod_http2-1.15.3-2.amzn2.x86_64                              2/2 
+  Verifying  : mod_http2-1.15.3-2.amzn2.x86_64                              1/2 
+  Verifying  : httpd-2.4.41-1.amzn2.0.1.x86_64                              2/2 
+
+Removed:
+  httpd.x86_64 0:2.4.41-1.amzn2.0.1                                             
+
+Dependency Removed:
+  mod_http2.x86_64 0:1.15.3-2.amzn2                                             
+
+Complete!
++ echo '############### Install httpd ############# '
+############### Install httpd ############# 
++ sudo yum install -y httpd
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+204 packages excluded due to repository priority protections
+Resolving Dependencies
+--> Running transaction check
+---> Package httpd.x86_64 0:2.4.41-1.amzn2.0.1 will be installed
+--> Processing Dependency: mod_http2 for package: httpd-2.4.41-1.amzn2.0.1.x86_64
+--> Running transaction check
+---> Package mod_http2.x86_64 0:1.15.3-2.amzn2 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package         Arch         Version                    Repository        Size
+================================================================================
+Installing:
+ httpd           x86_64       2.4.41-1.amzn2.0.1         amzn2-core       1.3 M
+Installing for dependencies:
+ mod_http2       x86_64       1.15.3-2.amzn2             amzn2-core       146 k
+
+Transaction Summary
+================================================================================
+Install  1 Package (+1 Dependent package)
+
+Total download size: 1.5 M
+Installed size: 4.3 M
+Downloading packages:
+Delta RPMs disabled because /usr/bin/applydeltarpm not installed.
+--------------------------------------------------------------------------------
+Total                                              9.7 MB/s | 1.5 MB  00:00     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : httpd-2.4.41-1.amzn2.0.1.x86_64                              1/2 
+  Installing : mod_http2-1.15.3-2.amzn2.x86_64                              2/2 
+  Verifying  : mod_http2-1.15.3-2.amzn2.x86_64                              1/2 
+  Verifying  : httpd-2.4.41-1.amzn2.0.1.x86_64                              2/2 
+
+Installed:
+  httpd.x86_64 0:2.4.41-1.amzn2.0.1                                             
+
+Dependency Installed:
+  mod_http2.x86_64 0:1.15.3-2.amzn2                                             
+
+Complete!
++ echo '########## removing the existing content from the below /var/www/html/* #########'
+########## removing the existing content from the below /var/www/html/* #########
++ sudo rm -rf /var/www/html/css /var/www/html/font /var/www/html/img /var/www/html/index.html /var/www/html/index.html-old /var/www/html/js /var/www/html/owl-carousel /var/www/html/README.md
++ echo '######## copying the workspace job content to /var/www/html########## '
+######## copying the workspace job content to /var/www/html########## 
++ sudo cp -r '/var/lib/jenkins/workspace/apache-install-staticdeploy-remote/*' /var/www/html/
+cp: cannot stat ‘/var/lib/jenkins/workspace/apache-install-staticdeploy-remote/*’: No such file or directory
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

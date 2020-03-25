@@ -1,0 +1,7 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<jenkins.plugins.git.GitBranchSCMRevision plugin="git@4.2.2">
+  <head class="jenkins.plugins.git.GitBranchSCMHead">
+    <name>accessing-credentials</name>
+  </head>
+  <hash>ebefb043bf5a046e8e49e4852f77662188dd2f7b</hash>
+</jenkins.plugins.git.GitBranchSCMRevision>

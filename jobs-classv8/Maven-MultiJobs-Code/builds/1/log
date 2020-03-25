@@ -1,0 +1,15 @@
+Started by user [8mha:////4MQJZdb9I5lNO70uCvhLqfOxAhh+dtd14bnc2zQ1tHvAAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4MLPRpVOyVNsUHgA9d0DaLrZIyNgk0SoTmEmXmcFp40SAAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgYR/eT83ILSktQi/eKcxLLUPKBjDQGWHaLlyQAAAA==[0mslavenode1 (linux-group) in workspace /home/jenkins/slave-repo/workspace/Maven-MultiJobs-Code
+[Maven-MultiJobs-Code] $ /bin/sh -xe /tmp/jenkins3138891022647043271.sh
++ echo 'This is starting the new Multi JOb flow'
+This is starting the new Multi JOb flow
+    >> Job status: [1_Build] the 'build only if scm changes' feature is disabled.
+Starting build job [8mha:////4H8kJXW5N7Rb0lMyIlxlTXqP9StC4YIu4Vh4rr0kYyDEAAAAjh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhgL2Hg1c/KT9I3jHcqzcxJ0QcAIcHAbZIAAAA=[0m1_Build.
+Finished Build : [8mha:////4NQ0pUsHQ2IRHg0m0u1mmbljoxkfg7fu+NxGXzveR2iPAAAAkR+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhgKmEQ0M/KT9I3jHcqzcxJ0TfW1wcAmmXOPpUAAAA=[0m#3 of Job : [8mha:////4H8kJXW5N7Rb0lMyIlxlTXqP9StC4YIu4Vh4rr0kYyDEAAAAjh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhgL2Hg1c/KT9I3jHcqzcxJ0QcAIcHAbZIAAAA=[0m1_Build with status : [8mha:////4BkWu/rGSFICB/gNYSpwmOjXXHgnWWLoZ8mr39PtdMsJAAAAkx+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhgL2EQ18/KT9I3jHcqzcxJ0TfW14dqAwB25oZdnAAAAA==[0mSUCCESS
+Started calculate disk usage of build
+Finished Calculation of disk usage of build in 0 seconds
+Started calculate disk usage of workspace
+Finished Calculation of disk usage of workspace in 0 seconds
+Finished: SUCCESS

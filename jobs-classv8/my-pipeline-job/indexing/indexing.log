@@ -1,0 +1,27 @@
+Started by timer
+[Wed Mar 25 15:20:00 UTC 2020] Starting branch indexing...
+ > git --version # timeout=10
+ > git ls-remote --symref -- https://github.com/hoto/jenkinsfile-examples.git # timeout=10
+ > git rev-parse --is-inside-work-tree # timeout=10
+Setting origin to https://github.com/hoto/jenkinsfile-examples.git
+ > git config remote.origin.url https://github.com/hoto/jenkinsfile-examples.git # timeout=10
+Fetching & pruning origin...
+Listing remote references...
+ > git config --get remote.origin.url # timeout=10
+ > git --version # timeout=10
+ > git ls-remote -h -- https://github.com/hoto/jenkinsfile-examples.git # timeout=10
+Fetching upstream changes from origin
+ > git config --get remote.origin.url # timeout=10
+ > git fetch --tags --force --progress --prune -- origin +refs/heads/*:refs/remotes/origin/* # timeout=10
+Checking branches...
+  Checking branch accessing-credentials
+      ‘jenkinsfiles/001-stages-declarative-style.groovy’ found
+    Met criteria
+No changes detected: accessing-credentials (still at ebefb043bf5a046e8e49e4852f77662188dd2f7b)
+  Checking branch master
+      ‘jenkinsfiles/001-stages-declarative-style.groovy’ found
+    Met criteria
+No changes detected: master (still at 23210a66aed26a4fc4579b6ede48cd150323e221)
+Processed 2 branches
+[Wed Mar 25 15:20:01 UTC 2020] Finished branch indexing. Indexing took 0.63 sec
+Finished: SUCCESS

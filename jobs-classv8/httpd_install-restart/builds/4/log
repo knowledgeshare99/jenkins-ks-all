@@ -1,0 +1,140 @@
+Started by user [8mha:////4MQJZdb9I5lNO70uCvhLqfOxAhh+dtd14bnc2zQ1tHvAAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/httpd_install-restart
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] Done
+[httpd_install-restart] $ /bin/sh -xe /tmp/jenkins8063160398767149007.sh
++ sudo echo '########### httpd Installation on Jenkins server ###########'
+########### httpd Installation on Jenkins server ###########
++ sudo echo '###########  unisntall apache server##########'
+###########  unisntall apache server##########
++ sudo yum remove -y httpd
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Resolving Dependencies
+--> Running transaction check
+---> Package httpd.x86_64 0:2.4.41-1.amzn2.0.1 will be erased
+--> Processing Dependency: httpd-mmn = 20120211x8664 for package: mod_http2-1.15.3-2.amzn2.x86_64
+--> Running transaction check
+---> Package mod_http2.x86_64 0:1.15.3-2.amzn2 will be erased
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package         Arch         Version                   Repository         Size
+================================================================================
+Removing:
+ httpd           x86_64       2.4.41-1.amzn2.0.1        @amzn2-core       4.0 M
+Removing for dependencies:
+ mod_http2       x86_64       1.15.3-2.amzn2            @amzn2-core       378 k
+
+Transaction Summary
+================================================================================
+Remove  1 Package (+1 Dependent package)
+
+Installed size: 4.3 M
+Downloading packages:
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Erasing    : httpd-2.4.41-1.amzn2.0.1.x86_64                              1/2 
+  Erasing    : mod_http2-1.15.3-2.amzn2.x86_64                              2/2 
+  Verifying  : mod_http2-1.15.3-2.amzn2.x86_64                              1/2 
+  Verifying  : httpd-2.4.41-1.amzn2.0.1.x86_64                              2/2 
+
+Removed:
+  httpd.x86_64 0:2.4.41-1.amzn2.0.1                                             
+
+Dependency Removed:
+  mod_http2.x86_64 0:1.15.3-2.amzn2                                             
+
+Complete!
++ sudo yum list httpd
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Available Packages
+httpd.x86_64                    2.4.41-1.amzn2.0.1                    amzn2-core
++ sudo echo '####### installation of httpd webserver #########'
+####### installation of httpd webserver #########
++ sudo yum install -y httpd
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Resolving Dependencies
+--> Running transaction check
+---> Package httpd.x86_64 0:2.4.41-1.amzn2.0.1 will be installed
+--> Processing Dependency: mod_http2 for package: httpd-2.4.41-1.amzn2.0.1.x86_64
+--> Running transaction check
+---> Package mod_http2.x86_64 0:1.15.3-2.amzn2 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package         Arch         Version                    Repository        Size
+================================================================================
+Installing:
+ httpd           x86_64       2.4.41-1.amzn2.0.1         amzn2-core       1.3 M
+Installing for dependencies:
+ mod_http2       x86_64       1.15.3-2.amzn2             amzn2-core       146 k
+
+Transaction Summary
+================================================================================
+Install  1 Package (+1 Dependent package)
+
+Total download size: 1.5 M
+Installed size: 4.3 M
+Downloading packages:
+--------------------------------------------------------------------------------
+Total                                               11 MB/s | 1.5 MB  00:00     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : httpd-2.4.41-1.amzn2.0.1.x86_64                              1/2 
+  Installing : mod_http2-1.15.3-2.amzn2.x86_64                              2/2 
+  Verifying  : mod_http2-1.15.3-2.amzn2.x86_64                              1/2 
+  Verifying  : httpd-2.4.41-1.amzn2.0.1.x86_64                              2/2 
+
+Installed:
+  httpd.x86_64 0:2.4.41-1.amzn2.0.1                                             
+
+Dependency Installed:
+  mod_http2.x86_64 0:1.15.3-2.amzn2                                             
+
+Complete!
++ sudo echo '####### status of httpd webserver #########'
+####### status of httpd webserver #########
++ sudo service httpd start
+Redirecting to /bin/systemctl start httpd.service
++ sudo echo '####### restart of httpd webserver #########'
+####### restart of httpd webserver #########
++ sudo service httpd status
+Redirecting to /bin/systemctl status httpd.service
+● httpd.service - The Apache HTTP Server
+   Loaded: loaded (/usr/lib/systemd/system/httpd.service; disabled; vendor preset: disabled)
+   Active: active (running) since Tue 2020-03-17 01:32:21 UTC; 93ms ago
+     Docs: man:httpd.service(8)
+ Main PID: 3820 (httpd)
+   Status: "Processing requests..."
+   CGroup: /system.slice/httpd.service
+           ├─3820 /usr/sbin/httpd -DFOREGROUND
+           ├─3823 /usr/sbin/httpd -DFOREGROUND
+           ├─3824 /usr/sbin/httpd -DFOREGROUND
+           ├─3825 /usr/sbin/httpd -DFOREGROUND
+           ├─3826 /usr/sbin/httpd -DFOREGROUND
+           └─3827 /usr/sbin/httpd -DFOREGROUND
+
+Mar 17 01:32:21 ip-172-31-18-75.us-west-2.compute.internal systemd[1]: Starting The Apache HTTP Server...
+Mar 17 01:32:21 ip-172-31-18-75.us-west-2.compute.internal systemd[1]: Started The Apache HTTP Server.
++ sudo echo '####### again checking status httpd webserver #########'
+####### again checking status httpd webserver #########
++ grep httpd
++ sudo ps -ef
+root      3820     1  0 01:32 ?        00:00:00 /usr/sbin/httpd -DFOREGROUND
+apache    3823  3820  0 01:32 ?        00:00:00 /usr/sbin/httpd -DFOREGROUND
+apache    3824  3820  0 01:32 ?        00:00:00 /usr/sbin/httpd -DFOREGROUND
+apache    3825  3820  0 01:32 ?        00:00:00 /usr/sbin/httpd -DFOREGROUND
+apache    3826  3820  0 01:32 ?        00:00:00 /usr/sbin/httpd -DFOREGROUND
+apache    3827  3820  0 01:32 ?        00:00:00 /usr/sbin/httpd -DFOREGROUND
+jenkins   3893  3689  0 01:32 ?        00:00:00 grep httpd
+Finished: SUCCESS

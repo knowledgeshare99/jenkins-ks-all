@@ -1,0 +1,120 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.37">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>jenkins</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.16">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <com.sonyericsson.rebuild.RebuildAction plugin="rebuild@1.31"/>
+  </actions>
+  <queueId>2081</queueId>
+  <timestamp>1585144245900</timestamp>
+  <startTime>1585144245902</startTime>
+  <result>FAILURE</result>
+  <duration>5002</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script>node {
+    // reference to maven
+    // ** NOTE: This &apos;maven-3.6.1&apos; Maven tool must be configured in the Jenkins Global Configuration.   
+    def mvnHome = tool &apos;maven-3.6.1&apos;
+
+    // holds reference to docker image
+    def dockerImage
+    // ip address of the docker private repository(nexus)
+    
+    def dockerRepoUrl = &quot;localhost:8083&quot;
+    def dockerImageName = &quot;hello-world-java&quot;
+    def dockerImageTag = &quot;${dockerRepoUrl}/${dockerImageName}:${env.BUILD_NUMBER}&quot;
+    
+    stage(&apos;Clone Repo&apos;) { // for display purposes
+      // Get some code from a GitHub repository
+      git &apos;https://github.com/dstar55/docker-hello-world-spring-boot.git&apos;
+      // Get the Maven tool.
+      // ** NOTE: This &apos;maven-3.6.1&apos; Maven tool must be configured
+      // **       in the global configuration.           
+      mvnHome = tool &apos;maven-3.6.1&apos;
+    }    
+  
+    stage(&apos;Build Project&apos;) {
+      // build project via maven
+      sh &quot;&apos;${mvnHome}/bin/mvn&apos; -Dmaven.test.failure.ignore clean package&quot;
+    }
+	
+	stage(&apos;Publish Tests Results&apos;){
+      parallel(
+        publishJunitTestsResultsToJenkins: {
+          echo &quot;Publish junit Tests Results&quot;
+		  junit &apos;**/target/surefire-reports/TEST-*.xml&apos;
+		  archive &apos;target/*.jar&apos;
+        },
+        publishJunitTestsResultsToSonar: {
+          echo &quot;This is branch b&quot;
+      })
+    }
+		
+    stage(&apos;Build Docker Image&apos;) {
+      // build docker image
+      sh &quot;whoami&quot;
+      sh &quot;ls -all /var/run/docker.sock&quot;
+      sh &quot;mv ./target/hello*.jar ./data&quot; 
+      
+      dockerImage = docker.build(&quot;hello-world-java&quot;)
+    }
+   
+    stage(&apos;Deploy Docker Image&apos;){
+      
+      // deploy docker image to nexus
+
+      echo &quot;Docker Image Tag Name: ${dockerImageTag}&quot;
+
+      sh &quot;docker login -u admin -p admin123 ${dockerRepoUrl}&quot;
+      sh &quot;docker tag ${dockerImageName} ${dockerImageTag}&quot;
+      sh &quot;docker push ${dockerImageTag}&quot;
+    }
+}
+</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>104704369</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>3608147904</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>1272163516</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>2278103208</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>809192605</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>8</iota>
+    <head>1:8</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

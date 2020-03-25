@@ -1,0 +1,144 @@
+Started by user [8mha:////4MQJZdb9I5lNO70uCvhLqfOxAhh+dtd14bnc2zQ1tHvAAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building on master in workspace /var/lib/jenkins/workspace/ansible-playbook-job
+using credential 2576fb98-9a6b-4dc4-b51c-f8bc467c52cb
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/knowledgeshare99/ansible-ks-all.git # timeout=10
+Fetching upstream changes from https://github.com/knowledgeshare99/ansible-ks-all.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials this is my API-AuthToken for knowledgeshare99/class github
+ > git fetch --tags --force --progress -- https://github.com/knowledgeshare99/ansible-ks-all.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision f682f9bb771ff5e1d50e92cdef6dab15978b1b59 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f f682f9bb771ff5e1d50e92cdef6dab15978b1b59 # timeout=10
+Commit message: "adde new 3nd remote for appservers"
+ > git rev-list --no-walk f682f9bb771ff5e1d50e92cdef6dab15978b1b59 # timeout=10
+[ansible-playbook-job] $ /bin/sh -xe /tmp/jenkins6898724247944916860.sh
++ echo 'Ansible workspave listing'
+Ansible workspave listing
++ pwd
+/var/lib/jenkins/workspace/ansible-playbook-job
++ ls -lrt
+total 1844
+-rw-r--r--  1 jenkins jenkins     258 Mar 20 13:14 README.md
+-rw-r--r--  1 jenkins jenkins    1327 Mar 20 13:14 ec2-remote.yml
+-rw-r--r--  1 jenkins jenkins    1169 Mar 20 13:14 ec2-luanching.yml
+-rw-r--r--  1 jenkins jenkins      10 Mar 20 13:14 ec2-luanching.retry
+-rw-r--r--  1 jenkins jenkins     766 Mar 20 13:14 EC2-LaunchingInstance.yml
+-rw-r--r--  1 jenkins jenkins      11 Mar 20 13:14 EC2-LaunchingInstance.retry
+-rw-r--r--  1 jenkins jenkins     770 Mar 20 13:14 ec2-instance.yml
+-rw-r--r--  1 jenkins jenkins      11 Mar 20 13:14 ec2-instance.retry
+-rw-r--r--  1 jenkins jenkins     241 Mar 20 13:14 ec2-instance-removed.yml
+-rw-r--r--  1 jenkins jenkins      10 Mar 20 13:14 ec2-instance-removed.retry
+-rw-r--r--  1 jenkins jenkins     672 Mar 20 13:14 ec2-createSecurityGroup.yml
+-rw-r--r--  1 jenkins jenkins     296 Mar 20 13:14 creat-user.yml
+-rw-r--r--  1 jenkins jenkins     258 Mar 20 13:14 creat-users-loop.yml
+-rw-r--r--  1 jenkins jenkins      11 Mar 20 13:14 creat-user.retry
+-rw-r--r--  1 jenkins jenkins     169 Mar 20 13:14 copy-slave.yml
+-rw-r--r--  1 jenkins jenkins     174 Mar 20 13:14 copy-data-emp.yml
+-rw-r--r--  1 jenkins jenkins      84 Mar 20 13:14 apache-site-role.yml
+-rw-r--r--  1 jenkins jenkins      11 Mar 20 13:14 apache-site-role.retry
+-rw-r--r--  1 jenkins jenkins     284 Mar 20 13:14 apache-httpd.yml
+-rw-r--r--  1 jenkins jenkins      11 Mar 20 13:14 apache-httpd.retry
+-rw-r--r--  1 jenkins jenkins     217 Mar 20 13:14 apache-httpd-local-remote.yml
+-rw-r--r--  1 jenkins jenkins     106 Mar 20 13:14 apache-basic.yml
+-rw-r--r--  1 jenkins jenkins      11 Mar 20 13:14 apache-basic.retry
+-rwxr-xr-x  1 jenkins jenkins   19155 Mar 20 13:14 ansible.cfg
+-rw-r--r--  1 jenkins jenkins     559 Mar 20 13:14 remote-root-httpd.yml
+-rw-r--r--  1 jenkins jenkins      11 Mar 20 13:14 remote-root-httpd.retry
+-rw-r--r--  1 jenkins jenkins      61 Mar 20 13:14 ping.yml
+-rw-r--r--  1 jenkins jenkins      57 Mar 20 13:14 master-play.yml
+-rw-r--r--  1 jenkins jenkins      66 Mar 20 13:14 master-playbook.yml
+-rw-r--r--  1 jenkins jenkins      11 Mar 20 13:14 master-playbook.retry
+drwxr-xr-x  3 jenkins jenkins      23 Mar 20 13:14 ks-skel-role
+-rw-r--r--  1 jenkins jenkins     531 Mar 20 13:14 httpd-postgresql.yml
+-rw-r--r--  1 jenkins jenkins      11 Mar 20 13:14 httpd-postgresql.retry
+-rw-r--r--  1 jenkins jenkins     534 Mar 20 13:14 httpd-all.yml
+-rw-r--r--  1 jenkins jenkins      11 Mar 20 13:14 httpd-all.retry
+-rwxr-xr-x  1 jenkins jenkins    1016 Mar 20 13:14 hosts-ORG
+-rw-r--r--  1 jenkins jenkins     276 Mar 20 13:14 get-url-tomcat.yml
+-rw-r--r--  1 jenkins jenkins 1661676 Mar 20 13:14 get-pip.py
+-rw-r--r--  1 jenkins jenkins      21 Mar 20 13:14 yum-install.retry
+-rw-r--r--  1 jenkins jenkins    1003 Mar 20 13:14 valut-ec2test.yml
+-rw-r--r--  1 jenkins jenkins     142 Mar 20 13:14 tomcat-roles.yml
+-rw-r--r--  1 jenkins jenkins      11 Mar 20 13:14 tomcat-roles.retry
+-rw-r--r--  1 jenkins jenkins       5 Mar 20 13:14 tomcat-roles.py
+-rw-r--r--  1 jenkins jenkins    1418 Mar 20 13:14 tomcat-installation-playbook.yml
+-rw-r--r--  1 jenkins jenkins     324 Mar 20 13:14 tags-ex-httpd-packages.yml
+drwxr-xr-x  2 jenkins jenkins      22 Mar 20 13:14 srv
+-rw-r--r--  1 jenkins jenkins      23 Mar 20 13:14 slave1.txt
+-rw-r--r--  1 jenkins jenkins     108 Mar 20 13:14 simple.yml
+-rw-r--r--  1 jenkins jenkins     792 Mar 20 13:14 setpassword.yml
+-rw-r--r--  1 jenkins jenkins      31 Mar 20 13:14 script.sh
+-rw-r--r--  1 jenkins jenkins      89 Mar 20 13:14 sample-httpd.yml
+drwxr-xr-x 13 jenkins jenkins     184 Mar 20 13:14 roles
+-rw-r--r--  1 jenkins jenkins      90 Mar 20 13:14 yum-install.yml
+-rw-r--r--  1 jenkins jenkins     234 Mar 21 12:50 copyartifact.yml
+-rwxr-xr-x  1 jenkins jenkins      81 Mar 21 13:01 hosts
+[ansible-playbook-job] $ ansible-playbook ping.yml -i hosts -l slavegroup -f 5 --private-key /tmp/ssh7168367332788105622.key -u jenkins
+FATAL: command execution failed
+java.io.IOException: Cannot run program "ansible-playbook" (in directory "/var/lib/jenkins/workspace/ansible-playbook-job"): error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at hudson.Proc$LocalProc.<init>(Proc.java:250)
+	at hudson.Proc$LocalProc.<init>(Proc.java:219)
+	at hudson.Launcher$LocalLauncher.launch(Launcher.java:937)
+	at hudson.Launcher$ProcStarter.start(Launcher.java:455)
+	at hudson.Launcher$ProcStarter.join(Launcher.java:466)
+	at org.jenkinsci.plugins.ansible.CLIRunner.execute(CLIRunner.java:49)
+	at org.jenkinsci.plugins.ansible.AbstractAnsibleInvocation.execute(AbstractAnsibleInvocation.java:290)
+	at org.jenkinsci.plugins.ansible.AnsiblePlaybookInvocation.execute(AnsiblePlaybookInvocation.java:31)
+	at org.jenkinsci.plugins.ansible.AnsiblePlaybookBuilder.perform(AnsiblePlaybookBuilder.java:261)
+	at org.jenkinsci.plugins.ansible.AnsiblePlaybookBuilder.perform(AnsiblePlaybookBuilder.java:232)
+	at hudson.tasks.BuildStepCompatibilityLayer.perform(BuildStepCompatibilityLayer.java:78)
+	at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:20)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:741)
+	at hudson.model.Build$BuildExecution.build(Build.java:206)
+	at hudson.model.Build$BuildExecution.doRun(Build.java:163)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:504)
+	at hudson.model.Run.execute(Run.java:1853)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:427)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 20 more
+FATAL: Cannot run program "ansible-playbook" (in directory "/var/lib/jenkins/workspace/ansible-playbook-job"): error=2, No such file or directory
+java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+Caused: java.io.IOException: Cannot run program "ansible-playbook" (in directory "/var/lib/jenkins/workspace/ansible-playbook-job"): error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at hudson.Proc$LocalProc.<init>(Proc.java:250)
+	at hudson.Proc$LocalProc.<init>(Proc.java:219)
+	at hudson.Launcher$LocalLauncher.launch(Launcher.java:937)
+	at hudson.Launcher$ProcStarter.start(Launcher.java:455)
+	at hudson.Launcher$ProcStarter.join(Launcher.java:466)
+	at org.jenkinsci.plugins.ansible.CLIRunner.execute(CLIRunner.java:49)
+	at org.jenkinsci.plugins.ansible.AbstractAnsibleInvocation.execute(AbstractAnsibleInvocation.java:290)
+	at org.jenkinsci.plugins.ansible.AnsiblePlaybookInvocation.execute(AnsiblePlaybookInvocation.java:31)
+	at org.jenkinsci.plugins.ansible.AnsiblePlaybookBuilder.perform(AnsiblePlaybookBuilder.java:261)
+	at org.jenkinsci.plugins.ansible.AnsiblePlaybookBuilder.perform(AnsiblePlaybookBuilder.java:232)
+	at hudson.tasks.BuildStepCompatibilityLayer.perform(BuildStepCompatibilityLayer.java:78)
+	at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:20)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:741)
+	at hudson.model.Build$BuildExecution.build(Build.java:206)
+	at hudson.model.Build$BuildExecution.doRun(Build.java:163)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:504)
+	at hudson.model.Run.execute(Run.java:1853)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:427)
+Started calculate disk usage of build
+Finished Calculation of disk usage of build in 0 seconds
+Started calculate disk usage of workspace
+Finished Calculation of disk usage of workspace in 0 seconds
+Finished: FAILURE

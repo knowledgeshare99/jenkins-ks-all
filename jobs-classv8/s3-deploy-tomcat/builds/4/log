@@ -1,0 +1,25 @@
+Started by user [8mha:////4MQJZdb9I5lNO70uCvhLqfOxAhh+dtd14bnc2zQ1tHvAAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9rNS87My8YgDGtiJjwgAAAA==[0mjenkins
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building on master in workspace /var/lib/jenkins/workspace/s3-deploy-tomcat
+[s3-deploy-tomcat] $ /bin/sh -xe /tmp/jenkins1383729423289792242.sh
++ echo 'Lisging Artifact content from S3 bucket to Worspace'
+Lisging Artifact content from S3 bucket to Worspace
++ aws s3 ls s3://artifact-s3-ks
+                           PRE gameoflife-web/
+2020-03-21 12:02:17    3192545 gameoflife.war
++ wc -l
++ aws s3 ls s3://artifact-s3-ks
+2
++ echo 'Downloading Artifact content from S3 bucket to Worspace'
+Downloading Artifact content from S3 bucket to Worspace
++ aws s3 cp s3://artifact-s3-ks/gameoflife.war /var/lib/jenkins/workspace/s3-deploy-tomcat --recursive
++ pwd
+/var/lib/jenkins/workspace/s3-deploy-tomcat
++ ls -lrt
+total 0
+Started calculate disk usage of build
+Finished Calculation of disk usage of build in 0 seconds
+Started calculate disk usage of workspace
+Finished Calculation of disk usage of workspace in 0 seconds
+Finished: SUCCESS

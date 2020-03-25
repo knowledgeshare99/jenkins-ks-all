@@ -1,0 +1,235 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.37">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>jenkins</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <hudson.plugins.jobConfigHistory.JobConfigBadgeAction plugin="jobConfigHistory@2.25">
+      <configDates>
+        <string>2020-03-20_02-24-46</string>
+        <string>2020-03-20_02-21-20</string>
+      </configDates>
+    </hudson.plugins.jobConfigHistory.JobConfigBadgeAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.16">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <hudson.plugins.git.util.BuildData plugin="git@4.2.2">
+      <buildsByBranchName>
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@3.2.1">
+              <sha1>3f29e1a13942658c0ff187a8fe7ec75c633c3b26</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>refs/remotes/origin/master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>2</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>https://github.com/KS-Organization/pipeline-examples.git</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <hudson.plugins.git.GitTagAction plugin="git@4.2.2">
+      <tags class="hudson.util.CopyOnWriteMap$Tree">
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <list/>
+        </entry>
+      </tags>
+      <ws>/home/jenkins/slave-repo/workspace/Jenkins-PipelineFlow</ws>
+    </hudson.plugins.git.GitTagAction>
+    <org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState plugin="workflow-scm-step@2.10">
+      <revisionStates>
+        <entry>
+          <string>git https://github.com/KS-Organization/pipeline-examples.git</string>
+          <hudson.scm.SCMRevisionState_-None/>
+        </entry>
+      </revisionStates>
+    </org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState>
+    <com.cloudbees.jenkins.plugins.bitbucket.FirstCheckoutCompletedInvisibleAction plugin="cloudbees-bitbucket-branch-source@2.7.0"/>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@2.80">
+      <env class="tree-map">
+        <entry>
+          <string>NODE_ENV</string>
+          <string>test</string>
+        </entry>
+      </env>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+    <com.sonyericsson.rebuild.RebuildAction plugin="rebuild@1.31"/>
+  </actions>
+  <queueId>82</queueId>
+  <timestamp>1584671089308</timestamp>
+  <startTime>1584671089310</startTime>
+  <result>FAILURE</result>
+  <duration>273699</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script>#!groovy
+
+/*
+The MIT License
+
+Copyright (c) 2015-, CloudBees, Inc., and a number of other of contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the &quot;Software&quot;), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+        THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+*/
+
+node(&apos;slave1&apos;) {
+
+
+    currentBuild.result = &quot;SUCCESS&quot;
+
+    try {
+
+       stage(&apos;Checkout&apos;){
+
+          checkout scm
+       }
+
+       stage(&apos;Test&apos;){
+
+         env.NODE_ENV = &quot;test&quot;
+
+         print &quot;Environment will be : ${env.NODE_ENV}&quot;
+
+         sh &apos;node -v&apos;
+         sh &apos;npm prune&apos;
+         sh &apos;npm install&apos;
+         sh &apos;npm test&apos;
+
+       }
+
+       stage(&apos;Build Docker&apos;){
+
+            sh &apos;./dockerBuild.sh&apos;
+       }
+
+       stage(&apos;Deploy&apos;){
+
+         echo &apos;Push to Repo&apos;
+         sh &apos;./dockerPushToRepo.sh&apos;
+
+         echo &apos;ssh to web server and tell it to pull new image&apos;
+         sh &apos;ssh deploy@xxxxx.xxxxx.com running/xxxxxxx/dockerRun.sh&apos;
+
+       }
+
+       stage(&apos;Cleanup&apos;){
+
+         echo &apos;prune and cleanup&apos;
+         sh &apos;npm prune&apos;
+         sh &apos;rm node_modules -rf&apos;
+
+         mail body: &apos;project build successful&apos;,
+                     from: &apos;xxxx@yyyyy.com&apos;,
+                     replyTo: &apos;xxxx@yyyy.com&apos;,
+                     subject: &apos;project build successful&apos;,
+                     to: &apos;yyyyy@yyyy.com&apos;
+       }
+
+
+
+    }
+    catch (err) {
+
+        currentBuild.result = &quot;FAILURE&quot;
+
+            mail body: &quot;project build error is here: ${env.BUILD_URL}&quot; ,
+            from: &apos;xxxx@yyyy.com&apos;,
+            replyTo: &apos;yyyy@yyyy.com&apos;,
+            subject: &apos;project build failed&apos;,
+            to: &apos;zzzz@yyyyy.com&apos;
+
+        throw err
+    }
+
+}
+</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>151138734</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>4524081755</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>1981832373</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>2591326436</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>484052645</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>19</iota>
+    <head>1:19</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList">
+    <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+      <scm class="hudson.plugins.git.GitSCM" plugin="git@4.2.2">
+        <configVersion>2</configVersion>
+        <userRemoteConfigs>
+          <hudson.plugins.git.UserRemoteConfig>
+            <url>https://github.com/KS-Organization/pipeline-examples.git</url>
+          </hudson.plugins.git.UserRemoteConfig>
+        </userRemoteConfigs>
+        <branches>
+          <hudson.plugins.git.BranchSpec>
+            <name>*/master</name>
+          </hudson.plugins.git.BranchSpec>
+        </branches>
+        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+        <submoduleCfg class="list"/>
+        <extensions/>
+      </scm>
+      <node>slave1</node>
+      <workspace>/home/jenkins/slave-repo/workspace/Jenkins-PipelineFlow</workspace>
+      <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
+    </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+  </checkouts>
+</flow-build>

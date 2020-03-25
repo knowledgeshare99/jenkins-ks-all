@@ -1,0 +1,10 @@
+commit e09a2e1abd808d7144c2bdf32725e94eef652fdf
+tree 757490c837d946da20e99c12d7b797b041c08b91
+parent 8311d4a961cb4ff8c5c787b2a1f2420456e90e92
+author root <root@ip-172-31-18-75.us-west-2.compute.internal> 2020-03-17 01:53:38 +0000
+committer root <root@ip-172-31-18-75.us-west-2.compute.internal> 2020-03-17 01:53:38 +0000
+
+    creating a dummy commit
+
+
+:100644 100644 a69bead62977f996d30865269b440b3d30ea5164 bf08b11e335de8670b7a1bd94637147a8d7c2715 M	README.md
