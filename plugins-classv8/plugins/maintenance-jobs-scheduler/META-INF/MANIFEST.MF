@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: victor.martinez
+Build-Jdk: 1.8.0_45
+Extension-Name: maintenance-jobs-scheduler
+Specification-Title: Perform some deleting or disabling of old jobs ba
+ sed on some cron task.
+Implementation-Title: maintenance-jobs-scheduler
+Implementation-Version: 0.1.0
+Group-Id: org.jenkins-ci.plugins
+Short-Name: maintenance-jobs-scheduler
+Long-Name: Maintenance Jobs Scheduler Plugin
+Url: https://wiki.jenkins-ci.org/display/JENKINS/Maintenance+Jobs+Sche
+ duler+Plugin
+Plugin-Version: 0.1.0
+Hudson-Version: 1.590
+Jenkins-Version: 1.590
+Plugin-Developers: Victor Martinez:v1v:VictorMartinezRubio@gmail.com
+

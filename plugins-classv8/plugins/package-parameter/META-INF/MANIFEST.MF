@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: vhmit009
+Build-Jdk: 1.7.0_60-ea
+Extension-Name: package-parameter
+Specification-Title: A rather specific use-case. A Jenkins plugin that
+  will look up a AWS S3 hosted Yum or Apt repo's database, and glean a
+ ny information needed to populate
+ 		a Jenkins parameter dropdown. The primary driver for me to develop 
+ this was the ability to look up the packages in the repo in order to 
+ call MCollective
+         with a package that we know exists.
+Implementation-Title: package-parameter
+Implementation-Version: 1.7
+Group-Id: com.viviquity.jenkins
+Short-Name: package-parameter
+Long-Name: S3 package parameter plugin
+Url: https://wiki.jenkins-ci.org/display/JENKINS/Package+Parameter+Plu
+ gin
+Plugin-Version: 1.7
+Hudson-Version: 1.596.1
+Jenkins-Version: 1.596.1
+Plugin-Developers: Declan Newman:d3clan:declan@declans.net,Christophe 
+ Marchal:toff63:toff63@gmail.com
+

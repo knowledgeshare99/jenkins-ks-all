@@ -1,0 +1,33 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: fcojfernandez
+Build-Jdk: 1.8.0_242
+Extension-Name: ec2
+Specification-Title: This is a Jenkins plugin to support ephemeral Jen
+ kins agents on Amazon EC2 or other EC2-compatible clouds
+Implementation-Title: ec2
+Implementation-Version: 1.49.1
+Plugin-Class: hudson.plugins.ec2.PluginImpl
+Group-Id: org.jenkins-ci.plugins
+Short-Name: ec2
+Long-Name: Amazon EC2 plugin
+Url: https://github.com/jenkinsci/ec2-plugin
+Compatible-Since-Version: 1.45
+Minimum-Java-Version: 1.8
+Plugin-Version: 1.49.1
+Hudson-Version: 2.150.1
+Jenkins-Version: 2.150.1
+PluginFirstClassLoader: true
+Plugin-Dependencies: workflow-step-api:2.19,apache-httpcomponents-clie
+ nt-4-api:4.5.10-2.0,aws-credentials:1.11,aws-java-sdk:1.11.700,bouncy
+ castle-api:2.18,command-launcher:1.2,node-iterator-api:1.5.0,trilead-
+ api:1.0.3
+Plugin-Developers: F Manfred Furuholen:thoulen:fabrizio.manfredi@gmail
+ .com,Julien Duchesne:julienduchesne:julienduchesne@live.com,Matt Sick
+ er:jvz:msicker@cloudbees.com,Raihaan Shouhell:raihaan:raihaanhimself@
+ gmail.com
+Plugin-License-Name: The MIT License
+Plugin-License-Url: https://opensource.org/licenses/MIT
+Plugin-ScmUrl: https://github.com/jenkinsci/ec2-plugin
+

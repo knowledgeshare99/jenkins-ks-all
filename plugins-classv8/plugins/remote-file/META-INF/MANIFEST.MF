@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: aytunc
+Build-Jdk: 1.8.0_242
+Extension-Name: remote-file
+Specification-Title: Enables definition of external Jenkinsfile from a
+ nother repository for Multibranch Pipeline Projects.
+Implementation-Title: remote-file
+Implementation-Version: 1.8
+Group-Id: io.jenkins.plugins
+Short-Name: remote-file
+Long-Name: Remote File Plugin
+Url: https://github.com/jenkinsci/remote-file-plugin
+Minimum-Java-Version: 1.8
+Plugin-Version: 1.8
+Hudson-Version: 2.176.1
+Jenkins-Version: 2.176.1
+Plugin-Dependencies: workflow-aggregator:2.6,workflow-api:2.35,workflo
+ w-cps-global-lib:2.11,workflow-cps:2.58,workflow-job:2.33,workflow-mu
+ ltibranch:2.21,workflow-scm-step:2.9,workflow-step-api:2.20,workflow-
+ support:3.3,apache-httpcomponents-client-4-api:4.5.5-3.0,cloudbees-bi
+ tbucket-branch-source:2.4.4,cloudbees-folder:6.9,git-client:2.7.7,mai
+ ler:1.23,scm-api:2.5.1,script-security:1.60,structs:1.19
+Plugin-Developers: Aytunc BEKEN:aytuncbeken:aytuncbeken.ab@gmail.com
+

@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: danielbeck
+Build-Jdk: 1.8.0_222
+Extension-Name: s3
+Specification-Title: The Jenkins Plugins Parent POM Project
+Implementation-Title: s3
+Implementation-Version: 0.11.5
+Group-Id: org.jenkins-ci.plugins
+Short-Name: s3
+Long-Name: Jenkins S3 publisher plugin
+Url: https://wiki.jenkins.io/display/JENKINS/S3+Plugin
+Minimum-Java-Version: 1.8
+Plugin-Version: 0.11.5
+Hudson-Version: 2.138.4
+Jenkins-Version: 2.138.4
+Plugin-Dependencies: maven-plugin:3.4,apache-httpcomponents-client-4-a
+ pi:4.5.10-2.0,aws-java-sdk:1.11.687,copyartifact:1.43,structs:1.20
+Plugin-Developers: Doug MacEachern:dougm:,Richard Dallaway:d6y:,Long H
+ o:longlho:,Michael Watt:mikewatt:,David Beer:dmbeer:,Mattias Appelgre
+ n:mattias:,Alexander Akbashev:Jimilian:
+Plugin-ScmUrl: https://github.com/jenkinsci/s3-plugin
+
